@@ -143,8 +143,8 @@ export async function importContentFromCsv(
           weapon: rowData.weapon || 'Sword',
           rarity: parseInt(rowData.rarity, 10) || 5,
           description: rowData.description || 'Deskripsi karakter...',
-          portrait: rowData.portrait || '/images/placeholder-game.svg',
-          full_image: rowData.full_image || '/images/placeholder-game.svg',
+          portrait: rowData.portrait || '/images/placeholder-character.svg',
+          full_image: rowData.full_image || '/images/placeholder-character.svg',
           status: (rowData.status as any) || 'PUBLISHED',
         };
 
@@ -194,7 +194,7 @@ export async function importContentFromCsv(
           rarity: parseInt(rowData.rarity, 10) || 4,
           description: rowData.description || 'Deskripsi item...',
           how_to_get: rowData.how_to_get || 'Didapatkan melalui quest atau drop.',
-          icon: rowData.icon || '/images/placeholder-game.svg',
+          icon: rowData.icon || '/images/placeholder-item.svg',
         };
 
         const val = validateItem(payload);
@@ -240,7 +240,7 @@ export async function importContentFromCsv(
           title: payload.title,
           slug: payload.slug,
           category: payload.category,
-          thumbnail: rowData.thumbnail || '/images/placeholder-game.svg',
+          thumbnail: rowData.thumbnail || '/images/placeholder-guide.svg',
           excerpt: payload.excerpt,
           content: payload.content,
           author: payload.author,

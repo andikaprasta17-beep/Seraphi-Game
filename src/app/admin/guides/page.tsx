@@ -93,7 +93,7 @@ export default function AdminGuidesPage() {
           author,
           excerpt,
           content,
-          thumbnail: thumbnail || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+          thumbnail: thumbnail || '/images/placeholder-guide.svg',
           status,
           tags: [category],
         }),

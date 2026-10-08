@@ -69,8 +69,8 @@ export default function AdminGamesPage() {
           genres: genres.split(',').map((s) => s.trim()).filter(Boolean),
           platforms: platforms.split(',').map((s) => s.trim()).filter(Boolean),
           description,
-          cover_image: coverImage || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600',
-          banner_image: bannerImage || 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600',
+          cover_image: coverImage || '/images/placeholder-game.svg',
+          banner_image: bannerImage || '/images/placeholder-game.svg',
           official_url: officialUrl,
         }),
       });

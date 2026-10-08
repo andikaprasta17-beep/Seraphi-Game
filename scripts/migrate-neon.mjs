@@ -237,7 +237,7 @@ export async function runNeonMigration() {
            related_guide_ids = EXCLUDED.related_guide_ids, related_character_ids = EXCLUDED.related_character_ids`,
         [
           gu.id, gameId, authorId, authorSlug, gu.title, gu.slug, gu.excerpt, gu.content,
-          gu.category, gu.difficulty || 'medium', Number(gu.reading_time || 5), gu.featured_image || gu.thumbnail || '', gu.status,
+          gu.category, gu.difficulty || 'medium', Number(gu.reading_time || 5), gu.thumbnail || gu.featured_image || '', gu.status,
           gu.created_at, gu.updated_at, Number(gu.views || 0), Number(gu.is_demo || 0),
           gu.meta_title || null, gu.meta_description || null, Number(gu.no_index || 0),
           gu.tags || '[]', gu.faq || '[]', gu.canonical_url || null,
@@ -276,7 +276,7 @@ export async function runNeonMigration() {
            meta_description = EXCLUDED.meta_description, no_index = EXCLUDED.no_index, tags = EXCLUDED.tags`,
         [
           n.id, gameId, authorId, authorSlug, n.title, n.slug, n.excerpt, n.content,
-          n.category, n.featured_image || n.thumbnail || '', n.status, n.created_at, n.updated_at,
+          n.category, n.thumbnail || n.featured_image || '', n.status, n.created_at, n.updated_at,
           Number(n.views || 0), Number(n.is_demo || 0), n.meta_title || null,
           n.meta_description || null, Number(n.no_index || 0), n.tags || '[]'
         ]

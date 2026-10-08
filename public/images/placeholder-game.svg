@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="200" r="140" fill="#00f2fe" opacity="0.04"/>
+  <circle cx="400" cy="200" r="90" fill="#4facfe" opacity="0.06"/>
+  <!-- Gamepad icon -->
+  <g transform="translate(360, 160)" stroke="url(#cyanGrad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-30" y="-10" width="140" height="85" rx="30" stroke="url(#cyanGrad)" stroke-width="4"/>
+    <path d="M-5 32 h30 M10 17 v30" stroke="#00f2fe" stroke-width="4"/>
+    <circle cx="65" cy="25" r="5" fill="#4facfe"/>
+    <circle cx="85" cy="40" r="5" fill="#00f2fe"/>
+  </g>
+  <text x="400" y="295" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="1">SERAPHI GAME</text>
+  <text x="400" y="325" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-size="14" text-anchor="middle">No Cover Preview Available</text>
+</svg>

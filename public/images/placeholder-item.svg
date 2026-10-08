@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="20" fill="url(#bg)"/>
+  <circle cx="200" cy="180" r="80" fill="#f43f5e" opacity="0.06"/>
+  <!-- Diamond / Item Gem icon -->
+  <g transform="translate(200, 180)" stroke="url(#roseGrad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="0,-50 45,0 0,50 -45,0"/>
+    <line x1="-45" y1="0" x2="45" y2="0"/>
+    <line x1="0" y1="-50" x2="0" y2="50"/>
+  </g>
+  <text x="200" y="275" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="1">SERAPHI ITEM</text>
+  <text x="200" y="300" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle">No Icon Available</text>
+</svg>

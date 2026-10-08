@@ -64,7 +64,7 @@ export default function AdminEventsPage() {
           end_date: new Date(endDate).toISOString(),
           status,
           official_url: officialUrl,
-          image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800',
+          image: '/images/placeholder-game.svg',
         }),
       });
 

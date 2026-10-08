@@ -72,7 +72,7 @@ export default function AdminNewsPage() {
           content,
           status,
           tags: [category],
-          thumbnail: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+          thumbnail: '/images/placeholder-news.svg',
         }),
       });
 

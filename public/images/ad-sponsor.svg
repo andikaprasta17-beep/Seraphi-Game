@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="adSponsorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" rx="16" fill="url(#adSponsorGrad)" />
+  <rect x="2" y="2" width="1196" height="296" rx="14" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.4" />
+  <text x="600" y="130" font-family="system-ui, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">TEMPAT TOP-UP GAME RESMI &amp; TERPERCAYA</text>
+  <text x="600" y="180" font-family="system-ui, sans-serif" font-size="20" fill="#bae6fd" text-anchor="middle">Gunakan Kode Diskon SERAPHI untuk Cashback Ekstra 10%</text>
+  <rect x="500" y="210" width="200" height="44" rx="8" fill="#0284c7" />
+  <text x="600" y="238" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">TOP UP SEKARANG</text>
+</svg>
