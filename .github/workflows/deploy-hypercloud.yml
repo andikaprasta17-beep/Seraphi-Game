@@ -25,6 +25,8 @@ jobs:
         run: |
           echo "=== VALIDASI GITHUB SECRETS UNTUK HYPERCLOUDHOST ==="
           MISSING_SECRETS=()
+          [ -z "${{ secrets.DATABASE_PROVIDER }}" ] && MISSING_SECRETS+=("DATABASE_PROVIDER")
+          [ -z "${{ secrets.DATABASE_URL }}" ] && MISSING_SECRETS+=("DATABASE_URL")
           [ -z "${{ secrets.HYPERCLOUD_SSH_HOST }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_HOST")
           [ -z "${{ secrets.HYPERCLOUD_SSH_USER }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_USER")
           [ -z "${{ secrets.HYPERCLOUD_SSH_PRIVATE_KEY }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_PRIVATE_KEY")
@@ -39,6 +41,8 @@ jobs:
             done
             echo ""
             echo "Silakan tambahkan di Settings > Secrets and variables > Actions:"
+            echo "  - DATABASE_PROVIDER             : postgres (Wajib untuk Neon production)"
+            echo "  - DATABASE_URL                  : Connection string Neon PostgreSQL Production"
             echo "  - HYPERCLOUD_SSH_HOST           : IP / Hostname HyperCloudHost"
             echo "  - HYPERCLOUD_SSH_PORT           : Port SSH (default: 22 atau port cPanel)"
             echo "  - HYPERCLOUD_SSH_USER           : Username SSH / cPanel"
@@ -48,7 +52,9 @@ jobs:
             echo "=========================================================================="
             exit 1
           fi
-          echo "✅ Semua secrets SSH wajib tersedia (termasuk SSH key passphrase)."
+          echo "DATABASE_PROVIDER configured: yes"
+          echo "DATABASE_URL configured: yes"
+          echo "✅ Semua secrets wajib tersedia (Database Neon & SSH HyperCloudHost)."
 
       - name: 3. Setup Node.js (18.20.8)
         uses: actions/setup-node@v4
@@ -66,12 +72,29 @@ jobs:
         env:
           NODE_ENV: production
           NEXT_TELEMETRY_DISABLED: 1
-          DATABASE_PROVIDER: ${{ secrets.DATABASE_PROVIDER || 'postgres' }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL || '' }}
+          DATABASE_PROVIDER: ${{ secrets.DATABASE_PROVIDER }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NEXT_PUBLIC_SITE_URL: https://seraphigame.my.id
+          CONTENT_MODE: production
         run: |
           echo "=== PRODUCTION BUILD NEXT.JS DI GITHUB RUNNER ==="
           echo "Target Node.js: 18.20.8"
           echo "Commit SHA: ${{ github.sha }}"
+
+          # Validasi aman konfigurasi database tanpa mencetak secret
+          if [ "$DATABASE_PROVIDER" != "postgres" ]; then
+            echo "❌ DATABASE_PROVIDER tidak valid. Harus 'postgres'."
+            exit 1
+          fi
+
+          if [ -z "$DATABASE_URL" ]; then
+            echo "❌ DATABASE_URL kosong. Neon Production connection string wajib tersedia untuk build."
+            exit 1
+          fi
+
+          echo "DATABASE_PROVIDER configured: yes"
+          echo "DATABASE_URL configured: yes"
+
           npm run build
           if [ ! -d ".next" ] || [ ! -f ".next/BUILD_ID" ]; then
             echo "❌ BUILD GAGAL: Direktori .next tidak terbentuk atau tidak valid."
@@ -352,20 +375,25 @@ jobs:
           echo "=================================================="
           echo "              DEPLOYMENT REPORT                   "
           echo "=================================================="
-          echo "SOURCE COMMIT   : ${{ github.sha }}"
-          echo "BUILD           : ${{ steps.build.outcome == 'success' && 'PASS' || (steps.check-secrets.outcome == 'failure' && 'BLOCKED' || 'FAIL') }}"
-          echo "BUILD LOCATION  : GitHub Actions"
-          echo "DEPLOY          : ${{ steps.deploy.outcome == 'success' && 'PASS' || 'FAIL' }}"
-          echo "TARGET HOST/IP  : ${{ env.VERIFIED_TARGET_IP || secrets.HYPERCLOUD_SSH_HOST }}"
-          echo "DEPLOYED COMMIT : ${{ github.sha }}"
-          echo "RESTART         : ${{ steps.restart.outcome == 'success' && 'PASS' || 'FAIL' }}"
-          echo "HEALTH CHECK    : ${{ env.ALL_HEALTH_PASS == 'true' && 'PASS' || 'FAIL' }}"
-          echo "PRODUCTION URL  : https://seraphigame.my.id (via HyperCloudHost direct)"
-          if [ "${{ env.ALL_HEALTH_PASS }}" == "true" ]; then
-            echo "ROLLBACK        : NOT NEEDED"
-          elif [ "${{ env.ROLLBACK_STATUS }}" == "SUCCESS" ]; then
-            echo "ROLLBACK        : SUCCESS"
+          echo "SOURCE COMMIT               : ${{ github.sha }}"
+          echo "DATABASE SECRET VALIDATION  : ${{ steps.check-secrets.outcome == 'success' && 'PASS' || 'FAIL' }}"
+          echo "BUILD                       : ${{ steps.build.outcome == 'success' && 'PASS' || (steps.check-secrets.outcome == 'failure' && 'BLOCKED' || 'FAIL') }}"
+          echo "BUILD LOCATION              : GitHub Actions"
+          if [ "${{ steps.build.outcome }}" != "success" ]; then
+            echo "DEPLOY                      : NOT RUN (Build gagal/terhenti)"
           else
-            echo "ROLLBACK        : NOT APPLICABLE"
+            echo "DEPLOY                      : ${{ steps.deploy.outcome == 'success' && 'PASS' || 'FAIL' }}"
+          fi
+          echo "TARGET HOST/IP              : ${{ env.VERIFIED_TARGET_IP || secrets.HYPERCLOUD_SSH_HOST }}"
+          echo "DEPLOYED COMMIT             : ${{ github.sha }}"
+          echo "RESTART                     : ${{ steps.restart.outcome == 'success' && 'PASS' || (steps.build.outcome != 'success' && 'NOT RUN' || 'FAIL') }}"
+          echo "HEALTH CHECK                : ${{ env.ALL_HEALTH_PASS == 'true' && 'PASS' || (steps.build.outcome != 'success' && 'NOT RUN' || 'FAIL') }}"
+          echo "PRODUCTION URL              : https://seraphigame.my.id (via HyperCloudHost direct)"
+          if [ "${{ env.ALL_HEALTH_PASS }}" == "true" ]; then
+            echo "ROLLBACK                    : NOT NEEDED"
+          elif [ "${{ env.ROLLBACK_STATUS }}" == "SUCCESS" ]; then
+            echo "ROLLBACK                    : SUCCESS"
+          else
+            echo "ROLLBACK                    : NOT APPLICABLE"
           fi
           echo "=================================================="
