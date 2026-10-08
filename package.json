@@ -1,0 +1,42 @@
+{
+  "name": "seraphi-game",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0",
+    "lint": "next lint",
+    "db": "node scripts/backup-db.mjs",
+    "db:backup": "node scripts/backup-db.mjs",
+    "db:migrate-neon": "node scripts/migrate-neon.mjs",
+    "db:migrate-postgres": "node scripts/migrate-postgres.mjs",
+    "db:seed-postgres": "node scripts/seed-postgres.mjs",
+    "test": "node test-phase6.mjs && node test-phase5.mjs && node test-phase4.mjs && node test-phase3.mjs && node test-security.mjs && node test-e2e.mjs",
+    "test:neon": "node test-neon-suite.mjs",
+    "test:postgres": "node test-postgres.mjs",
+    "test:phase6": "node test-phase6.mjs",
+    "test:phase5": "node test-phase5.mjs",
+    "test:phase4": "node test-phase4.mjs",
+    "test:phase3": "node test-phase3.mjs",
+    "test:security": "node test-security.mjs",
+    "test:e2e": "node test-e2e.mjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "next": "^15.2.0",
+    "pg": "^8.23.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  }
+}

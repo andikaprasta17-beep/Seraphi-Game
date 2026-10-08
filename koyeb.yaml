@@ -1,0 +1,36 @@
+# Koyeb Free Tier Deployment Configuration
+# https://www.koyeb.com/docs/reference/koyeb-yaml
+name: seraphi-game
+services:
+  - name: web
+    type: web
+    instance_type: free
+    regions:
+      - sin # Singapore (lowest latency for Indonesia)
+    ports:
+      - port: 8000
+        path: /
+    routes:
+      - path: /
+    health_checks:
+      - http:
+          path: /api/health
+          port: 8000
+        grace_period: 30
+        interval: 30
+        restart_limit: 3
+        timeout: 5
+    scalings:
+      - min: 1
+        max: 1
+    env:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PROVIDER
+        value: postgres
+      - key: CONTENT_MODE
+        value: production
+      - key: INDEXING_ENABLED
+        value: "false" # SEO Safety for staging Koyeb URL
+      - key: NEXT_PUBLIC_AD_PROVIDER
+        value: none

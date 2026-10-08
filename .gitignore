@@ -1,0 +1,46 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# next.js
+.next/
+out/
+
+# production
+build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files (strictly ignore all real env files, preserve example template)
+.env
+.env.*
+!.env.example
+
+# sqlite data and backups (strictly ignore all live databases and backups)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/backups/
+backups/
+backup/
+*.db
+*.sqlite
+*.sqlite3
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
