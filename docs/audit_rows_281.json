@@ -1,0 +1,2531 @@
+[
+  {
+    "category": "Game Cover",
+    "entity": "Apex Legends (Cover)",
+    "url": "/images/games/apex-cover.jpg",
+    "desc": "Respawn official key art featuring Fuse, Mad Maggie, and Ash with heavy artillery",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Arknights (Cover)",
+    "url": "/images/games/arknights-cover.jpg",
+    "desc": "Hypergryph official Amiya in Rhodes Island jacket with tactical rings and rabbit ears",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Blue Archive (Cover)",
+    "url": "/images/games/ba-cover.jpg",
+    "desc": "Nexon official Misono Mika in white Trinity halo uniform with angelic wings",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Cyberpunk 2077 (Cover)",
+    "url": "/images/games/cyberpunk-cover.jpg",
+    "desc": "V in glowing Samurai leather jacket with cybernetic implants in rainy neon Night City",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Dota 2 (Cover)",
+    "url": "/images/games/dota2-cover.jpg",
+    "desc": "Valve official cover art featuring Juggernaut, Legion Commander, and heroes charging into battle",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Elden Ring (Cover)",
+    "url": "/images/games/elden-ring-cover.jpg",
+    "desc": "Tarnished knight in armor kneeling before the giant golden radiant Erdtree",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Free Fire (Cover)",
+    "url": "/images/games/ff-cover.jpg",
+    "desc": "Garena official DJ Alok in tactical black beat vest with sunglasses in Bermuda",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Fate/Grand Order (Cover)",
+    "url": "/images/games/fgo-cover.jpg",
+    "desc": "Lasengle official Artoria Pendragon in blue knight dress brandishing holy sword Excalibur",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Genshin Impact (Cover)",
+    "url": "/images/games/genshin-cover.jpg",
+    "desc": "Aether traveler gazing across Teyvat plains toward the floating celestial island of Celestia",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Honkai Impact 3rd (Cover)",
+    "url": "/images/games/hi3-cover.jpg",
+    "desc": "HoYoverse official Kiana Kaslana Herrscher of Flamescion wielding blazing flaming greatsword",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Honkai: Star Rail (Cover)",
+    "url": "/images/games/hsr-cover.jpg",
+    "desc": "HoYoverse official Acheron in flowing purple attire alongside Astral Express cosmic train",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "League of Legends (Cover)",
+    "url": "/images/games/lol-cover.jpg",
+    "desc": "Riot official Jinx loading splash art with loose blue twin braids and Fishbones rocket launcher",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Monster Hunter Wilds (Cover)",
+    "url": "/images/games/mh-wilds-cover.jpg",
+    "desc": "Monster hunter wielding colossal greatsword facing flying apex wyvern above Forbidden Lands",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Minecraft (Cover)",
+    "url": "/images/games/minecraft-cover.jpg",
+    "desc": "Steve in signature blue shirt with diamond sword against cubic voxel landscape and castle",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Mobile Legends: Bang Bang (Cover)",
+    "url": "/images/games/mlbb-cover.jpg",
+    "desc": "Moonton official Ling cyan assassin with light sword agility pose in Land of Dawn",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Overwatch 2 (Cover)",
+    "url": "/images/games/overwatch2-cover.jpg",
+    "desc": "Blizzard official hero art featuring Tracer, Brigitte, and Ana in combat poses",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "PUBG Mobile (Cover)",
+    "url": "/images/games/pubgm-cover.jpg",
+    "desc": "Krafton official tactical operative in iconic Level 3 Spetsnaz helmet holding M416 rifle",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Roblox (Cover)",
+    "url": "/images/games/roblox-cover.jpg",
+    "desc": "Blox Fruits pirate warrior holding Cursed Dual Katana on open sea anime island",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Valorant (Cover)",
+    "url": "/images/games/valorant-cover.jpg",
+    "desc": "Riot official tactical artwork featuring Phoenix channeling fire alongside Jett wind dash",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Black Myth: Wukong (Cover)",
+    "url": "/images/games/wukong-cover.jpg",
+    "desc": "Sun Wukong in ornate gold mythical armor with glowing Ruyi Jingu Bang staff on Chinese mountain precipice",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Wuthering Waves (Cover)",
+    "url": "/images/games/wuwa-cover.jpg",
+    "desc": "Kuro official Jiyan wielding verdant dragon lance against Jinzhou mountain backdrop",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Cover",
+    "entity": "Zenless Zone Zero (Cover)",
+    "url": "/images/games/zzz-cover.jpg",
+    "desc": "HoYoverse official Ellen Joe shark maid in black gothic uniform with serrated shark tail",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Apex Legends (Banner)",
+    "url": "/images/games/apex-banner.jpg",
+    "desc": "Apex Legends Kings Canyon arena landscape with Repulsor tower and dropship flyby",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Arknights (Banner)",
+    "url": "/images/games/arknights-banner.jpg",
+    "desc": "Victoria city street battleground in Terra with Rhodes Island mobile landship in background",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Blue Archive (Banner)",
+    "url": "/images/games/ba-banner.jpg",
+    "desc": "Trinity General School campus square in Kivotos with blooming cherry blossoms and clocktower",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Cyberpunk 2077 (Banner)",
+    "url": "/images/games/cyberpunk-banner.jpg",
+    "desc": "Futuristic Night City panoramic skyline with neon-lit megatowers and flying aerodynes in rain",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Dota 2 (Banner)",
+    "url": "/images/games/dota2-banner.jpg",
+    "desc": "Valve official Dota 2 battlefield landscape with Radiant and Dire ancient towers and river",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Elden Ring (Banner)",
+    "url": "/images/games/elden-ring-banner.jpg",
+    "desc": "Atmospheric panoramic view of the Lands Between ruins bathed in the golden aura of the Erdtree",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Free Fire (Banner)",
+    "url": "/images/games/ff-banner.jpg",
+    "desc": "Free Fire Bermuda military airfield runway with cargo planes and parachute dropzones",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Fate/Grand Order (Banner)",
+    "url": "/images/games/fgo-banner.jpg",
+    "desc": "Chaldea Security Organization central command room with the glowing blue Rayshift globe",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Genshin Impact (Banner)",
+    "url": "/images/games/genshin-banner.jpg",
+    "desc": "Panoramic view of Mondstadt city cathedral, windmill islands, and Cider Lake at sunset",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Honkai Impact 3rd (Banner)",
+    "url": "/images/games/hi3-banner.jpg",
+    "desc": "HoYoverse official Hyperion battleship cruising through the clouds with St. Freya academy fleet",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Honkai: Star Rail (Banner)",
+    "url": "/images/games/hsr-banner.jpg",
+    "desc": "Honkai: Star Rail Astral Express train blazing a trail through starry cosmic nebulas",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "League of Legends (Banner)",
+    "url": "/images/games/lol-banner.jpg",
+    "desc": "Riot official League of Legends Summoners Rift arena battlefield with Baron Nashor pit",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Monster Hunter Wilds (Banner)",
+    "url": "/images/games/mh-wilds-banner.jpg",
+    "desc": "Expansive Windward Plains savanna landscape with hunter riding Seikret mount alongside caravan",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Minecraft (Banner)",
+    "url": "/images/games/minecraft-banner.jpg",
+    "desc": "Panoramic voxel block paradise showing redstone automation, fortress, and sunset lighting",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Mobile Legends: Bang Bang (Banner)",
+    "url": "/images/games/mlbb-banner.jpg",
+    "desc": "Panoramic battle arena of the Land of Dawn with celestial crystal base and jungle river",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Overwatch 2 (Banner)",
+    "url": "/images/games/overwatch2-banner.jpg",
+    "desc": "Overwatch 2 heroes assembled in formation against futuristic city skyline",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "PUBG Mobile (Banner)",
+    "url": "/images/games/pubgm-banner.jpg",
+    "desc": "PUBG Mobile Erangel airdrop dropzone with red flare smoke billowing across open fields",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Roblox (Banner)",
+    "url": "/images/games/roblox-banner.jpg",
+    "desc": "Vibrant Roblox metaverse adventure islands with pirate galleons and floating sky islands",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Valorant (Banner)",
+    "url": "/images/games/valorant-banner.jpg",
+    "desc": "Valorant official tactical map panoramic vista with spike site and neon radianite crates",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Black Myth: Wukong (Banner)",
+    "url": "/images/games/wukong-banner.jpg",
+    "desc": "Cinematic vista of ancient Chinese mountain temples shrouded in mist with Sun Wukong walking the path",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Wuthering Waves (Banner)",
+    "url": "/images/games/wuwa-banner.jpg",
+    "desc": "Panoramic vista of Jinzhou City with high-tech retro-futuristic oriental towers and resonance crystals",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Game Banner",
+    "entity": "Zenless Zone Zero (Banner)",
+    "url": "/images/games/zzz-banner.jpg",
+    "desc": "New Eridu Sixth Street nightlife with retro video rental store, ramen shop, and neon signs",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Acheron [char-acheron] (Portrait)",
+    "url": "/images/characters/acheron-portrait.webp",
+    "desc": "Official focused avatar portrait of Acheron highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "DJ Alok [char-alok] (Portrait)",
+    "url": "/images/characters/dj-alok-portrait.webp",
+    "desc": "Official focused avatar portrait of DJ Alok highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Amiya [char-amiya] (Portrait)",
+    "url": "/images/characters/amiya-portrait.webp",
+    "desc": "Official focused avatar portrait of Amiya highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Artoria Pendragon [char-artoria-pendragon] (Portrait)",
+    "url": "/images/characters/artoria-pendragon-portrait.webp",
+    "desc": "Official focused avatar portrait of Artoria Pendragon highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Aventurine [char-aventurine] (Portrait)",
+    "url": "/images/characters/aventurine-portrait.webp",
+    "desc": "Official focused avatar portrait of Aventurine highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Beatrix [char-beatrix] (Portrait)",
+    "url": "/images/characters/beatrix-portrait.webp",
+    "desc": "Official focused avatar portrait of Beatrix highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Blade [char-blade] (Portrait)",
+    "url": "/images/characters/blade-portrait.webp",
+    "desc": "Official focused avatar portrait of Blade highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Bloodhound [char-bloodhound] (Portrait)",
+    "url": "/images/characters/bloodhound-portrait.webp",
+    "desc": "Official focused avatar portrait of Bloodhound highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Changli [char-changli] (Portrait)",
+    "url": "/images/characters/changli-portrait.webp",
+    "desc": "Official focused avatar portrait of Changli highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Chou [char-chou] (Portrait)",
+    "url": "/images/characters/chou-portrait.webp",
+    "desc": "Official focused avatar portrait of Chou highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Dan Heng • Imbibitor Lunae [char-dan-heng-imbibitor-lunae] (Portrait)",
+    "url": "/images/characters/dan-heng-imbibitor-lunae-portrait.webp",
+    "desc": "Official focused avatar portrait of Dan Heng • Imbibitor Lunae highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "The Destined One (Wukong) [char-destined-one] (Portrait)",
+    "url": "/images/characters/the-destined-one-portrait.webp",
+    "desc": "Official focused avatar portrait of The Destined One (Wukong) highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Ellen Joe [char-ellen] (Portrait)",
+    "url": "/images/characters/ellen-joe-portrait.webp",
+    "desc": "Official focused avatar portrait of Ellen Joe highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Ellen Joe [char-ellen-joe] (Portrait)",
+    "url": "/images/characters/ellen-joe-alt-portrait.webp",
+    "desc": "Official focused avatar portrait of Ellen Joe highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Fanny [char-fanny] (Portrait)",
+    "url": "/images/characters/fanny-portrait.webp",
+    "desc": "Official focused avatar portrait of Fanny highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Firefly (SAM) [char-firefly] (Portrait)",
+    "url": "/images/characters/firefly-portrait.webp",
+    "desc": "Official focused avatar portrait of Firefly (SAM) highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Furina [char-furina] (Portrait)",
+    "url": "/images/characters/furina-portrait.webp",
+    "desc": "Official focused avatar portrait of Furina highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Genji [char-genji] (Portrait)",
+    "url": "/images/characters/genji-portrait.webp",
+    "desc": "Official focused avatar portrait of Genji highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Gilgamesh [char-gilgamesh] (Portrait)",
+    "url": "/images/characters/gilgamesh-portrait.webp",
+    "desc": "Official focused avatar portrait of Gilgamesh highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Hayabusa [char-hayabusa] (Portrait)",
+    "url": "/images/characters/hayabusa-portrait.webp",
+    "desc": "Official focused avatar portrait of Hayabusa highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Hoshimi Miyabi [char-hoshimi-miyabi] (Portrait)",
+    "url": "/images/characters/hoshimi-miyabi-portrait.webp",
+    "desc": "Official focused avatar portrait of Hoshimi Miyabi highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Hu Tao [char-hu-tao] (Portrait)",
+    "url": "/images/characters/hu-tao-portrait.webp",
+    "desc": "Official focused avatar portrait of Hu Tao highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Jett [char-jett] (Portrait)",
+    "url": "/images/characters/jett-portrait.webp",
+    "desc": "Official focused avatar portrait of Jett highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Jingliu [char-jingliu] (Portrait)",
+    "url": "/images/characters/jingliu-portrait.webp",
+    "desc": "Official focused avatar portrait of Jingliu highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Jinhsi [char-jinhsi] (Portrait)",
+    "url": "/images/characters/jinhsi-portrait.webp",
+    "desc": "Official focused avatar portrait of Jinhsi highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Jinhsi [char-jinshi] (Portrait)",
+    "url": "/images/characters/jinshi-portrait.webp",
+    "desc": "Official focused avatar portrait of Jinhsi highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Jiyan [char-jiyan] (Portrait)",
+    "url": "/images/characters/jiyan-portrait.webp",
+    "desc": "Official focused avatar portrait of Jiyan highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Johnny Silverhand [char-johnny-silverhand] (Portrait)",
+    "url": "/images/characters/johnny-silverhand-portrait.webp",
+    "desc": "Official focused avatar portrait of Johnny Silverhand highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Kaedehara Kazuha [char-kaedehara-kazuha] (Portrait)",
+    "url": "/images/characters/kaedehara-kazuha-portrait.webp",
+    "desc": "Official focused avatar portrait of Kaedehara Kazuha highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Kafka [char-kafka] (Portrait)",
+    "url": "/images/characters/kafka-portrait.webp",
+    "desc": "Official focused avatar portrait of Kafka highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Kiana Kaslana [char-kiana] (Portrait)",
+    "url": "/images/characters/kiana-kaslana-portrait.webp",
+    "desc": "Official focused avatar portrait of Kiana Kaslana highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Ling [char-ling] (Portrait)",
+    "url": "/images/characters/ling-portrait.webp",
+    "desc": "Official focused avatar portrait of Ling highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Malenia, Blade of Miquella [char-malenia] (Portrait)",
+    "url": "/images/characters/malenia-portrait.webp",
+    "desc": "Official focused avatar portrait of Malenia, Blade of Miquella highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Misono Mika [char-misono-mika] (Portrait)",
+    "url": "/images/characters/misono-mika-portrait.webp",
+    "desc": "Official focused avatar portrait of Misono Mika highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Nahida [char-nahida] (Portrait)",
+    "url": "/images/characters/nahida-portrait.webp",
+    "desc": "Official focused avatar portrait of Nahida highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Neuvillette [char-neuvillette] (Portrait)",
+    "url": "/images/characters/neuvillette-portrait.webp",
+    "desc": "Official focused avatar portrait of Neuvillette highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Nicole Demara [char-nicole-demara] (Portrait)",
+    "url": "/images/characters/nicole-demara-portrait.webp",
+    "desc": "Official focused avatar portrait of Nicole Demara highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Octane [char-octane] (Portrait)",
+    "url": "/images/characters/octane-portrait.webp",
+    "desc": "Official focused avatar portrait of Octane highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Omen [char-omen] (Portrait)",
+    "url": "/images/characters/omen-portrait.webp",
+    "desc": "Official focused avatar portrait of Omen highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Raiden Shogun [char-raiden] (Portrait)",
+    "url": "/images/characters/raiden-shogun-portrait.webp",
+    "desc": "Official focused avatar portrait of Raiden Shogun highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Reyna [char-reyna] (Portrait)",
+    "url": "/images/characters/reyna-portrait.webp",
+    "desc": "Official focused avatar portrait of Reyna highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "SilverAsh [char-silverash] (Portrait)",
+    "url": "/images/characters/silverash-portrait.webp",
+    "desc": "Official focused avatar portrait of SilverAsh highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Sorasaki Hina [char-sorasaki-hina] (Portrait)",
+    "url": "/images/characters/sorasaki-hina-portrait.webp",
+    "desc": "Official focused avatar portrait of Sorasaki Hina highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Sova [char-sova] (Portrait)",
+    "url": "/images/characters/sova-portrait.webp",
+    "desc": "Official focused avatar portrait of Sova highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Sunao Shiroko [char-sunao-shiroko] (Portrait)",
+    "url": "/images/characters/sunao-shiroko-portrait.webp",
+    "desc": "Official focused avatar portrait of Sunao Shiroko highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Surtr [char-surtr] (Portrait)",
+    "url": "/images/characters/surtr-portrait.webp",
+    "desc": "Official focused avatar portrait of Surtr highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Tracer [char-tracer] (Portrait)",
+    "url": "/images/characters/tracer-portrait.webp",
+    "desc": "Official focused avatar portrait of Tracer highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "V [char-v-cyberpunk] (Portrait)",
+    "url": "/images/characters/v-cyberpunk-portrait.webp",
+    "desc": "Official focused avatar portrait of V highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Wraith [char-wraith] (Portrait)",
+    "url": "/images/characters/wraith-portrait.webp",
+    "desc": "Official focused avatar portrait of Wraith highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Yinlin [char-yinlin] (Portrait)",
+    "url": "/images/characters/yinlin-portrait.webp",
+    "desc": "Official focused avatar portrait of Yinlin highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Zhongli [char-zhongli] (Portrait)",
+    "url": "/images/characters/zhongli-portrait.webp",
+    "desc": "Official focused avatar portrait of Zhongli highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Portrait",
+    "entity": "Zhu Yuan [char-zhu-yuan] (Portrait)",
+    "url": "/images/characters/zhu-yuan-portrait.webp",
+    "desc": "Official focused avatar portrait of Zhu Yuan highlighting facial features, hairstyle, and attire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Acheron [char-acheron] (Full Art)",
+    "url": "/images/characters/acheron-full.webp",
+    "desc": "Official full-body character artwork of Acheron in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "DJ Alok [char-alok] (Full Art)",
+    "url": "/images/characters/dj-alok-full.webp",
+    "desc": "Official full-body character artwork of DJ Alok in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Amiya [char-amiya] (Full Art)",
+    "url": "/images/characters/amiya-full.webp",
+    "desc": "Official full-body character artwork of Amiya in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Artoria Pendragon [char-artoria-pendragon] (Full Art)",
+    "url": "/images/characters/artoria-pendragon-full.webp",
+    "desc": "Official full-body character artwork of Artoria Pendragon in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Aventurine [char-aventurine] (Full Art)",
+    "url": "/images/characters/aventurine-full.webp",
+    "desc": "Official full-body character artwork of Aventurine in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Beatrix [char-beatrix] (Full Art)",
+    "url": "/images/characters/beatrix-full.webp",
+    "desc": "Official full-body character artwork of Beatrix in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Blade [char-blade] (Full Art)",
+    "url": "/images/characters/blade-full.webp",
+    "desc": "Official full-body character artwork of Blade in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Bloodhound [char-bloodhound] (Full Art)",
+    "url": "/images/characters/bloodhound-full.webp",
+    "desc": "Official full-body character artwork of Bloodhound in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Changli [char-changli] (Full Art)",
+    "url": "/images/characters/changli-full.webp",
+    "desc": "Official full-body character artwork of Changli in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Chou [char-chou] (Full Art)",
+    "url": "/images/characters/chou-full.webp",
+    "desc": "Official full-body character artwork of Chou in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Dan Heng • Imbibitor Lunae [char-dan-heng-imbibitor-lunae] (Full Art)",
+    "url": "/images/characters/dan-heng-imbibitor-lunae-full.webp",
+    "desc": "Official full-body character artwork of Dan Heng • Imbibitor Lunae in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "The Destined One (Wukong) [char-destined-one] (Full Art)",
+    "url": "/images/characters/the-destined-one-full.webp",
+    "desc": "Official full-body character artwork of The Destined One (Wukong) in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Ellen Joe [char-ellen] (Full Art)",
+    "url": "/images/characters/ellen-joe-full.webp",
+    "desc": "Official full-body character artwork of Ellen Joe in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Ellen Joe [char-ellen-joe] (Full Art)",
+    "url": "/images/characters/ellen-joe-alt-full.webp",
+    "desc": "Official full-body character artwork of Ellen Joe in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Fanny [char-fanny] (Full Art)",
+    "url": "/images/characters/fanny-full.webp",
+    "desc": "Official full-body character artwork of Fanny in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Firefly (SAM) [char-firefly] (Full Art)",
+    "url": "/images/characters/firefly-full.webp",
+    "desc": "Official full-body character artwork of Firefly (SAM) in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Furina [char-furina] (Full Art)",
+    "url": "/images/characters/furina-full.webp",
+    "desc": "Official full-body character artwork of Furina in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Genji [char-genji] (Full Art)",
+    "url": "/images/characters/genji-full.webp",
+    "desc": "Official full-body character artwork of Genji in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Gilgamesh [char-gilgamesh] (Full Art)",
+    "url": "/images/characters/gilgamesh-full.webp",
+    "desc": "Official full-body character artwork of Gilgamesh in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Hayabusa [char-hayabusa] (Full Art)",
+    "url": "/images/characters/hayabusa-full.webp",
+    "desc": "Official full-body character artwork of Hayabusa in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Hoshimi Miyabi [char-hoshimi-miyabi] (Full Art)",
+    "url": "/images/characters/hoshimi-miyabi-full.webp",
+    "desc": "Official full-body character artwork of Hoshimi Miyabi in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Hu Tao [char-hu-tao] (Full Art)",
+    "url": "/images/characters/hu-tao-full.webp",
+    "desc": "Official full-body character artwork of Hu Tao in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Jett [char-jett] (Full Art)",
+    "url": "/images/characters/jett-full.webp",
+    "desc": "Official full-body character artwork of Jett in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Jingliu [char-jingliu] (Full Art)",
+    "url": "/images/characters/jingliu-full.webp",
+    "desc": "Official full-body character artwork of Jingliu in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Jinhsi [char-jinhsi] (Full Art)",
+    "url": "/images/characters/jinhsi-full.webp",
+    "desc": "Official full-body character artwork of Jinhsi in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Jinhsi [char-jinshi] (Full Art)",
+    "url": "/images/characters/jinshi-full.webp",
+    "desc": "Official full-body character artwork of Jinhsi in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Jiyan [char-jiyan] (Full Art)",
+    "url": "/images/characters/jiyan-full.webp",
+    "desc": "Official full-body character artwork of Jiyan in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Johnny Silverhand [char-johnny-silverhand] (Full Art)",
+    "url": "/images/characters/johnny-silverhand-full.webp",
+    "desc": "Official full-body character artwork of Johnny Silverhand in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Kaedehara Kazuha [char-kaedehara-kazuha] (Full Art)",
+    "url": "/images/characters/kaedehara-kazuha-full.webp",
+    "desc": "Official full-body character artwork of Kaedehara Kazuha in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Kafka [char-kafka] (Full Art)",
+    "url": "/images/characters/kafka-full.webp",
+    "desc": "Official full-body character artwork of Kafka in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Kiana Kaslana [char-kiana] (Full Art)",
+    "url": "/images/characters/kiana-kaslana-full.webp",
+    "desc": "Official full-body character artwork of Kiana Kaslana in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Ling [char-ling] (Full Art)",
+    "url": "/images/characters/ling-full.webp",
+    "desc": "Official full-body character artwork of Ling in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Malenia, Blade of Miquella [char-malenia] (Full Art)",
+    "url": "/images/characters/malenia-full.webp",
+    "desc": "Official full-body character artwork of Malenia, Blade of Miquella in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Misono Mika [char-misono-mika] (Full Art)",
+    "url": "/images/characters/misono-mika-full.webp",
+    "desc": "Official full-body character artwork of Misono Mika in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Nahida [char-nahida] (Full Art)",
+    "url": "/images/characters/nahida-full.webp",
+    "desc": "Official full-body character artwork of Nahida in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Neuvillette [char-neuvillette] (Full Art)",
+    "url": "/images/characters/neuvillette-full.webp",
+    "desc": "Official full-body character artwork of Neuvillette in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Nicole Demara [char-nicole-demara] (Full Art)",
+    "url": "/images/characters/nicole-demara-full.webp",
+    "desc": "Official full-body character artwork of Nicole Demara in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Octane [char-octane] (Full Art)",
+    "url": "/images/characters/octane-full.webp",
+    "desc": "Official full-body character artwork of Octane in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Omen [char-omen] (Full Art)",
+    "url": "/images/characters/omen-full.webp",
+    "desc": "Official full-body character artwork of Omen in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Raiden Shogun [char-raiden] (Full Art)",
+    "url": "/images/characters/raiden-shogun-full.webp",
+    "desc": "Official full-body character artwork of Raiden Shogun in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Reyna [char-reyna] (Full Art)",
+    "url": "/images/characters/reyna-full.webp",
+    "desc": "Official full-body character artwork of Reyna in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "SilverAsh [char-silverash] (Full Art)",
+    "url": "/images/characters/silverash-full.webp",
+    "desc": "Official full-body character artwork of SilverAsh in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Sorasaki Hina [char-sorasaki-hina] (Full Art)",
+    "url": "/images/characters/sorasaki-hina-full.webp",
+    "desc": "Official full-body character artwork of Sorasaki Hina in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Sova [char-sova] (Full Art)",
+    "url": "/images/characters/sova-full.webp",
+    "desc": "Official full-body character artwork of Sova in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Sunao Shiroko [char-sunao-shiroko] (Full Art)",
+    "url": "/images/characters/sunao-shiroko-full.webp",
+    "desc": "Official full-body character artwork of Sunao Shiroko in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Surtr [char-surtr] (Full Art)",
+    "url": "/images/characters/surtr-full.webp",
+    "desc": "Official full-body character artwork of Surtr in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Tracer [char-tracer] (Full Art)",
+    "url": "/images/characters/tracer-full.webp",
+    "desc": "Official full-body character artwork of Tracer in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "V [char-v-cyberpunk] (Full Art)",
+    "url": "/images/characters/v-cyberpunk-full.webp",
+    "desc": "Official full-body character artwork of V in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Wraith [char-wraith] (Full Art)",
+    "url": "/images/characters/wraith-full.webp",
+    "desc": "Official full-body character artwork of Wraith in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Yinlin [char-yinlin] (Full Art)",
+    "url": "/images/characters/yinlin-full.webp",
+    "desc": "Official full-body character artwork of Yinlin in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Zhongli [char-zhongli] (Full Art)",
+    "url": "/images/characters/zhongli-full.webp",
+    "desc": "Official full-body character artwork of Zhongli in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Character Full Image",
+    "entity": "Zhu Yuan [char-zhu-yuan] (Full Art)",
+    "url": "/images/characters/zhu-yuan-full.webp",
+    "desc": "Official full-body character artwork of Zhu Yuan in signature combat stance with canonical equipment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Along the Passing Shore [item-along-passing-shore]",
+    "url": "/images/items/along-the-passing-shore.webp",
+    "desc": "Official in-game equipment badge render of Along the Passing Shore composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Along the Passing Shore [item-along-the-passing-shore]",
+    "url": "/images/items/along-the-passing-shore-alt.webp",
+    "desc": "Official in-game equipment badge render of Along the Passing Shore composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Blade of Despair [item-blade-of-despair]",
+    "url": "/images/items/blade-of-despair.webp",
+    "desc": "Official in-game equipment badge render of Blade of Despair composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Cor Lapis [item-cor-lapis]",
+    "url": "/images/items/cor-lapis.webp",
+    "desc": "Official in-game equipment badge render of Cor Lapis composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Deep Sea Visitor [item-deep-sea-visitor]",
+    "url": "/images/items/deep-sea-visitor.webp",
+    "desc": "Official in-game equipment badge render of Deep Sea Visitor composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Immortality [item-immortality]",
+    "url": "/images/items/immortality.webp",
+    "desc": "Official in-game equipment badge render of Immortality composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Lumitoile [item-lumitoile]",
+    "url": "/images/items/lumitoile.webp",
+    "desc": "Official in-game equipment badge render of Lumitoile composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Mace [item-mace-heavy-core]",
+    "url": "/images/items/mace.webp",
+    "desc": "Official in-game equipment badge render of Mace composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Cursed Dual Katana [item-phantom-curse-katana]",
+    "url": "/images/items/cursed-dual-katana.webp",
+    "desc": "Official in-game equipment badge render of Cursed Dual Katana composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Sacrificial Jade [item-sacrificial-jade]",
+    "url": "/images/items/sacrificial-jade.webp",
+    "desc": "Official in-game equipment badge render of Sacrificial Jade composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Staff of Homa [item-staff-of-homa]",
+    "url": "/images/items/staff-of-homa.webp",
+    "desc": "Official in-game equipment badge render of Staff of Homa composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Tome of the Eternal Flow [item-tome-eternal-flow]",
+    "url": "/images/items/tome-of-the-eternal-flow.webp",
+    "desc": "Official in-game equipment badge render of Tome of the Eternal Flow composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Tome of the Eternal Flow [item-tome-flowing-sands]",
+    "url": "/images/items/tome-of-the-eternal-flow-alt.webp",
+    "desc": "Official in-game equipment badge render of Tome of the Eternal Flow composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Vandal Rifle [item-vandal]",
+    "url": "/images/items/vandal-rifle.webp",
+    "desc": "Official in-game equipment badge render of Vandal Rifle composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Verdant Summit [item-verdant-summit]",
+    "url": "/images/items/verdant-summit.webp",
+    "desc": "Official in-game equipment badge render of Verdant Summit composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Item Icon",
+    "entity": "Whereabouts Should Dreams Rest [item-whereabouts-should-dreams-rest]",
+    "url": "/images/items/whereabouts-should-dreams-rest.webp",
+    "desc": "Official in-game equipment badge render of Whereabouts Should Dreams Rest composited on dark luxury gaming badge",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Three Strikes Limited-Time LTM [event-apex-1]",
+    "url": "/images/events/event-apex-1.jpg",
+    "desc": "Official game event visual illustrating Three Strikes Limited-Time LTM with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Contingency Contract: Operation Pyrite [event-ark-1]",
+    "url": "/images/events/event-ark-1.jpg",
+    "desc": "Official game event visual illustrating Contingency Contract: Operation Pyrite with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Total Assault: Binah Urban Warfare [event-ba-1]",
+    "url": "/images/events/event-ba-1.jpg",
+    "desc": "Official game event visual illustrating Total Assault: Binah Urban Warfare with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Crownfall: The Perroying Act II [event-dota-1]",
+    "url": "/images/events/event-dota-1.jpg",
+    "desc": "Official game event visual illustrating Crownfall: The Perroying Act II with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Lands Between Community Boss Rush Celebration [event-elden-ring-bossrush]",
+    "url": "/images/events/event-elden-ring-bossrush.jpg",
+    "desc": "Official game event visual illustrating Lands Between Community Boss Rush Celebration with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Bermuda Red Carpet Carnival [event-ff-1]",
+    "url": "/images/events/event-ff-1.jpg",
+    "desc": "Official game event visual illustrating Bermuda Red Carpet Carnival with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Booyah Day 2026: Pesta Kemenangan Survivor [event-ff-booyah-day]",
+    "url": "/images/events/event-ff-booyah-day.jpg",
+    "desc": "Official game event visual illustrating Booyah Day 2026: Pesta Kemenangan Survivor with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Chaldea Spring Lottery Festival [event-fgo-1]",
+    "url": "/images/events/event-fgo-1.jpg",
+    "desc": "Official game event visual illustrating Chaldea Spring Lottery Festival with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Windblume Festival Mondstadt Rerun [event-genshin-future]",
+    "url": "/images/events/event-genshin-future.jpg",
+    "desc": "Official game event visual illustrating Windblume Festival Mondstadt Rerun with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Simulated Universe: Unknowable Domain [event-hsr-future]",
+    "url": "/images/events/event-hsr-future.jpg",
+    "desc": "Official game event visual illustrating Simulated Universe: Unknowable Domain with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Festival Lantern Rite: Cahaya Harapan Liyue [event-lantern-rite-2026]",
+    "url": "/images/events/event-lantern-rite-2026.jpg",
+    "desc": "Official game event visual illustrating Festival Lantern Rite: Cahaya Harapan Liyue with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Arena 2v2v2v2 Gladiator Clash [event-lol-1]",
+    "url": "/images/events/event-lol-1.jpg",
+    "desc": "Official game event visual illustrating Arena 2v2v2v2 Gladiator Clash with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Minecraft Trial Chambers Community Challenge [event-mc-1]",
+    "url": "/images/events/event-mc-1.jpg",
+    "desc": "Official game event visual illustrating Minecraft Trial Chambers Community Challenge with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "515 All-Star Party Mobile Legends 2026 [event-mlbb-515-party]",
+    "url": "/images/events/event-mlbb-515-party.jpg",
+    "desc": "Official game event visual illustrating 515 All-Star Party Mobile Legends 2026 with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "515 All-Star Carnival Land of Dawn [event-mlbb-future]",
+    "url": "/images/events/event-mlbb-future.jpg",
+    "desc": "Official game event visual illustrating 515 All-Star Carnival Land of Dawn with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Shadow Force Mode: Ninja Battleground [event-pubg-1]",
+    "url": "/images/events/event-pubg-1.jpg",
+    "desc": "Official game event visual illustrating Shadow Force Mode: Ninja Battleground with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "PUBG Mobile Global Warmup Season Challenge [event-pubgm-warmup]",
+    "url": "/images/events/event-pubgm-warmup.jpg",
+    "desc": "Official game event visual illustrating PUBG Mobile Global Warmup Season Challenge with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Blox Fruits: Sea Beast Raid Awakening [event-roblox-1]",
+    "url": "/images/events/event-roblox-1.jpg",
+    "desc": "Official game event visual illustrating Blox Fruits: Sea Beast Raid Awakening with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Solis Awakening Festival: Tantangan Menara Jinzhou [event-solis-wuwa]",
+    "url": "/images/events/event-solis-wuwa.jpg",
+    "desc": "Official game event visual illustrating Solis Awakening Festival: Tantangan Menara Jinzhou with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Penacony Dreamscape Gala: Stellaron Hunt Challenge [event-stellaron-hunt-hsr]",
+    "url": "/images/events/event-stellaron-hunt-hsr.jpg",
+    "desc": "Official game event visual illustrating Penacony Dreamscape Gala: Stellaron Hunt Challenge with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Valorant Night Market Spring Edition [event-val-future]",
+    "url": "/images/events/event-val-future.jpg",
+    "desc": "Official game event visual illustrating Valorant Night Market Spring Edition with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "VCT Masters World Tour 2026: In-Game Pick'Em & Watch Party [event-vct-masters]",
+    "url": "/images/events/event-vct-masters.jpg",
+    "desc": "Official game event visual illustrating VCT Masters World Tour 2026: In-Game Pick'Em & Watch Party with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Journey to the West Seasonal Speedrun Challenge [event-wukong-west-journey]",
+    "url": "/images/events/event-wukong-west-journey.jpg",
+    "desc": "Official game event visual illustrating Journey to the West Seasonal Speedrun Challenge with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Tower of Adversity: Hazard Zone Reset [event-wuwa-1]",
+    "url": "/images/events/event-wuwa-1.jpg",
+    "desc": "Official game event visual illustrating Tower of Adversity: Hazard Zone Reset with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "Hollow Zero: Shiyu Defense Frontier [event-zzz-1]",
+    "url": "/images/events/event-zzz-1.jpg",
+    "desc": "Official game event visual illustrating Hollow Zero: Shiyu Defense Frontier with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Event Banner",
+    "entity": "New Eridu Street Music Festival [event-zzz-music-gala]",
+    "url": "/images/events/event-zzz-music-gala.jpg",
+    "desc": "Official game event visual illustrating New Eridu Street Music Festival with themed festival or combat environment",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Bagaimana Perkembangan AI Mengubah Desain NPC di Game Modern [news-ai-gaming]",
+    "url": "/images/news/news-ai-gaming.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Bagaimana Perkembangan AI Mengubah Desain NPC di Game Modern",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Apex Legends Ungkap Musim Baru: Rework Legend & Perubahan Map Storm Point [news-apex-season-new]",
+    "url": "/images/news/news-apex-season-new.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Apex Legends Ungkap Musim Baru: Rework Legend & Perubahan Map Storm Point",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Musim Lanjutan Anime Arknights Dikonfirmasi Masuk Tahap Produksi [news-arknights-anime]",
+    "url": "/images/news/news-arknights-anime.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Musim Lanjutan Anime Arknights Dikonfirmasi Masuk Tahap Produksi",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Blue Archive Gelar Ulang Tahun Spesial: Hadiah 100 Tiket Rekrutmen Gratis untuk Semua Pemain [news-ba-fes]",
+    "url": "/images/news/news-ba-fes.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Blue Archive Gelar Ulang Tahun Spesial: Hadiah 100 Tiket Rekrutmen Gratis untuk Semua Pemain",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Valve Luncurkan Patch Keseimbangan Dota 2: Hero Meta Melemah [news-dota-patch]",
+    "url": "/images/news/news-dota-patch.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Valve Luncurkan Patch Keseimbangan Dota 2: Hero Meta Melemah",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Elden Ring Cetak Rekor Pemain Bersamaan Tertinggi Pasca Diskon Musim Semi Steam [news-elden-ring-shadow-records]",
+    "url": "/images/news/news-elden-ring-shadow-records.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Elden Ring Cetak Rekor Pemain Bersamaan Tertinggi Pasca Diskon Musim Semi Steam",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Indonesia Borong Medali Emas Cabang Esports di Pesta Olahraga Asia Tenggara [news-esports-sea]",
+    "url": "/images/news/news-esports-sea.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Indonesia Borong Medali Emas Cabang Esports di Pesta Olahraga Asia Tenggara",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Esports World Cup Resmi Tambahkan Turnamen Game Mobile Populer dengan Hadiah Rekor [news-esports-world-cup]",
+    "url": "/images/news/news-esports-world-cup.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Esports World Cup Resmi Tambahkan Turnamen Game Mobile Populer dengan Hadiah Rekor",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Free Fire Gandeng Serial Shonen Terkenal untuk Event Kolaborasi Mendatang [news-ff-collab-anime]",
+    "url": "/images/news/news-ff-collab-anime.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Free Fire Gandeng Serial Shonen Terkenal untuk Event Kolaborasi Mendatang",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Free Fire Rilis Update Patch OB Baru: Rework Map Bermuda & Penyesuaian Shotgun [news-ff-ob-update]",
+    "url": "/images/news/news-ff-ob-update.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Free Fire Rilis Update Patch OB Baru: Rework Map Bermuda & Penyesuaian Shotgun",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Fate/Grand Order Rayakan Pencapaian Unduhan Global dengan Servant Bintang 5 Gratis [news-fgo-anniversary]",
+    "url": "/images/news/news-fgo-anniversary.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Fate/Grand Order Rayakan Pencapaian Unduhan Global dengan Servant Bintang 5 Gratis",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Pertumbuhan Industri Gaming Indonesia 2026: Mobile Masih Jadi Rajanya [news-gaming-industry]",
+    "url": "/images/news/news-gaming-industry.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Pertumbuhan Industri Gaming Indonesia 2026: Mobile Masih Jadi Rajanya",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Genshin Impact Versi 5.4 Resmi Diumumkan: Banners Baru & Ekspansi Wilayah Natlan [news-genshin-5-4]",
+    "url": "/images/news/news-genshin-5-4.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Genshin Impact Versi 5.4 Resmi Diumumkan: Banners Baru & Ekspansi Wilayah Natlan",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Genshin Impact Buka Event Festival Perang Natlan Berhadiah Senjata Bintang 4 Gratis [news-genshin-natlan-event]",
+    "url": "/images/news/news-genshin-natlan-event.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Genshin Impact Buka Event Festival Perang Natlan Berhadiah Senjata Bintang 4 Gratis",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Honkai: Star Rail Bocorkan Info Kolaborasi Global Terbesar Tahun Ini [news-hsr-collab]",
+    "url": "/images/news/news-hsr-collab.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Honkai: Star Rail Bocorkan Info Kolaborasi Global Terbesar Tahun Ini",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Honkai: Star Rail Siapkan Destinasi Planet Baru Pasca Penacony di Update Mendatang [news-hsr-new-planet]",
+    "url": "/images/news/news-hsr-new-planet.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Honkai: Star Rail Siapkan Destinasi Planet Baru Pasca Penacony di Update Mendatang",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Riot Games Rilis Format Baru Turnamen Mid-Season Invitational League of Legends [news-lol-msi]",
+    "url": "/images/news/news-lol-msi.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Riot Games Rilis Format Baru Turnamen Mid-Season Invitational League of Legends",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Mojang Umumkan Bundel Fitur Baru Minecraft: Mobs dan Blok Bioma Eksotis [news-mc-drop]",
+    "url": "/images/news/news-mc-drop.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Mojang Umumkan Bundel Fitur Baru Minecraft: Mobs dan Blok Bioma Eksotis",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Jadwal Lengkap Turnamen Dunia MLBB M-Series: Tim Indonesia Siap Berlaga [news-mlbb-m-series]",
+    "url": "/images/news/news-mlbb-m-series.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Jadwal Lengkap Turnamen Dunia MLBB M-Series: Tim Indonesia Siap Berlaga",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Mobile Legends Rilis Patch Baru: Buff Hero Assassin & Penyesuaian Defense Item [news-mlbb-patch-buff-nerf]",
+    "url": "/images/news/news-mlbb-patch-buff-nerf.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Mobile Legends Rilis Patch Baru: Buff Hero Assassin & Penyesuaian Defense Item",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "MPL Indonesia Season Baru Resmi Dimulai: Persaingan Perebutan Tiket MSC Memanas [news-mpl-season-new]",
+    "url": "/images/news/news-mpl-season-new.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: MPL Indonesia Season Baru Resmi Dimulai: Persaingan Perebutan Tiket MSC Memanas",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Informasi Spesifikasi Konsol Generasi Baru Nintendo Semakin Terkuak ke Publik [news-nintendo-switch-2-rumor]",
+    "url": "/images/news/news-nintendo-switch-2-rumor.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Informasi Spesifikasi Konsol Generasi Baru Nintendo Semakin Terkuak ke Publik",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "PlayStation State of Play Umumkan Deretan Game Action RPG Baru untuk PS5 [news-playstation-state-of-play]",
+    "url": "/images/news/news-playstation-state-of-play.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: PlayStation State of Play Umumkan Deretan Game Action RPG Baru untuk PS5",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "PUBG Mobile Global Championship Umumkan Tuan Rumah Grand Finals [news-pubg-pmgc]",
+    "url": "/images/news/news-pubg-pmgc.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: PUBG Mobile Global Championship Umumkan Tuan Rumah Grand Finals",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "PUBG Mobile Hadirkan Kolaborasi Anime Populer dengan Skin Kendaraan Eksklusif [news-pubgm-anime-collab]",
+    "url": "/images/news/news-pubgm-anime-collab.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: PUBG Mobile Hadirkan Kolaborasi Anime Populer dengan Skin Kendaraan Eksklusif",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Roblox Tingkatkan Engine Grafis & Batas Kapasitas Server Komunitas [news-roblox-update]",
+    "url": "/images/news/news-roblox-update.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Roblox Tingkatkan Engine Grafis & Batas Kapasitas Server Komunitas",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Steam Spring Sale 2026 Resmi Dimulai: Diskon Game AAA hingga 80% [news-steam-sale]",
+    "url": "/images/news/news-steam-sale.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Steam Spring Sale 2026 Resmi Dimulai: Diskon Game AAA hingga 80%",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Jadwal Steam Seasonal Sale 2026 Resmi Ditetapkan: Siapkan Wishlist Game Favorit [news-steam-sale-dates]",
+    "url": "/images/news/news-steam-sale-dates.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Jadwal Steam Seasonal Sale 2026 Resmi Ditetapkan: Siapkan Wishlist Game Favorit",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "VCT Masters Musim Ini Umumkan Format Pertandingan Baru & Rotasi Map [news-val-vct]",
+    "url": "/images/news/news-val-vct.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: VCT Masters Musim Ini Umumkan Format Pertandingan Baru & Rotasi Map",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Riot Games Goda Agent Controller Baru Valorant dengan Mekanisme Manipulasi Suara [news-valorant-new-agent]",
+    "url": "/images/news/news-valorant-new-agent.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Riot Games Goda Agent Controller Baru Valorant dengan Mekanisme Manipulasi Suara",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Game Science Konfirmasi Pengembangan DLC Ekspansi Cerita Black Myth: Wukong [news-wukong-dlc-expansion]",
+    "url": "/images/news/news-wukong-dlc-expansion.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Game Science Konfirmasi Pengembangan DLC Ekspansi Cerita Black Myth: Wukong",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Wuthering Waves Luncurkan Fitur Echo Auto-Recycle & Event Eksklusif Jinzhou [news-wuwa-auto-recycle]",
+    "url": "/images/news/news-wuwa-auto-recycle.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Wuthering Waves Luncurkan Fitur Echo Auto-Recycle & Event Eksklusif Jinzhou",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Wuthering Waves Rilis Teaser Resonator Baru Beratribut Glacio [news-wuwa-banner]",
+    "url": "/images/news/news-wuwa-banner.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Wuthering Waves Rilis Teaser Resonator Baru Beratribut Glacio",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Zenless Zone Zero Umumkan Update Versi Terbaru: Karakter S-Rank & Wilayah Baru [news-zzz-1-5]",
+    "url": "/images/news/news-zzz-1-5.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Zenless Zone Zero Umumkan Update Versi Terbaru: Karakter S-Rank & Wilayah Baru",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "News Thumbnail",
+    "entity": "Zenless Zone Zero Tembus 50 Juta Unduhan Global: Hadiah Polychrome Gratis Dibagikan [news-zzz-50m-downloads]",
+    "url": "/images/news/news-zzz-50m-downloads.jpg",
+    "desc": "Thematic 16:9 news editorial visual matching article topic: Zenless Zone Zero Tembus 50 Juta Unduhan Global: Hadiah Polychrome Gratis Dibagikan",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Acheron Honkai Star Rail: Relic, Light Cone, & Sinergi Nihility [guide-acheron-build]",
+    "url": "/images/guides/build-acheron-honkai-star-rail-relic-light-cone.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Acheron Honkai Star Rail: Relic, Light Cone, & Sinergi Nihility",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Acheron E0S1 Terkuat: Tim Nihility & Sinergi Debuff [guide-build-acheron-e0s1-terkuat-tim-nihility-debuff]",
+    "url": "/images/guides/build-acheron-e0s1-terkuat-tim-nihility-debuff.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Acheron E0S1 Terkuat: Tim Nihility & Sinergi Debuff",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Ellen Joe Terbaik: Drive Disc & Kombinasi Tim Shark Maid [guide-build-ellen-joe-terbaik-drive-disc-tim-shark-maid]",
+    "url": "/images/guides/build-ellen-joe-terbaik-drive-disc-tim-shark-maid.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Ellen Joe Terbaik: Drive Disc & Kombinasi Tim Shark Maid",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Firefly Super Break: Sinergi Ruan Mei & Harmony Trailblazer [guide-build-firefly-super-break-sinergi-ruan-mei-trailblazer]",
+    "url": "/images/guides/build-firefly-super-break-sinergi-ruan-mei-trailblazer.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Firefly Super Break: Sinergi Ruan Mei & Harmony Trailblazer",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Hu Tao Terbaik: Senjata, Artefak & Komposisi Tim Vaporize [guide-build-hu-tao-terbaik-senjata-artefak-tim]",
+    "url": "/images/guides/build-hu-tao-terbaik-senjata-artefak-tim.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Hu Tao Terbaik: Senjata, Artefak & Komposisi Tim Vaporize",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Jiyan Dragon Burst: Echo Set Sierra Gale & Rotasi Qingloong [guide-build-jiyan-dragon-burst-echo-sierra-gale]",
+    "url": "/images/guides/build-jiyan-dragon-burst-echo-sierra-gale.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Jiyan Dragon Burst: Echo Set Sierra Gale & Rotasi Qingloong",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Zhongli Support Shielder: Artefak HP% & Senjata F2P [guide-build-zhongli-support-shielder-senjata-f2p]",
+    "url": "/images/guides/build-zhongli-support-shielder-senjata-f2p.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Zhongli Support Shielder: Artefak HP% & Senjata F2P",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Cara Mendapatkan Echo Bintang 5 Gold Lebih Cepat di Data Bank [guide-cara-mendapatkan-echo-bintang-5-gold-data-bank]",
+    "url": "/images/guides/cara-mendapatkan-echo-bintang-5-gold-data-bank.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Cara Mendapatkan Echo Bintang 5 Gold Lebih Cepat di Data Bank",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Cara Mengalahkan Ender Dragon Pertama Kali untuk Pemula [guide-cara-mengalahkan-ender-dragon-pertama-kali-pemula]",
+    "url": "/images/guides/cara-mengalahkan-ender-dragon-pertama-kali-pemula.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Cara Mengalahkan Ender Dragon Pertama Kali untuk Pemula",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Changli Fusion DPS: Timing Forte Circuit & True Sight Combo [guide-changli-wuwa-build]",
+    "url": "/images/guides/build-changli-fusion-dps-timing-forte-circuit.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Changli Fusion DPS: Timing Forte Circuit & True Sight Combo",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Daftar Item Defense Mobile Legends dan Kapan Harus Membelinya [guide-daftar-item-defense-mobile-legends-kapan-membeli]",
+    "url": "/images/guides/daftar-item-defense-mobile-legends-kapan-membeli.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Daftar Item Defense Mobile Legends dan Kapan Harus Membelinya",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Daftar Siswi Bintang 2 dan 1 Blue Archive yang Wajib Dinaikkan (Meta Low Rarity) [guide-daftar-siswi-bintang-2-1-blue-archive-wajib-dinaikkan]",
+    "url": "/images/guides/daftar-siswi-bintang-2-1-blue-archive-wajib-dinaikkan.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Daftar Siswi Bintang 2 dan 1 Blue Archive yang Wajib Dinaikkan (Meta Low Rarity)",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Ellen Joe Zenless Zone Zero: Flash Freeze Dash & Combo Anomaly [guide-ellen-joe-zzz]",
+    "url": "/images/guides/panduan-ellen-joe-zenless-zone-zero-flash-freeze.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Ellen Joe Zenless Zone Zero: Flash Freeze Dash & Combo Anomaly",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Tips Melawan Erlang Shen di Black Myth: Wukong — Manajemen Qi & Spell [guide-erlang-wukong]",
+    "url": "/images/guides/tips-melawan-erlang-shen-black-myth-wukong.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Tips Melawan Erlang Shen di Black Myth: Wukong — Manajemen Qi & Spell",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Cara Menguasai Fanny MLBB: Rumus Kabel Garis Lurus & Tips Hemat Energi [guide-fanny-cable-mastery]",
+    "url": "/images/guides/cara-menguasai-fanny-mlbb-rumus-kabel-hemat-energi.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Cara Menguasai Fanny MLBB: Rumus Kabel Garis Lurus & Tips Hemat Energi",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Farming Guide Primogem & Stellar Jade: Rute Harian & Event Gacha Hemat [guide-farming-primogem-jade]",
+    "url": "/images/guides/farming-guide-primogem-stellar-jade-gacha-hemat.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Farming Guide Primogem & Stellar Jade: Rute Harian & Event Gacha Hemat",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Kombinasi Skill Karakter Free Fire Terbaik untuk Push Rank Clash Squad [guide-ff-clash-squad-combos]",
+    "url": "/images/guides/kombinasi-skill-karakter-free-fire-clash-squad.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Kombinasi Skill Karakter Free Fire Terbaik untuk Push Rank Clash Squad",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Headshot Free Fire: Setting DPI & Tarikan Aim Sensitivitas [guide-ff-headshot-settings]",
+    "url": "/images/guides/panduan-headshot-free-fire-setting-dpi-aim.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Headshot Free Fire: Setting DPI & Tarikan Aim Sensitivitas",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Guide Firefly Super Break: Ruan Mei, Harmony MC & Cara Hit Jutaan Damage [guide-firefly-super-break]",
+    "url": "/images/guides/guide-firefly-super-break-ruan-mei-harmony-mc.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Guide Firefly Super Break: Ruan Mei, Harmony MC & Cara Hit Jutaan Damage",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Furina Sub-DPS & Buffer: Maksimalkan Fanfare Points [guide-furina-build]",
+    "url": "/images/guides/build-furina-sub-dps-buffer-fanfare.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Furina Sub-DPS & Buffer: Maksimalkan Fanfare Points",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Pemula Genshin Impact: Cara Cepat Menaikkan AR dan Menghemat Primogem [guide-genshin-beginner]",
+    "url": "/images/guides/panduan-pemula-genshin-impact-ar-primogem.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Pemula Genshin Impact: Cara Cepat Menaikkan AR dan Menghemat Primogem",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Guide Jinhsi Wuthering Waves: Rotasi Skill & Komposisi Tim Resonance [guide-jinhsi-wuwa-build]",
+    "url": "/images/guides/guide-jinhsi-wuthering-waves-rotasi-skill-tim.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Guide Jinhsi Wuthering Waves: Rotasi Skill & Komposisi Tim Resonance",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Lineup Recon Dart Sova Terbaik di Map Ascent [guide-lineup-recon-dart-sova-terbaik-map-ascent]",
+    "url": "/images/guides/lineup-recon-dart-sova-terbaik-map-ascent.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Lineup Recon Dart Sova Terbaik di Map Ascent",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Cara Mengalahkan Boss Malenia di Elden Ring: Trik Hindari Waterfowl Dance [guide-malenia-elden-ring]",
+    "url": "/images/guides/cara-mengalahkan-boss-malenia-elden-ring-waterfowl-dance.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Cara Mengalahkan Boss Malenia di Elden Ring: Trik Hindari Waterfowl Dance",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Mekanik Parry & Dodge Counter Wuthering Waves: Rahasia No Damage Run [guide-mekanik-parry-dodge-counter-wuthering-waves-no-damage]",
+    "url": "/images/guides/mekanik-parry-dodge-counter-wuthering-waves-no-damage.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Mekanik Parry & Dodge Counter Wuthering Waves: Rahasia No Damage Run",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Tips Rotasi Jungler Mobile Legends: Maksimalkan Turtle & Lord Control [guide-mlbb-jungler-rotation]",
+    "url": "/images/guides/tips-rotasi-jungler-mobile-legends-turtle-lord.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Tips Rotasi Jungler Mobile Legends: Maksimalkan Turtle & Lord Control",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Build Neuvillette Terbaik 2026: Senjata, Artefak, dan Tim Hypercarry [guide-neuvillette-build]",
+    "url": "/images/guides/build-neuvillette-terbaik-senjata-artefak-tim.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Build Neuvillette Terbaik 2026: Senjata, Artefak, dan Tim Hypercarry",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Apocalyptic Shadow: Strategi Menguras Toughness Meter Bos [guide-panduan-apocalyptic-shadow-strategi-toughness-meter]",
+    "url": "/images/guides/panduan-apocalyptic-shadow-strategi-toughness-meter.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Apocalyptic Shadow: Strategi Menguras Toughness Meter Bos",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Crosshair Placement & Peeking Technique Valorant [guide-panduan-crosshair-placement-peeking-technique-valorant]",
+    "url": "/images/guides/panduan-crosshair-placement-peeking-technique-valorant.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Crosshair Placement & Peeking Technique Valorant",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Efisiensi Resin Teyvat: Prioritas Karakter, Senjata & Artefak [guide-panduan-efisiensi-resin-teyvat-prioritas-farming]",
+    "url": "/images/guides/panduan-efisiensi-resin-teyvat-prioritas-farming.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Efisiensi Resin Teyvat: Prioritas Karakter, Senjata & Artefak",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Eksplorasi Natlan: Lokasi Saurian & Puzzle Rahasia [guide-panduan-eksplorasi-natlan-lokasi-saurian-puzzle]",
+    "url": "/images/guides/panduan-eksplorasi-natlan-lokasi-saurian-puzzle.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Eksplorasi Natlan: Lokasi Saurian & Puzzle Rahasia",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Kelas Operator Arknights: Memahami Fungsi Vanguard hingga Specialist [guide-panduan-kelas-operator-arknights-vanguard-specialist]",
+    "url": "/images/guides/panduan-kelas-operator-arknights-vanguard-specialist.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Kelas Operator Arknights: Memahami Fungsi Vanguard hingga Specialist",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Mengatur Komunikasi Tim & Callout Efektif Valorant [guide-panduan-komunikasi-tim-callout-efektif-valorant]",
+    "url": "/images/guides/panduan-komunikasi-tim-callout-efektif-valorant.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Mengatur Komunikasi Tim & Callout Efektif Valorant",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Manajemen Wave Minion League of Legends: Freeze, Slow Push, Fast Push [guide-panduan-manajemen-wave-minion-lol-freeze-push]",
+    "url": "/images/guides/panduan-manajemen-wave-minion-lol-freeze-push.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Manajemen Wave Minion League of Legends: Freeze, Slow Push, Fast Push",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Memahami Peran Posisi 1 hingga 5 di Dota 2 [guide-panduan-memahami-peran-posisi-1-hingga-5-dota-2]",
+    "url": "/images/guides/panduan-memahami-peran-posisi-1-hingga-5-dota-2.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Memahami Peran Posisi 1 hingga 5 di Dota 2",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Menaklukkan Memory of Chaos Lantai 12 [guide-panduan-menaklukkan-memory-of-chaos-lantai-12]",
+    "url": "/images/guides/panduan-menaklukkan-memory-of-chaos-lantai-12.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Menaklukkan Memory of Chaos Lantai 12",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Pemula Blox Fruits: Cara Cepat Naik Level 1 hingga Max [guide-panduan-pemula-blox-fruits-cara-cepat-naik-level-max]",
+    "url": "/images/guides/panduan-pemula-blox-fruits-cara-cepat-naik-level-max.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Pemula Blox Fruits: Cara Cepat Naik Level 1 hingga Max",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Pemula Zenless Zone Zero: Mekanik Daze & Chain Attack [guide-panduan-pemula-zenless-zone-zero-mekanik-daze-chain-attack]",
+    "url": "/images/guides/panduan-pemula-zenless-zone-zero-mekanik-daze-chain-attack.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Pemula Zenless Zone Zero: Mekanik Daze & Chain Attack",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Redstone Dasar: Komponen, Logika Sirkuit, dan Pintu Otomatis [guide-panduan-redstone-dasar-komponen-sirkuit-pintu-otomatis]",
+    "url": "/images/guides/panduan-redstone-dasar-komponen-sirkuit-pintu-otomatis.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Redstone Dasar: Komponen, Logika Sirkuit, dan Pintu Otomatis",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Relic Farming Honkai Star Rail: Stat Utama vs Sub-Stat [guide-panduan-relic-farming-honkai-star-rail-stat-optimal]",
+    "url": "/images/guides/panduan-relic-farming-honkai-star-rail-stat-optimal.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Relic Farming Honkai Star Rail: Stat Utama vs Sub-Stat",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Rotasi Jungler Mobile Legends Season Terbaru [guide-panduan-rotasi-jungler-mobile-legends-season-terbaru]",
+    "url": "/images/guides/panduan-rotasi-jungler-mobile-legends-season-terbaru.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Rotasi Jungler Mobile Legends Season Terbaru",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Memilih Senjata Terbaik Sesuai Playstyle di Apex Legends [guide-panduan-senjata-terbaik-playstyle-apex-legends]",
+    "url": "/images/guides/panduan-senjata-terbaik-playstyle-apex-legends.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Memilih Senjata Terbaik Sesuai Playstyle di Apex Legends",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Total Assault Blue Archive: Strategi Menembus Rank Platinum [guide-panduan-total-assault-blue-archive-rank-platinum]",
+    "url": "/images/guides/panduan-total-assault-blue-archive-rank-platinum.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Total Assault Blue Archive: Strategi Menembus Rank Platinum",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Pengaturan Sensitivitas Giroskop PUBG Mobile No Recoil Terbaik [guide-pengaturan-sensitivitas-giroskop-pubg-mobile-no-recoil]",
+    "url": "/images/guides/pengaturan-sensitivitas-giroskop-pubg-mobile-no-recoil.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Pengaturan Sensitivitas Giroskop PUBG Mobile No Recoil Terbaik",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Rute Looting Terbaik di Map Erangel PUBG Mobile: Pochinki vs Sosnovka [guide-pubgm-erangel-loot]",
+    "url": "/images/guides/rute-looting-terbaik-erangel-pubg-mobile.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Rute Looting Terbaik di Map Erangel PUBG Mobile: Pochinki vs Sosnovka",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Sensitivitas & Setting Kontrol PUBG Mobile Terbaik 2026: No Recoil [guide-pubgm-settings]",
+    "url": "/images/guides/sensitivitas-setting-kontrol-pubg-mobile-terbaik.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Sensitivitas & Setting Kontrol PUBG Mobile Terbaik 2026: No Recoil",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Rekomendasi Tim Free-to-Play Terbaik Zenless Zone Zero Chapter Awal [guide-rekomendasi-tim-f2p-terbaik-zenless-zone-zero-chapter-awal]",
+    "url": "/images/guides/rekomendasi-tim-f2p-terbaik-zenless-zone-zero-chapter-awal.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Rekomendasi Tim Free-to-Play Terbaik Zenless Zone Zero Chapter Awal",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Memilih Relic & Artefak: Prioritas Sub-Stat vs Main-Stat di Game RPG [guide-relic-artifact-priority]",
+    "url": "/images/guides/panduan-memilih-relic-artefak-prioritas-stat.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Memilih Relic & Artefak: Prioritas Sub-Stat vs Main-Stat di Game RPG",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Rute Farming 168 Lumitoile Fontaine untuk Ascension Neuvillette [guide-rute-farming-168-lumitoile-fontaine-neuvillette]",
+    "url": "/images/guides/rute-farming-168-lumitoile-fontaine-neuvillette.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Rute Farming 168 Lumitoile Fontaine untuk Ascension Neuvillette",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Sistem Farming 3-Turn FGO: Setup Double Koyanskaya & Oberon [guide-sistem-farming-3-turn-fgo-double-koyanskaya-oberon]",
+    "url": "/images/guides/sistem-farming-3-turn-fgo-double-koyanskaya-oberon.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Sistem Farming 3-Turn FGO: Setup Double Koyanskaya & Oberon",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Lineups Sova Ascent Paling Efektif untuk Info & Post-Plant Kill [guide-sova-ascent-lineups]",
+    "url": "/images/guides/lineups-sova-ascent-paling-efektif-info-post-plant.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Lineups Sova Ascent Paling Efektif untuk Info & Post-Plant Kill",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Tips Gerakan Lanjutan Apex Legends: Tap Strafe & Wall Bounce [guide-tips-gerakan-lanjutan-apex-legends-tap-strafe-wall-bounce]",
+    "url": "/images/guides/tips-gerakan-lanjutan-apex-legends-tap-strafe-wall-bounce.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Tips Gerakan Lanjutan Apex Legends: Tap Strafe & Wall Bounce",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Tips Gloo Wall Cepat & Trik Duduk Pasang Free Fire [guide-tips-gloo-wall-cepat-trik-duduk-pasang-free-fire]",
+    "url": "/images/guides/tips-gloo-wall-cepat-trik-duduk-pasang-free-fire.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Tips Gloo Wall Cepat & Trik Duduk Pasang Free Fire",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Tips Memilih Buah Iblis Terbaik untuk Bounty Hunting di Blox Fruits [guide-tips-memilih-buah-iblis-bounty-hunting-blox-fruits]",
+    "url": "/images/guides/tips-memilih-buah-iblis-bounty-hunting-blox-fruits.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Tips Memilih Buah Iblis Terbaik untuk Bounty Hunting di Blox Fruits",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Tips Menguasai Mekanik Kabel Fanny untuk Pemula [guide-tips-menguasai-mekanik-kabel-fanny-pemula]",
+    "url": "/images/guides/tips-menguasai-mekanik-kabel-fanny-pemula.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Tips Menguasai Mekanik Kabel Fanny untuk Pemula",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  },
+  {
+    "category": "Guide Thumbnail",
+    "entity": "Panduan Aim & Crosshair Placement Valorant untuk Pemula Menuju Immortal [guide-valorant-aim-crosshair]",
+    "url": "/images/guides/panduan-aim-crosshair-placement-valorant-pemula.jpg",
+    "desc": "Thematic 16:9 strategy guide visual directly illustrating Panduan Aim & Crosshair Placement Valorant untuk Pemula Menuju Immortal",
+    "relevance": "PASS",
+    "duplicate": "NO",
+    "http": "200 OK"
+  }
+]
