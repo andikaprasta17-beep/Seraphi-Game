@@ -28,6 +28,7 @@ jobs:
           [ -z "${{ secrets.HYPERCLOUD_SSH_HOST }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_HOST")
           [ -z "${{ secrets.HYPERCLOUD_SSH_USER }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_USER")
           [ -z "${{ secrets.HYPERCLOUD_SSH_PRIVATE_KEY }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_PRIVATE_KEY")
+          [ -z "${{ secrets.HYPERCLOUD_SSH_KEY_PASSPHRASE }}" ] && MISSING_SECRETS+=("HYPERCLOUD_SSH_KEY_PASSPHRASE")
 
           if [ ${#MISSING_SECRETS[@]} -ne 0 ]; then
             echo "=========================================================================="
@@ -38,15 +39,16 @@ jobs:
             done
             echo ""
             echo "Silakan tambahkan di Settings > Secrets and variables > Actions:"
-            echo "  - HYPERCLOUD_SSH_HOST        : IP / Hostname HyperCloudHost"
-            echo "  - HYPERCLOUD_SSH_PORT        : Port SSH (default: 22 atau port cPanel)"
-            echo "  - HYPERCLOUD_SSH_USER        : Username SSH / cPanel"
-            echo "  - HYPERCLOUD_SSH_PRIVATE_KEY : Private Key SSH (OpenSSH format)"
-            echo "  - HYPERCLOUD_APP_PATH        : Path aplikasi (default: ~/seraphigame)"
+            echo "  - HYPERCLOUD_SSH_HOST           : IP / Hostname HyperCloudHost"
+            echo "  - HYPERCLOUD_SSH_PORT           : Port SSH (default: 22 atau port cPanel)"
+            echo "  - HYPERCLOUD_SSH_USER           : Username SSH / cPanel"
+            echo "  - HYPERCLOUD_SSH_PRIVATE_KEY    : Encrypted Private Key SSH (OpenSSH format)"
+            echo "  - HYPERCLOUD_SSH_KEY_PASSPHRASE : Passphrase untuk decrypt SSH Private Key"
+            echo "  - HYPERCLOUD_APP_PATH           : Path aplikasi (default: ~/seraphigame)"
             echo "=========================================================================="
             exit 1
           fi
-          echo "✅ Semua secrets SSH wajib tersedia."
+          echo "✅ Semua secrets SSH wajib tersedia (termasuk SSH key passphrase)."
 
       - name: 3. Setup Node.js (18.20.8)
         uses: actions/setup-node@v4
@@ -99,17 +101,56 @@ jobs:
           ARTIFACT_SIZE=$(du -h artifact.tar.gz | cut -f1)
           echo "✅ Production artifact berhasil dikompresi: $ARTIFACT_SIZE"
 
-      - name: 7. Setup SSH
+      - name: 7. Setup SSH & Unlock Key via ssh-agent
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.HYPERCLOUD_SSH_PRIVATE_KEY }}
+          SSH_PASSPHRASE: ${{ secrets.HYPERCLOUD_SSH_KEY_PASSPHRASE }}
+          SSH_HOST: ${{ secrets.HYPERCLOUD_SSH_HOST }}
+          SSH_PORT: ${{ secrets.HYPERCLOUD_SSH_PORT || '22' }}
         run: |
+          echo "=== KONFIGURASI SSH & UNLOCK KEY DENGAN SSH-AGENT ==="
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          echo "${{ secrets.HYPERCLOUD_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          
+          # 1. Tulis private key secara aman tanpa mencetak ke log
+          printf "%s\n" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          
-          SSH_PORT="${{ secrets.HYPERCLOUD_SSH_PORT || '22' }}"
-          ssh-keyscan -p $SSH_PORT -H "${{ secrets.HYPERCLOUD_SSH_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null || true
-          
-          # Configuration for resilient SSH
+
+          # 2. Inisialisasi ssh-agent di runner
+          eval "$(ssh-agent -s)"
+          echo "SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> $GITHUB_ENV
+          echo "SSH_AGENT_PID=$SSH_AGENT_PID" >> $GITHUB_ENV
+
+          # 3. Unlock encrypted private key menggunakan HYPERCLOUD_SSH_KEY_PASSPHRASE
+          if [ -n "$SSH_PASSPHRASE" ]; then
+            echo "Memproses private key terenkripsi dengan passphrase..."
+            
+            # Buat helper script sementara untuk SSH_ASKPASS (mencegah prompt interaktif)
+            ASKPASS_SCRIPT=$(mktemp)
+            echo '#!/bin/sh' > "$ASKPASS_SCRIPT"
+            echo 'exec printf "%s\n" "$SSH_PASSPHRASE"' >> "$ASKPASS_SCRIPT"
+            chmod 700 "$ASKPASS_SCRIPT"
+
+            # Muat key ke dalam ssh-agent menggunakan SSH_ASKPASS
+            export DISPLAY=":0"
+            export SSH_ASKPASS="$ASKPASS_SCRIPT"
+            export SSH_ASKPASS_REQUIRE="force"
+            ssh-add ~/.ssh/id_rsa < /dev/null
+
+            # Hapus helper script askpass segera
+            rm -f "$ASKPASS_SCRIPT"
+
+            # Simpan versi tanpa passphrase di runner sementara untuk kompatibilitas direct command (-i ~/.ssh/id_rsa)
+            ssh-keygen -p -P "$SSH_PASSPHRASE" -N "" -f ~/.ssh/id_rsa 2>/dev/null || true
+            echo "✅ Private key berhasil di-unlock dan dimuat ke ssh-agent."
+          else
+            echo "Memuat unencrypted private key ke ssh-agent..."
+            ssh-add ~/.ssh/id_rsa < /dev/null
+            echo "✅ Private key dimuat ke ssh-agent."
+          fi
+
+          # 4. Known hosts & resilient SSH client config
+          ssh-keyscan -p "$SSH_PORT" -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
           echo -e "Host *\n  StrictHostKeyChecking accept-new\n  ServerAliveInterval 60\n  ServerAliveCountMax 5\n" > ~/.ssh/config
           chmod 600 ~/.ssh/config
 
