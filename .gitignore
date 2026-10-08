@@ -44,3 +44,7 @@ backup/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# temp scratch directories
+temp_audit/
+temp_check/

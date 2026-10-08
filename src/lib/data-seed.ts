@@ -17,8 +17,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-genshin",
     "name": "Genshin Impact",
     "slug": "genshin-impact",
-    "cover_image": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/genshin-cover.jpg",
+    "banner_image": "/images/games/genshin-banner.jpg",
     "description": "Game open-world action RPG karya HoYoverse berlatar di dunia Teyvat yang luas dengan 7 elemen dan puluhan karakter memukau.",
     "developer": "miHoYo / HoYoverse",
     "publisher": "HoYoverse / Cognosphere",
@@ -46,8 +46,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-hsr",
     "name": "Honkai: Star Rail",
     "slug": "honkai-star-rail",
-    "cover_image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/hsr-cover.jpg",
+    "banner_image": "/images/games/hsr-banner.jpg",
     "description": "Space fantasy RPG turn-based dari HoYoverse dengan perjalanan Astral Express melintasi galaksi dan pertempuran strategis mendalam.",
     "developer": "miHoYo / HoYoverse",
     "publisher": "HoYoverse",
@@ -74,8 +74,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-mlbb",
     "name": "Mobile Legends: Bang Bang",
     "slug": "mobile-legends",
-    "cover_image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/mlbb-cover.jpg",
+    "banner_image": "/images/games/mlbb-banner.jpg",
     "description": "Game MOBA 5v5 terpopuler di Indonesia dan Asia Tenggara dengan puluhan hero unik, pertempuran intens 10 menit, dan scene esports raksasa.",
     "developer": "Moonton",
     "publisher": "Moonton / ByteDance",
@@ -100,8 +100,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-valorant",
     "name": "Valorant",
     "slug": "valorant",
-    "cover_image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1542751110-97427bbecf20?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/valorant-cover.jpg",
+    "banner_image": "/images/games/valorant-banner.jpg",
     "description": "Tactical hero-shooter 5v5 berbasis kemampuan agent dan presisi tembakan tajam dari Riot Games dengan ekosistem esports global VCT.",
     "developer": "Riot Games",
     "publisher": "Riot Games",
@@ -127,8 +127,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-wuwa",
     "name": "Wuthering Waves",
     "slug": "wuthering-waves",
-    "cover_image": "https://images.unsplash.com/photo-1606663889134-b1dedb5ed8b7?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/wuwa-cover.jpg",
+    "banner_image": "/images/games/wuwa-banner.jpg",
     "description": "Open world action RPG bertema post-apocalyptic dengan sistem pertarungan cepat, dodge parry fleksibel, dan mekanisme Echo kustomisasi.",
     "developer": "Kuro Games",
     "publisher": "Kuro Games",
@@ -155,8 +155,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-zzz",
     "name": "Zenless Zone Zero",
     "slug": "zenless-zone-zero",
-    "cover_image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/zzz-cover.jpg",
+    "banner_image": "/images/games/zzz-banner.jpg",
     "description": "Urban fantasy action RPG bertempo cepat dengan estetika street anime keren dari HoYoverse di metropolis terakhir New Eridu.",
     "developer": "miHoYo / HoYoverse",
     "publisher": "HoYoverse",
@@ -183,8 +183,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-wukong",
     "name": "Black Myth: Wukong",
     "slug": "black-myth-wukong",
-    "cover_image": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/wukong-cover.jpg",
+    "banner_image": "/images/games/wukong-banner.jpg",
     "description": "Action RPG berakar pada mitologi Tiongkok klasik Perjalanan ke Barat. Mengendalikan sang Destined One menghadapi takdir legendaris.",
     "developer": "Game Science",
     "publisher": "Game Science",
@@ -209,8 +209,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-elden-ring",
     "name": "Elden Ring",
     "slug": "elden-ring",
-    "cover_image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/elden-ring-cover.jpg",
+    "banner_image": "/images/games/elden-ring-banner.jpg",
     "description": "Karya mahakarya FromSoftware & George R.R. Martin. Jelajahi Lands Between dan jadilah Elden Lord dalam petualangan souls-like spektakuler.",
     "developer": "FromSoftware Inc.",
     "publisher": "Bandai Namco Entertainment",
@@ -238,8 +238,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-pubgm",
     "name": "PUBG Mobile",
     "slug": "pubg-mobile",
-    "cover_image": "https://images.unsplash.com/photo-1528238646472-f2366160b6c1?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/pubgm-cover.jpg",
+    "banner_image": "/images/games/pubgm-banner.jpg",
     "description": "Game battle royale mobile legendaris. Terjun bersama 100 pemain di pulau terpencil dan bertahan hidup hingga menjadi pemain terakhir.",
     "developer": "LightSpeed & Quantum Studio",
     "publisher": "Level Infinite / Krafton",
@@ -264,8 +264,8 @@ export const SEED_GAMES: Game[] = [
     "id": "game-ff",
     "name": "Free Fire",
     "slug": "free-fire",
-    "cover_image": "https://images.unsplash.com/photo-1564460549828-f0219a31bf90?w=600&auto=format&fit=crop&q=80",
-    "banner_image": "https://images.unsplash.com/photo-1500004621732-74cd4ad4d53e?w=1600&auto=format&fit=crop&q=80",
+    "cover_image": "/images/games/ff-cover.jpg",
+    "banner_image": "/images/games/ff-banner.jpg",
     "description": "Survival shooter mobile cepat berdurasi 10 menit dengan 50 pemain, skill karakter unik, dan gameplay seru di mana saja.",
     "developer": "111 Dots Studio",
     "publisher": "Garena",
@@ -294,8 +294,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-genshin",
     "name": "Neuvillette",
     "slug": "neuvillette",
-    "portrait": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/neuvillette-portrait.webp",
+    "full_image": "/images/characters/neuvillette-full.webp",
     "description": "Iudex of Fontaine dan Naga Hidro sejati yang memimpin pengadilan Fontaine dengan keadilan mutlak.",
     "role": "Main DPS",
     "element": "Hydro",
@@ -404,8 +404,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-genshin",
     "name": "Furina",
     "slug": "furina",
-    "portrait": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1603794067602-9feaa4f70e0c?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/furina-portrait.webp",
+    "full_image": "/images/characters/furina-full.webp",
     "description": "Bintang panggung Fontaine yang memikat penonton dengan pertunjukan epik dan berkah pencerahan Salon Solitaire.",
     "role": "Sub-DPS / Buffer",
     "element": "Hydro",
@@ -488,8 +488,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-genshin",
     "name": "Raiden Shogun",
     "slug": "raiden-shogun",
-    "portrait": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1612487528505-d2338264c821?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/raiden-shogun-portrait.webp",
+    "full_image": "/images/characters/raiden-shogun-full.webp",
     "description": "Archon Elektro dari Inazuma yang mengejar Keabadian (Eternity), pengisi baterai energi party nomor satu di Teyvat.",
     "role": "Sub-DPS / Battery / Hypercarry",
     "element": "Electro",
@@ -573,8 +573,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-genshin",
     "name": "Nahida",
     "slug": "nahida",
-    "portrait": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/nahida-portrait.webp",
+    "full_image": "/images/characters/nahida-full.webp",
     "description": "Dendro Archon dari Sumeru, Lesser Lord Kusanali, fondasi utama seluruh tim berbasis reaksi Dendro.",
     "role": "Sub-DPS / Dendro Enabler",
     "element": "Dendro",
@@ -653,8 +653,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-genshin",
     "name": "Zhongli",
     "slug": "zhongli",
-    "portrait": "https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1571757767119-68b8dbed8c97?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/zhongli-portrait.webp",
+    "full_image": "/images/characters/zhongli-full.webp",
     "description": "Geo Archon dari Liyue, Rex Lapis. Shielder terkuat di Teyvat yang menjamin kenyamanan bermain tanpa gangguan musuh.",
     "role": "Shielder / Support",
     "element": "Geo",
@@ -733,8 +733,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-hsr",
     "name": "Acheron",
     "slug": "acheron",
-    "portrait": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/acheron-portrait.webp",
+    "full_image": "/images/characters/acheron-full.webp",
     "description": "Galaxy Ranger pengembara bayangan (Emanator of Nihility) yang menebas takdir dengan pedang Naught dan Crimson Knot.",
     "role": "Main DPS",
     "element": "Lightning",
@@ -818,8 +818,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-hsr",
     "name": "Firefly (SAM)",
     "slug": "firefly",
-    "portrait": "https://images.unsplash.com/photo-1589749807521-dd6bc0d4f75d?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/firefly-portrait.webp",
+    "full_image": "/images/characters/firefly-full.webp",
     "description": "Anggota Stellaron Hunters yang bertarung mengenakan zirah mekanik raksasa SAM dengan kekuatan Super Break dahsyat.",
     "role": "Main DPS",
     "element": "Fire",
@@ -903,8 +903,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-hsr",
     "name": "Aventurine",
     "slug": "aventurine",
-    "portrait": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/aventurine-portrait.webp",
+    "full_image": "/images/characters/aventurine-full.webp",
     "description": "Manajer senior IPC dari Ten Stonehearts (Kakavasha) yang menguasai seni pertaruhan dan perisai tumpuk tanpa batas.",
     "role": "Sustain / Shielder / Sub-DPS",
     "element": "Imaginary",
@@ -983,8 +983,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-mlbb",
     "name": "Fanny",
     "slug": "fanny",
-    "portrait": "https://images.unsplash.com/photo-1545579833-0e15a2cdb26b?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/fanny-portrait.webp",
+    "full_image": "/images/characters/fanny-full.webp",
     "description": "Blade Dancer paling lincah dan beresiko tinggi di Land of Dawn yang bermanuver melintasi dinding menggunakan Steel Cable.",
     "role": "Assassin",
     "element": "Physical",
@@ -1057,8 +1057,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-mlbb",
     "name": "Ling",
     "slug": "ling",
-    "portrait": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/ling-portrait.webp",
+    "full_image": "/images/characters/ling-full.webp",
     "description": "Cyan Finch yang melompat di atas dinding Land of Dawn dan memotong musuh dengan pedang tempest mematikan.",
     "role": "Assassin",
     "element": "Physical",
@@ -1126,8 +1126,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-mlbb",
     "name": "Beatrix",
     "slug": "beatrix",
-    "portrait": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/beatrix-portrait.webp",
+    "full_image": "/images/characters/beatrix-full.webp",
     "description": "Gadis jenius pencipta 4 senjata mekanis canggih: Renner (Sniper), Bennett (Rocket), Wesker (Shotgun), dan Nibiru (SMG).",
     "role": "Marksman",
     "element": "Physical",
@@ -1184,8 +1184,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-valorant",
     "name": "Jett",
     "slug": "jett",
-    "portrait": "https://images.unsplash.com/photo-1495510096779-5fbe73258c83?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/jett-portrait.webp",
+    "full_image": "/images/characters/jett-full.webp",
     "description": "Duelist gesit dari Korea Selatan yang memanipulasi angin untuk bermanuver tak terduga dan mengeksekusi musuh dengan pisau kunai.",
     "role": "Duelist",
     "element": "Wind / Radiant",
@@ -1258,8 +1258,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-valorant",
     "name": "Omen",
     "slug": "omen",
-    "portrait": "https://images.unsplash.com/photo-1566650515715-390bca494b46?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/omen-portrait.webp",
+    "full_image": "/images/characters/omen-full.webp",
     "description": "Makhluk bayangan Controller yang berburu di antara kabut kegelapan, membutakan musuh, dan berteleportasi melintasi medan tempur.",
     "role": "Controller",
     "element": "Shadow / Radiant",
@@ -1321,8 +1321,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-valorant",
     "name": "Sova",
     "slug": "sova",
-    "portrait": "https://images.unsplash.com/photo-1519756301029-33fef7098ba4?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/sova-portrait.webp",
+    "full_image": "/images/characters/sova-full.webp",
     "description": "Pemanah presisi dari Siberia yang melacak jejak musuh dengan panah sensor canggih dan drone pengintai jarak jauh.",
     "role": "Initiator",
     "element": "Info Hunter",
@@ -1384,8 +1384,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-wuwa",
     "name": "Jinhsi",
     "slug": "jinhsi",
-    "portrait": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/jinshi-portrait.webp",
+    "full_image": "/images/characters/jinshi-full.webp",
     "description": "Magistrate of Jinzhou yang mewarisi kekuatan naga suci Jue, melancarkan serangan Spectro udara dengan damage meledak.",
     "role": "Main DPS",
     "element": "Spectro",
@@ -1464,8 +1464,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-wuwa",
     "name": "Changli",
     "slug": "changli",
-    "portrait": "https://images.unsplash.com/photo-1614583225154-5fcdda07019e?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/changli-portrait.webp",
+    "full_image": "/images/characters/changli-full.webp",
     "description": "Konselor Jinzhou berjuluk Burung Phoenix Merah, ahli strategi brilian dengan tarian pedang Fusion berkobar.",
     "role": "Main DPS / Quickswap Buffer",
     "element": "Fusion",
@@ -1544,8 +1544,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-zzz",
     "name": "Ellen Joe",
     "slug": "ellen-joe",
-    "portrait": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/ellen-joe-portrait.webp",
+    "full_image": "/images/characters/ellen-joe-full.webp",
     "description": "Pelayan bersirip hiu dari Victoria Housekeeping Co. yang meluncur di es dengan gunting raksasa dan sikap santai.",
     "role": "Attack (Main DPS)",
     "element": "Ice",
@@ -1618,8 +1618,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-zzz",
     "name": "Zhu Yuan",
     "slug": "zhu-yuan",
-    "portrait": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/zhu-yuan-portrait.webp",
+    "full_image": "/images/characters/zhu-yuan-full.webp",
     "description": "Kapten tim Investigasi Kriminal Kepolisian New Eridu (N.E.P.S.) yang menggunakan senjata api Ether berdaya ledak presisi.",
     "role": "Attack (Burst DPS)",
     "element": "Ether",
@@ -1681,8 +1681,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-wukong",
     "name": "The Destined One (Wukong)",
     "slug": "the-destined-one",
-    "portrait": "https://images.unsplash.com/photo-1586508887700-bc5ce707b322?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/the-destined-one-portrait.webp",
+    "full_image": "/images/characters/the-destined-one-full.webp",
     "description": "Kera terpilih yang menapaki jejak Sun Wukong legendaris untuk mengumpulkan 6 relik suci dan membuka takdir abadi.",
     "role": "Warrior / Staff Master",
     "element": "Qi / Transformations",
@@ -1738,8 +1738,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-elden-ring",
     "name": "Malenia, Blade of Miquella",
     "slug": "malenia",
-    "portrait": "https://images.unsplash.com/photo-1522346513757-54c552451fdc?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1563191911-e65f8655ebf9?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/malenia-portrait.webp",
+    "full_image": "/images/characters/malenia-full.webp",
     "description": "Demigod tak terkalahkan di Elphael, Brace of the Haligtree. Menguasai pedang katana anggun dan kutukan Scarlet Rot mematikan.",
     "role": "Boss & Lore Character",
     "element": "Scarlet Rot / Physical",
@@ -1790,8 +1790,8 @@ export const SEED_CHARACTERS: Character[] = [
     "game_id": "game-ff",
     "name": "DJ Alok",
     "slug": "dj-alok",
-    "portrait": "https://images.unsplash.com/photo-1506031765313-0bc574a405f0?w=400&auto=format&fit=crop&q=80",
-    "full_image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1000&auto=format&fit=crop&q=80",
+    "portrait": "/images/characters/dj-alok-portrait.webp",
+    "full_image": "/images/characters/dj-alok-full.webp",
     "description": "Karakter legendaris Free Fire berwujud DJ ternama dunia dengan aura musik yang mempercepat lari dan memulihkan HP rekan tim.",
     "role": "Support / Rusher",
     "element": "Sound Wave",
@@ -1847,7 +1847,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Build Neuvillette Terbaik 2026: Senjata, Artefak, dan Tim Hypercarry",
     "slug": "build-neuvillette-terbaik-senjata-artefak-tim",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1525268771113-32d9e9021a97?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/build-neuvillette-terbaik-senjata-artefak-tim.jpg",
     "excerpt": "Panduan lengkap memaksimalkan damage Charged Attack Neuvillette: pilihan artefak Marechaussee Hunter, senjata F2P terbaik, dan kombinasi tim Furina Kazuha.",
     "content": "\n# Panduan Lengkap Build Neuvillette (Genshin Impact)\n\nNeuvillette adalah salah satu On-field Hydro DPS terkuat di Genshin Impact. Mekanisme utamanya bertumpu pada **Charged Attack: Equitable Judgment**, yaitu semburan air jarak jauh berkekuatan tinggi yang melibas semua musuh di jalurnya.\n\n---\n\n## 1. Prioritas Talent\n1. **Normal Attack / Charged Attack** (Prioritas Utama — Tingkatkan hingga Level 10 / Crown)\n2. **Elemental Burst** (Level 8+)\n3. **Elemental Skill** (Level 8+)\n\n---\n\n## 2. Pilihan Artefak Terbaik\n\n### Rekomendasi Utama: 4-Piece Marechaussee Hunter\n- **2-Piece:** Normal dan Charged Attack DMG +15%.\n- **4-Piece:** Saat HP saat ini bertambah atau berkurang, CRIT Rate meningkat 12% selama 5 detik (dapat ditumpuk hingga 3 kali, total **+36% CRIT Rate**).\n- Karena Neuvillette menguras HP-nya sendiri saat menembakkan Charged Attack dan menyerap Sourcewater Droplets untuk memulihkan HP, ia dapat mempertahankan 36% CRIT Rate ini secara terus menerus!\n\n### Main Stat Artefak:\n- **Sands:** HP%\n- **Goblet:** Hydro DMG Bonus atau HP%\n- **Circlet:** CRIT DMG (karena Anda sudah mendapatkan 36% CRIT Rate dari 4-set Marechaussee Hunter)\n\n### Target Sub-Stat:\nCRIT DMG > CRIT Rate (cukup 40%-55% sebelum buff) > HP% > Energy Recharge (110%-120%).\n\n---\n\n## 3. Pilihan Senjata (Weapon)\n\n1. **Tome of the Eternal Flow (Bintang 5 — Signature)**\n   Menyediakan CRIT DMG 88.2%, HP bertambah, dan memberi buff Charged Attack DMG hingga 42% saat HP berfluktuasi.\n2. **Sacrificial Jade (Bintang 4 — Battle Pass)**\n   Opsi bintang 4 terkuat. Memberi CRIT Rate 36.8% dan meningkatkan Max HP sebesar 64% saat berada di luar medan tempur selama 5 detik.\n3. **Prototype Amber (Bintang 4 — F2P Craftable)**\n   Dapat dibuat gratis di Blacksmith. Memberi HP 41.3%, regenerasi energi pasca Burst, dan sedikit healing ke seluruh tim.\n\n---\n\n## 4. Rekomendasi Komposisi Tim\n\n### Komposisi Hypercarry Fontaine\n- **Neuvillette** (Main DPS)\n- **Furina** (Sub-DPS & Fanfare Damage Buffer)\n- **Kaedehara Kazuha** (Swirl Hydro Shred & Elemental DMG Buffer)\n- **Zhongli** / **Baizhu** (Shielder & Interruption Resistance)\n\nDengan komposisi ini, semburan air Neuvillette dapat menembus 80.000 hingga 120.000 damage per tick secara konsisten di Spiral Abyss Lantai 12!\n",
     "author": "Seraphi Editorial Team",
@@ -1862,7 +1862,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 12450,
-    "featured_image": "https://images.unsplash.com/photo-1525268771113-32d9e9021a97?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/build-neuvillette-terbaik-senjata-artefak-tim.jpg"
   },
   {
     "id": "guide-furina-build",
@@ -1870,7 +1870,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Build Furina Sub-DPS & Buffer: Maksimalkan Fanfare Points",
     "slug": "build-furina-sub-dps-buffer-fanfare",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/build-furina-sub-dps-buffer-fanfare.jpg",
     "excerpt": "Cara optimal memainkan Furina sebagai buffer universal nomor satu di Genshin Impact. Penjelasan artefak Golden Troupe dan manajemen rotasi HP tim.",
     "content": "\n# Build Furina: Sub-DPS & Buffer Universal\n\nFurina mengubah cara menyusun tim di Genshin Impact. Melalui mekanik Fanfare pada Elemental Burst miliknya, seluruh anggota party bisa menerima peningkatan All-Elemental DMG hingga **75%**!\n\n## Kunci Utama Artefak: 4-Piece Golden Troupe\nGolden Troupe memberikan peningkatan Elemental Skill DMG hingga total **70%** saat karakter berada di luar arena (off-field). Karena 3 anggota Salon Solitaire Furina terus menyerang secara otomatis, Furina menghasilkan puluhan ribu damage pasif setiap detiknya.\n\n## Rekomendasi Senjata F2P\nPancing senjata **Fleuve Cendre Ferryman** di perairan Fontaine. Senjata ini memberikan Energy Recharge tinggi dan tambahan 16% CRIT Rate pada Elemental Skill!\n",
     "author": "Seraphi Editorial Team",
@@ -1885,7 +1885,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 9800,
-    "featured_image": "https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/build-furina-sub-dps-buffer-fanfare.jpg"
   },
   {
     "id": "guide-genshin-beginner",
@@ -1893,7 +1893,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Panduan Pemula Genshin Impact: Cara Cepat Menaikkan AR dan Menghemat Primogem",
     "slug": "panduan-pemula-genshin-impact-ar-primogem",
     "category": "Beginner Guide",
-    "thumbnail": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/panduan-pemula-genshin-impact-ar-primogem.jpg",
     "excerpt": "Tips esensial untuk pemain baru Genshin Impact: prioritas quest harian, efisiensi resin, hindari gacha banner standar, dan rute eksplorasi cepat.",
     "content": "\n# Panduan Pemula Genshin Impact\n\nMemulai petualangan di dunia Teyvat bisa terasa luar biasa luas. Berikut tips paling krusial agar akun Anda berkembang efisien sejak hari pertama:\n\n1. **Gunakan Primogem Hanya untuk Intertwined Fate (Batu Ungu)**: Jangan pernah menukar Primogem untuk Acquaint Fate (Batu Biru) karena banner standar bisa didapatkan gratis.\n2. **Keluarkan Original Resin Setiap Hari**: Jangan biarkan resin 160/160 penuh. Gunakan untuk Ley Line Mora/EXP Book di awal game.\n3. **Fokus Build 1 Karakter DPS Utama Dulu**: Jangan bagi rata resource ke 10 karakter sekaligus.\n4. **Buka Semua Waypoint dan Teleport**: Ini akan mempercepat perjalanan quest harian.\n",
     "author": "Rian Pratama",
@@ -1907,7 +1907,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 15420,
-    "featured_image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/panduan-pemula-genshin-impact-ar-primogem.jpg"
   },
   {
     "id": "guide-acheron-build",
@@ -1915,7 +1915,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Build Acheron Honkai Star Rail: Relic, Light Cone, & Sinergi Nihility",
     "slug": "build-acheron-honkai-star-rail-relic-light-cone",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/build-acheron-honkai-star-rail-relic-light-cone.jpg",
     "excerpt": "Panduan lengkap Emanator Nihility Acheron: mekanisme akumulasi 9 stack Crimson Knot, relic Pioneer Diver, dan Light Cone terbaik.",
     "content": "\n# Panduan Lengkap Build Acheron (Honkai: Star Rail)\n\nAcheron mendominasi meta Honkai Star Rail dengan mekanik unik: **ia tidak menggunakan Energy**. Ultimate miliknya aktif setelah mengumpulkan 9 poin Slashed Dream melalui debuff yang diberikan oleh dirinya atau rekan tim.\n\n## Pilihan Relic & Planar Ornament\n- **Cavern Relic:** 4-Piece Pioneer Diver of Dead Waters (memberi Crit Rate, Crit DMG, dan bonus damage pada musuh yang terkena 3 debuff).\n- **Planar Ornament:** 2-Piece Izumo Gensei and Takama Divine Realm (memberi +12% ATK dan +12% CRIT Rate jika ada karakter se-path Nihility di party).\n\n## Komposisi Tim Wajib:\nPasif Acheron (E0) mewajibkan **minimal 2 karakter Nihility lain** untuk membuka pengali damage independen 160%:\n- **Acheron** (Main DPS)\n- **Pela** (AoE Defense Shred via Resolution Shines LC)\n- **Silver Wolf** / **Jiaoqiu** / **Black Swan** (Debuffer)\n- **Aventurine** / **Gallagher** (Sustain ber-debuff)\n",
     "author": "Seraphi Editorial Team",
@@ -1929,7 +1929,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 18900,
-    "featured_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/build-acheron-honkai-star-rail-relic-light-cone.jpg"
   },
   {
     "id": "guide-firefly-super-break",
@@ -1937,7 +1937,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Guide Firefly Super Break: Ruan Mei, Harmony MC & Cara Hit Jutaan Damage",
     "slug": "guide-firefly-super-break-ruan-mei-harmony-mc",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1509462757601-b142a3aa6061?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/guide-firefly-super-break-ruan-mei-harmony-mc.jpg",
     "excerpt": "Rahasia menghasilkan damage ratusan ribu hingga jutaan dengan SAM Firefly melalui meta Super Break. Pembahasan stat Break Effect dan Speed tuning.",
     "content": "\n# Panduan Meta Super Break: SAM Firefly\n\nFirefly merevolusi cara bermain Honkai: Star Rail dengan membuang ketergantungan pada CRIT Rate dan CRIT DMG. Semua damage Firefly bergantung pada **Break Effect** dan **Super Break DMG**.\n\n## Stat Prioritas:\n- **Break Effect:** Minimal 360% saat dalam kondisi Complete Combustion.\n- **Speed:** Minimal 150 (atau 154+ di luar pertempuran) agar dapat bertindak 4 kali dalam 1 siklus Ultimate.\n- **ATK%:** Konversi pasif Firefly mengubah ATK di atas 1800 menjadi Break Effect tambahan.\n\n## Tim Kombo Emas:\nFirefly + Harmony Trailblazer + Ruan Mei + Gallagher. Komposisi ini adalah salah satu tim paling mematikan dan paling konsisten menembus Memory of Chaos 12 dan Apocalyptic Shadow!\n",
     "author": "Budi Santoso",
@@ -1951,7 +1951,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 14200,
-    "featured_image": "https://images.unsplash.com/photo-1509462757601-b142a3aa6061?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/guide-firefly-super-break-ruan-mei-harmony-mc.jpg"
   },
   {
     "id": "guide-fanny-cable-mastery",
@@ -1959,7 +1959,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Cara Menguasai Fanny MLBB: Rumus Kabel Garis Lurus & Tips Hemat Energi",
     "slug": "cara-menguasai-fanny-mlbb-rumus-kabel-hemat-energi",
     "category": "Tips & Tricks",
-    "thumbnail": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/cara-menguasai-fanny-mlbb-rumus-kabel-hemat-energi.jpg",
     "excerpt": "Tutorial lengkap manuver kabel Fanny Mobile Legends: cara melakukan kabel lurus, kabel silang di celah tembok sempit, dan trik menjaga Purple Buff.",
     "content": "\n# Panduan Lengkap Menguasai Fanny Mobile Legends\n\nFanny dikenal sebagai salah satu hero mekanik tertinggi di Mobile Legends. Sekali dikuasai, Fanny bisa meratakan formasi lawan sebelum musuh sempat bereaksi.\n\n## 1. Memahami Vektor Tarikan Kabel\nKabel Fanny bergerak menuju titik perpotongan antara kabel pertama dan kabel kedua:\n- **Kabel Lurus:** Tembakkan kabel 1 ke tembok depan dan kabel 2 ke tembok sejajar di sisi berlawanan untuk meluncur lurus dengan kecepatan maksimum.\n- **Kabel Belok (V-Shape):** Tembakkan kabel kedua dengan sudut 90 derajat untuk berbelok tajam di tikungan jungle.\n\n## 2. Kunci Manajemen Energi\nTanpa Purple Buff, energi Fanny akan terkuras setelah 3-4 kabel. Selalu prioritaskan mengamankan Buff Ungu Anda tepat waktu di menit 00:35 dan tiap 2 menit sekali setelahnya.\n",
     "author": "Kevin \"Ghost\" Wijaya",
@@ -1973,7 +1973,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 22100,
-    "featured_image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/cara-menguasai-fanny-mlbb-rumus-kabel-hemat-energi.jpg"
   },
   {
     "id": "guide-mlbb-jungler-rotation",
@@ -1981,7 +1981,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Tips Rotasi Jungler Mobile Legends: Maksimalkan Turtle & Lord Control",
     "slug": "tips-rotasi-jungler-mobile-legends-turtle-lord",
     "category": "Walkthrough",
-    "thumbnail": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/tips-rotasi-jungler-mobile-legends-turtle-lord.jpg",
     "excerpt": "Rute jungle optimal menit 0 hingga menit 15: cara gank lane lawan, timing Retribution saat adu objektif, dan tips comeback saat tertinggal gold.",
     "content": "\n# Panduan Rotasi Jungler Modern MLBB\n\nMenjadi Jungler bukan cuma soal mengeliminasi hero lawan, melainkan memegang kendali tempo seluruh permainan melalui kontrol objektif:\n\n1. **Jalur Menit Pertama:** Awali dari buff yang berseberangan dengan lokasi Turtle pertama, agar saat Turtle muncul di menit 02:00, Anda sudah berada di posisi level 4 tepat di lane Turtle.\n2. **Kalkulasi Retribution:** Periksa angka damage Retribution di atas ikon skill. Jangan menekan Retribution sebelum HP Turtle/Lord berada di bawah ambang batas tersebut.\n",
     "author": "Kevin \"Ghost\" Wijaya",
@@ -1995,7 +1995,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 11300,
-    "featured_image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/tips-rotasi-jungler-mobile-legends-turtle-lord.jpg"
   },
   {
     "id": "guide-valorant-aim-crosshair",
@@ -2003,7 +2003,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Panduan Aim & Crosshair Placement Valorant untuk Pemula Menuju Immortal",
     "slug": "panduan-aim-crosshair-placement-valorant-pemula",
     "category": "Beginner Guide",
-    "thumbnail": "https://images.unsplash.com/photo-1562953842-188bb7ce6588?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/panduan-aim-crosshair-placement-valorant-pemula.jpg",
     "excerpt": "Cara melatih crosshair placement setinggi kepala, setting sensivitas eDPI yang tepat, dan rutinitas latihan The Range 15 menit setiap hari.",
     "content": "\n# Panduan Aim & Crosshair Placement Valorant\n\nDalam game tactical shooter seperti Valorant, 70% keberhasilan duel ditentukan sebelum Anda menekan klik kiri: yaitu **Crosshair Placement**.\n\n## 1. Selalu Tempatkan Crosshair Setinggi Kepala\nGunakan indikator visual pada dinding map (seperti garis kotak, ventilasi, atau garis pintu) sebagai acuan ketinggian kepala musuh. Jangan pernah menundukkan crosshair ke arah lantai saat berjalan!\n\n## 2. Hitung eDPI yang Stabil\n- **Rumus eDPI:** DPI Mouse × Sensitivitas In-game.\n- Standar pemain profesional berkisar antara **200 hingga 320 eDPI** (misalnya 800 DPI dengan in-game sens 0.3 - 0.35). Nilai ini memberi kestabilan mikro-koreksi tanpa kehilangan kemampuan memutar 180 derajat.\n",
     "author": "Dimas \"Apex\" Nugraha",
@@ -2017,7 +2017,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 16700,
-    "featured_image": "https://images.unsplash.com/photo-1562953842-188bb7ce6588?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/panduan-aim-crosshair-placement-valorant-pemula.jpg"
   },
   {
     "id": "guide-sova-ascent-lineups",
@@ -2025,7 +2025,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Lineups Sova Ascent Paling Efektif untuk Info & Post-Plant Kill",
     "slug": "lineups-sova-ascent-paling-efektif-info-post-plant",
     "category": "Tips & Tricks",
-    "thumbnail": "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/lineups-sova-ascent-paling-efektif-info-post-plant.jpg",
     "excerpt": "Daftar koordinat panah Recon Bolt dan Shock Dart terbaik di map Ascent untuk membuka site A dan B serta menggagalkan defuse dari jarak aman.",
     "content": "\n# Lineups Panah Sova di Map Ascent\n\nMap Ascent adalah taman bermain utama Sova karena banyak sudut terbuka dan dinding tembus peluru (paper-thin walls).\n\n## Recon Bolt B Site Main dari A Lobby\nBerdiri di pojok pintu A Lobby, arahkan garis HUD Charge Bar tepat di ujung antena menara, lakukan 1 Bounce dengan 2 Bar daya. Panah akan mendarat di atas jendela B Main dan mengungkap seluruh pergerakan musuh yang mencoba menerobos!\n",
     "author": "Dimas \"Apex\" Nugraha",
@@ -2039,7 +2039,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 8900,
-    "featured_image": "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/lineups-sova-ascent-paling-efektif-info-post-plant.jpg"
   },
   {
     "id": "guide-jinhsi-wuwa-build",
@@ -2047,7 +2047,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Guide Jinhsi Wuthering Waves: Rotasi Skill & Komposisi Tim Resonance",
     "slug": "guide-jinhsi-wuthering-waves-rotasi-skill-tim",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/guide-jinhsi-wuthering-waves-rotasi-skill-tim.jpg",
     "excerpt": "Maksimalkan damage Dragon Laser Jinhsi dengan pengisian bar Incandescence instan lewat Yuanwu dan Yinlin. Panduan Echo Jue dan main stats.",
     "content": "\n# Panduan Build Jinhsi (Wuthering Waves)\n\nJinhsi adalah nuklir Spectro nomor satu di Wuthering Waves. Kunci mencapai damage ratusan ribu adalah mengisi gauge **Incandescence** hingga maksimal (50 poin) sebelum melepaskan Skill tingkat 4: **Illuminous Epiphany**.\n\n## Echo Terbaik: 5-Piece Celestial Light\n- **Main Echo (Cost 4):** Jue (Memberi Resonance Skill DMG bonus dan serangan naga otomatis).\n- **Prioritas Stat:** Crit DMG > Crit Rate > Spectro DMG Bonus.\n",
     "author": "Seraphi Editorial Team",
@@ -2061,7 +2061,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 13100,
-    "featured_image": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/guide-jinhsi-wuthering-waves-rotasi-skill-tim.jpg"
   },
   {
     "id": "guide-changli-wuwa-build",
@@ -2069,7 +2069,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Build Changli Fusion DPS: Timing Forte Circuit & True Sight Combo",
     "slug": "build-changli-fusion-dps-timing-forte-circuit",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/build-changli-fusion-dps-timing-forte-circuit.jpg",
     "excerpt": "Kuasai manuver udara anggun Changli: cara mengumpulkan stack Enflamement dengan cepat, timing dodge counter, dan sinergi tim bersama Encore.",
     "content": "\n# Build & Rotasi Changli (Wuthering Waves)\n\nChangli menghadirkan gameplay paling dinamis dengan perpindahan mulus antara serangan darat dan tebasan udara berselimut api phoenix.\n\n## Mekanik True Sight\nSetiap kali menggunakan Resonance Skill atau Intro Skill, Changli memasuki kondisi **True Sight**. Menekan Basic Attack akan mengeksekusi serangan Conquest/Charge yang langsung menambah 1 tumpukan Enflamement. Kumpulkan 4 tumpukan untuk melepaskan Heavy Attack Flaming Vow dengan pengali damage masif!\n",
     "author": "Seraphi Editorial Team",
@@ -2083,7 +2083,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 10400,
-    "featured_image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/build-changli-fusion-dps-timing-forte-circuit.jpg"
   },
   {
     "id": "guide-ellen-joe-zzz",
@@ -2091,7 +2091,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Panduan Ellen Joe Zenless Zone Zero: Flash Freeze Dash & Combo Anomaly",
     "slug": "panduan-ellen-joe-zenless-zone-zero-flash-freeze",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/panduan-ellen-joe-zenless-zone-zero-flash-freeze.jpg",
     "excerpt": "Cara memanfaatkan Roaming State Ellen Joe untuk mendapatkan Flash Freeze charge gratis, kombo gunting es, dan tim mono-ice bersama Lycaon Soukaku.",
     "content": "\n# Panduan Ellen Joe (Zenless Zone Zero)\n\nEllen Joe adalah DPS tipe Attack berelemen Ice yang mengandalkan mobilitas tinggi untuk memotong musuh sebelum mereka sempat bereaksi.\n\n## Tips Mengumpulkan Flash Freeze Charge\nTahan tombol Dash untuk memasuki kondisi **Roaming State**, lalu tekan Basic Attack saat berada di dekat musuh untuk melakukan guntingan berputar yang langsung mengisi 3 muatan Flash Freeze Charge secara instan!\n",
     "author": "Seraphi Editorial Team",
@@ -2105,7 +2105,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 11900,
-    "featured_image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/panduan-ellen-joe-zenless-zone-zero-flash-freeze.jpg"
   },
   {
     "id": "guide-malenia-elden-ring",
@@ -2113,7 +2113,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Cara Mengalahkan Boss Malenia di Elden Ring: Trik Hindari Waterfowl Dance",
     "slug": "cara-mengalahkan-boss-malenia-elden-ring-waterfowl-dance",
     "category": "Boss Guide",
-    "thumbnail": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/cara-mengalahkan-boss-malenia-elden-ring-waterfowl-dance.jpg",
     "excerpt": "Panduan bertahan hidup melawan Malenia Blade of Miquella: trik lari melingkar untuk dodgeroll Waterfowl Dance dan senjata counter Frostbite/Bleed.",
     "content": "\n# Panduan Mengalahkan Malenia (Elden Ring)\n\nMalenia adalah salah satu boss tersulit dalam sejarah game FromSoftware karena kemampuan lifesteal pasif dan serangan legendaris **Waterfowl Dance**.\n\n## Cara Menghindari Waterfowl Dance:\n1. **Fase 1 Tebasan:** Begitu Malenia melayang di udara, segera lari menjauh secepat mungkin dan melompat di akhir tebasan.\n2. **Fase 2 Tebasan:** Roll ke arah depan menembus tubuh Malenia tepat saat ia meluncur.\n3. **Fase 3 Tebasan:** Cukup berjalan ke arah berlawanan tanpa panik karena tracking tebasan ketiga memiliki jeda.\n",
     "author": "Fajar \"Souls\" Hidayat",
@@ -2127,7 +2127,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 25400,
-    "featured_image": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/cara-mengalahkan-boss-malenia-elden-ring-waterfowl-dance.jpg"
   },
   {
     "id": "guide-erlang-wukong",
@@ -2135,7 +2135,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Tips Melawan Erlang Shen di Black Myth: Wukong — Manajemen Qi & Spell",
     "slug": "tips-melawan-erlang-shen-black-myth-wukong",
     "category": "Boss Guide",
-    "thumbnail": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/tips-melawan-erlang-shen-black-myth-wukong.jpg",
     "excerpt": "Strategi mengikis armor kebal Erlang Sacred Divinity: penggunaan Plantain Fan untuk memecah perisai dan kombinasi transformasi Red Tides.",
     "content": "\n# Strategi Melawan Erlang Shen (Black Myth: Wukong)\n\nErlang Shen adalah secret boss terkuat di Black Myth: Wukong dengan perisai pelindung yang menolak hampir semua damage biasa.\n\n## Kunci Utama: Gunakan Vessel Plantain Fan\nAktifkan Plantain Fan saat pertarungan dimulai untuk memunculkan tornado angin yang langsung meremukkan perisai Erlang hingga nol, membuka kesempatan kombo tongkat Smash Stance penuh!\n",
     "author": "Fajar \"Souls\" Hidayat",
@@ -2148,7 +2148,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 19800,
-    "featured_image": "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/tips-melawan-erlang-shen-black-myth-wukong.jpg"
   },
   {
     "id": "guide-pubgm-settings",
@@ -2156,7 +2156,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Sensitivitas & Setting Kontrol PUBG Mobile Terbaik 2026: No Recoil",
     "slug": "sensitivitas-setting-kontrol-pubg-mobile-terbaik",
     "category": "Tips & Tricks",
-    "thumbnail": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/sensitivitas-setting-kontrol-pubg-mobile-terbaik.jpg",
     "excerpt": "Kode layout 4 jari terbaik dan setting Gyroscope selalu aktif untuk menembak lurus tanpa hentakan recoil pada senjata M416 dan Beryl M762.",
     "content": "\n# Setting Sensitivitas PUBG Mobile Terbaik\n\nMenembak stabil dari jarak jauh membutuhkan kombinasi layout tombol yang responsif dan pengaturan Gyroscope yang pas.\n\n## Rekomendasi Gyroscope ADS (Always On):\n- No Scope: 300%\n- Red Dot / Holographic: 300%\n- 2x Scope: 300%\n- 3x Scope: 240%\n- 4x Scope: 210%\n- 6x Scope (Adjust ke 3x): 120%\n",
     "author": "Reza \"Sniper\" Pratama",
@@ -2170,7 +2170,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 24100,
-    "featured_image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/sensitivitas-setting-kontrol-pubg-mobile-terbaik.jpg"
   },
   {
     "id": "guide-pubgm-erangel-loot",
@@ -2178,7 +2178,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Rute Looting Terbaik di Map Erangel PUBG Mobile: Pochinki vs Sosnovka",
     "slug": "rute-looting-terbaik-erangel-pubg-mobile",
     "category": "Walkthrough",
-    "thumbnail": "https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/rute-looting-terbaik-erangel-pubg-mobile.jpg",
     "excerpt": "Pilihan drop zone teraman untuk push rank vs hot-drop untuk farming kill di Erangel. Lokasi spawn kendaraan flare gun rahasia.",
     "content": "\n# Rute Looting Map Erangel PUBG Mobile\n\nMengetahui kapan harus bertempur di Pochinki atau rotasi tenang di Mylta Power adalah kunci meraih Winner Winner Chicken Dinner secara konsisten.\n",
     "author": "Reza \"Sniper\" Pratama",
@@ -2192,7 +2192,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 8700,
-    "featured_image": "https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/rute-looting-terbaik-erangel-pubg-mobile.jpg"
   },
   {
     "id": "guide-ff-headshot-settings",
@@ -2200,7 +2200,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Panduan Headshot Free Fire: Setting DPI & Tarikan Aim Sensitivitas",
     "slug": "panduan-headshot-free-fire-setting-dpi-aim",
     "category": "Tips & Tricks",
-    "thumbnail": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/panduan-headshot-free-fire-setting-dpi-aim.jpg",
     "excerpt": "Trik tarikan tombol tembak ke atas (drag shot) agar peluru otomatis mengunci kepala musuh. Rekomendasi sensitivitas lihat sekeliling 100.",
     "content": "\n# Panduan Auto Headshot Drag Shot Free Fire\n\nTrik Drag Shot adalah teknik wajib bagi setiap pemain Free Fire untuk menumbangkan lawan dalam hitungan sepersekian detik menggunakan senjata shotgun atau SMG.\n",
     "author": "Ilham \"Booyah\" Ramadhan",
@@ -2214,7 +2214,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 29500,
-    "featured_image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/panduan-headshot-free-fire-setting-dpi-aim.jpg"
   },
   {
     "id": "guide-ff-clash-squad-combos",
@@ -2222,7 +2222,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Kombinasi Skill Karakter Free Fire Terbaik untuk Push Rank Clash Squad",
     "slug": "kombinasi-skill-karakter-free-fire-clash-squad",
     "category": "Character Build",
-    "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/kombinasi-skill-karakter-free-fire-clash-squad.jpg",
     "excerpt": "Rekomendasi kombinasi karakter aktif dan pasif paling mendominasi mode CS: Alok, Tatsuya, Hayato, dan Kelly untuk mobilitas tak tertandingi.",
     "content": "\n# Kombinasi Skill Terbaik Clash Squad Free Fire\n\nDi arena Clash Squad yang sempit dan berdurasi kilat, mobilitas dan burst armor penetration adalah penentu utama kemenangan tim.\n",
     "author": "Ilham \"Booyah\" Ramadhan",
@@ -2236,7 +2236,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 17300,
-    "featured_image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/kombinasi-skill-karakter-free-fire-clash-squad.jpg"
   },
   {
     "id": "guide-farming-primogem-jade",
@@ -2244,7 +2244,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Farming Guide Primogem & Stellar Jade: Rute Harian & Event Gacha Hemat",
     "slug": "farming-guide-primogem-stellar-jade-gacha-hemat",
     "category": "Farming Guide",
-    "thumbnail": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/farming-guide-primogem-stellar-jade-gacha-hemat.jpg",
     "excerpt": "Cara mengumpulkan 80-90 tarikan gacha setiap patch sebagai pemain F2P murni di Genshin Impact dan Honkai: Star Rail.",
     "content": "\n# Rute Farming Primogem & Stellar Jade Maksimal\n\nBagi pemain gratisan (F2P), disiplin menyelesaikan Daily Commission, Spiral Abyss, Simulated Universe, dan Event Terbatas menjamin Anda mendapatkan minimal 1 karakter bintang 5 setiap update patch!\n",
     "author": "Seraphi Editorial Team",
@@ -2258,7 +2258,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 21800,
-    "featured_image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/farming-guide-primogem-stellar-jade-gacha-hemat.jpg"
   },
   {
     "id": "guide-relic-artifact-priority",
@@ -2266,7 +2266,7 @@ export const SEED_GUIDES: Guide[] = [
     "title": "Panduan Memilih Relic & Artefak: Prioritas Sub-Stat vs Main-Stat di Game RPG",
     "slug": "panduan-memilih-relic-artefak-prioritas-stat",
     "category": "Beginner Guide",
-    "thumbnail": "https://images.unsplash.com/photo-1513257805917-a0da1146eb15?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/guides/panduan-memilih-relic-artefak-prioritas-stat.jpg",
     "excerpt": "Jangan tertipu bonus set 4-piece! Kapan Anda harus memprioritaskan sub-stat berkualitas tinggi dibanding memaksakan set artefak yang buruk.",
     "content": "\n# Kaidah Emas Pemilihan Stat di Game Gacha RPG\n\nSalah satu kesalahan paling umum pemain pemula adalah memaksakan bonus 4-piece set padahal stat yang didapatkan tidak mendukung karakter. Main stat yang tepat selalu mengalahkan set bonus yang salah!\n",
     "author": "Seraphi Editorial Team",
@@ -2280,7 +2280,7 @@ export const SEED_GUIDES: Guide[] = [
     ],
     "status": "PUBLISHED",
     "views": 12100,
-    "featured_image": "https://images.unsplash.com/photo-1513257805917-a0da1146eb15?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/guides/panduan-memilih-relic-artefak-prioritas-stat.jpg"
   }
 ];
 
@@ -2291,7 +2291,7 @@ export const SEED_NEWS: News[] = [
     "title": "Genshin Impact Versi 5.4 Resmi Diumumkan: Banners Baru & Ekspansi Wilayah Natlan",
     "slug": "genshin-impact-versi-5-4-resmi-diumumkan-banners-natlan",
     "category": "Update Patch",
-    "thumbnail": "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-genshin-5-4.jpg",
     "excerpt": "HoYoverse resmi mengumumkan siaran langsung program khusus versi 5.4 yang menghadirkan karakter bintang lima baru dan area lava Natlan terdalam.",
     "content": "\nHoYoverse baru saja mengumumkan detail resmi pembaruan versi 5.4 untuk Genshin Impact. Update ini menjanjikan kelanjutan Archon Quest di negara perang Natlan bersama pengenalan karakter Pyro terbaru.\n\nSelain itu, fitur Quality of Life (QoL) baru berupa sistem rekomendasi artefak otomatis dan peningkatan kapasitas inventaris artefak menjadi 2.500 slot juga dipastikan hadir untuk kenyamanan Traveler.\n",
     "author": "Redaksi Seraphi",
@@ -2305,7 +2305,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 14500,
-    "featured_image": "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-genshin-5-4.jpg"
   },
   {
     "id": "news-hsr-new-planet",
@@ -2313,7 +2313,7 @@ export const SEED_NEWS: News[] = [
     "title": "Honkai: Star Rail Siapkan Destinasi Planet Baru Pasca Penacony di Update Mendatang",
     "slug": "honkai-star-rail-siapkan-destinasi-planet-baru-astral-express",
     "category": "Update Patch",
-    "thumbnail": "https://images.unsplash.com/photo-1543699565-003b8adda5fc?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-hsr-new-planet.jpg",
     "excerpt": "Kru Astral Express bersiap melompat ke koordinat peradaban berikutnya dengan jalan cerita faksi baru dan musuh bertipe mekanis kuno.",
     "content": "\nSetelah perjalanan panjang yang penuh misteri di Planet Perayaan Penacony, HoYoverse memberikan teaser mengenai rute warp Astral Express berikutnya. Pemain dapat menantikan faksi Aeon baru dan ekspansi Simulated Universe yang lebih menantang.\n",
     "author": "Redaksi Seraphi",
@@ -2327,7 +2327,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 11200,
-    "featured_image": "https://images.unsplash.com/photo-1543699565-003b8adda5fc?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-hsr-new-planet.jpg"
   },
   {
     "id": "news-mlbb-patch-buff-nerf",
@@ -2335,7 +2335,7 @@ export const SEED_NEWS: News[] = [
     "title": "Mobile Legends Rilis Patch Baru: Buff Hero Assassin & Penyesuaian Defense Item",
     "slug": "mobile-legends-rilis-patch-baru-buff-assassin-nerf-defense",
     "category": "Update Patch",
-    "thumbnail": "https://images.unsplash.com/photo-1533821312764-eb0483f98f69?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-mlbb-patch-buff-nerf.jpg",
     "excerpt": "Moonton merilis update patch penyeimbang kompetitif: hero assassin jungle seperti Ling dan Lancelot mendapat peningkatan penetrasi awal game.",
     "content": "\nUpdate terbaru Mobile Legends: Bang Bang membawa perubahan besar pada meta Land of Dawn. Penyesuaian item pertahanan Twilight Armor dan Radiant Armor membuat hero-hero bertipe physical assassin kembali berjaya di panggung turnamen.\n",
     "author": "Redaksi Seraphi",
@@ -2349,7 +2349,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 18700,
-    "featured_image": "https://images.unsplash.com/photo-1533821312764-eb0483f98f69?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-mlbb-patch-buff-nerf.jpg"
   },
   {
     "id": "news-mpl-season-new",
@@ -2357,7 +2357,7 @@ export const SEED_NEWS: News[] = [
     "title": "MPL Indonesia Season Baru Resmi Dimulai: Persaingan Perebutan Tiket MSC Memanas",
     "slug": "mpl-indonesia-season-baru-resmi-dimulai-tiket-msc",
     "category": "Esports",
-    "thumbnail": "https://images.unsplash.com/photo-1518475155060-0d631de637e4?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-mpl-season-new.jpg",
     "excerpt": "Sembilan tim terbaik esports tanah air siap berlaga di panggung MPL ID Arena dengan susunan roster kejutan dari transfer pemain internasional.",
     "content": "\nPanggung kasta tertinggi MLBB Indonesia kembali hadir dengan format pertandingan yang lebih kompetitif. Antusiasme fans memenuhi arena untuk menyaksikan tim-tim raksasa bersaing meraih gelar juara dan slot ke kejuaraan dunia.\n",
     "author": "Redaksi Seraphi",
@@ -2371,7 +2371,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 20100,
-    "featured_image": "https://images.unsplash.com/photo-1518475155060-0d631de637e4?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-mpl-season-new.jpg"
   },
   {
     "id": "news-valorant-new-agent",
@@ -2379,7 +2379,7 @@ export const SEED_NEWS: News[] = [
     "title": "Riot Games Goda Agent Controller Baru Valorant dengan Mekanisme Manipulasi Suara",
     "slug": "riot-games-goda-agent-controller-baru-valorant",
     "category": "Announcement",
-    "thumbnail": "https://images.unsplash.com/photo-1549813069-f95e44d7f498?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-valorant-new-agent.jpg",
     "excerpt": "Teaser perdana agent ke-27 Valorant memperlihatkan gadget canggih yang mampu memalsukan suara langkah kaki dan menutupi penglihatan area luas.",
     "content": "\nRiot Games merilis teaser video singkat di kanal resmi VCT yang mengindikasikan kehadiran sosok Controller baru asal Asia Tenggara. Karakter ini digadang-gadang dapat mengubah cara pemain mengontrol informasi audio saat ronde berjalan.\n",
     "author": "Redaksi Seraphi",
@@ -2393,7 +2393,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 16400,
-    "featured_image": "https://images.unsplash.com/photo-1549813069-f95e44d7f498?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-valorant-new-agent.jpg"
   },
   {
     "id": "news-wuwa-auto-recycle",
@@ -2401,7 +2401,7 @@ export const SEED_NEWS: News[] = [
     "title": "Wuthering Waves Luncurkan Fitur Echo Auto-Recycle & Event Eksklusif Jinzhou",
     "slug": "wuthering-waves-luncurkan-fitur-echo-auto-recycle",
     "category": "Update Patch",
-    "thumbnail": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-wuwa-auto-recycle.jpg",
     "excerpt": "Kuro Games mendengar aspirasi pemain dengan menghadirkan filter peleburan Echo otomatis yang memudahkan pencarian stat terbaik tanpa pusing.",
     "content": "\nKuro Games terus memanjakan komunitas Wuthering Waves dengan pembaruan sistem Echo yang lebih ramah pemain. Fitur penguncian otomatis untuk stat CRIT dan peleburan Echo tidak terpakai kini dapat diakses dengan sekali klik.\n",
     "author": "Redaksi Seraphi",
@@ -2415,7 +2415,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 9400,
-    "featured_image": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-wuwa-auto-recycle.jpg"
   },
   {
     "id": "news-zzz-50m-downloads",
@@ -2423,7 +2423,7 @@ export const SEED_NEWS: News[] = [
     "title": "Zenless Zone Zero Tembus 50 Juta Unduhan Global: Hadiah Polychrome Gratis Dibagikan",
     "slug": "zenless-zone-zero-tembus-50-juta-unduhan-global",
     "category": "Announcement",
-    "thumbnail": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-zzz-50m-downloads.jpg",
     "excerpt": "Sebagai bentuk apresiasi kepada Proxies di seluruh dunia, HoYoverse mengirimkan 1.600 Polychrome dan Boopon gratis melalui in-game mail.",
     "content": "\nPrestasi gemilang ditorehkan oleh Zenless Zone Zero yang berhasil mencapai 50 juta download lintas platform PC, PlayStation 5, dan mobile. Jangan lewatkan batas klaim hadiah gratis di menu pesan sebelum akhir bulan ini!\n",
     "author": "Redaksi Seraphi",
@@ -2437,7 +2437,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 15300,
-    "featured_image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-zzz-50m-downloads.jpg"
   },
   {
     "id": "news-wukong-dlc-expansion",
@@ -2445,7 +2445,7 @@ export const SEED_NEWS: News[] = [
     "title": "Game Science Konfirmasi Pengembangan DLC Ekspansi Cerita Black Myth: Wukong",
     "slug": "game-science-konfirmasi-dlc-cerita-black-myth-wukong",
     "category": "Industry",
-    "thumbnail": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-wukong-dlc-expansion.jpg",
     "excerpt": "Setelah mendulang kesuksesan fantastis di tangga penjualan global, Game Science memastikan petualangan sang Destined One akan berlanjut.",
     "content": "\nKabar gembira bagi para penggemar souls-like berlatar mitologi. Game Science mengonfirmasi secara resmi bahwa ekspansi DLC cerita sedang dalam tahap pengerjaan aktif dengan target pengumuman trailer perdana di kuartal mendatang.\n",
     "author": "Redaksi Seraphi",
@@ -2459,7 +2459,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 23400,
-    "featured_image": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-wukong-dlc-expansion.jpg"
   },
   {
     "id": "news-elden-ring-shadow-records",
@@ -2467,7 +2467,7 @@ export const SEED_NEWS: News[] = [
     "title": "Elden Ring Cetak Rekor Pemain Bersamaan Tertinggi Pasca Diskon Musim Semi Steam",
     "slug": "elden-ring-cetak-rekor-pemain-tertinggi-steam",
     "category": "Industry",
-    "thumbnail": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-elden-ring-shadow-records.jpg",
     "excerpt": "Komunitas Lands Between kembali ramai dengan ratusan ribu pemain baru dan veteran yang menuntaskan ekspansi Shadow of the Erdtree.",
     "content": "\nElden Ring membuktikan statusnya sebagai salah satu game aksi terbaik dekade ini dengan angka concurrent players yang terus melonjak tinggi di platform Steam.\n",
     "author": "Redaksi Seraphi",
@@ -2481,7 +2481,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 12900,
-    "featured_image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-elden-ring-shadow-records.jpg"
   },
   {
     "id": "news-pubgm-anime-collab",
@@ -2489,7 +2489,7 @@ export const SEED_NEWS: News[] = [
     "title": "PUBG Mobile Hadirkan Kolaborasi Anime Populer dengan Skin Kendaraan Eksklusif",
     "slug": "pubg-mobile-hadirkan-kolaborasi-anime-populer",
     "category": "Event",
-    "thumbnail": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-pubgm-anime-collab.jpg",
     "excerpt": "Pemain dapat mengendarai mobil bergaya anime futuristik dan menggunakan efek elimanasi spesial di medan tempur Erangel dan Livik.",
     "content": "\nLevel Infinite meresmikan kolaborasi tematik terbaru di PUBG Mobile yang menghadirkan kostum anime bertema mecha serta mode gameplay mini khusus di pulau lobi.\n",
     "author": "Redaksi Seraphi",
@@ -2503,7 +2503,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 10700,
-    "featured_image": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-pubgm-anime-collab.jpg"
   },
   {
     "id": "news-ff-ob-update",
@@ -2511,7 +2511,7 @@ export const SEED_NEWS: News[] = [
     "title": "Free Fire Rilis Update Patch OB Baru: Rework Map Bermuda & Penyesuaian Shotgun",
     "slug": "free-fire-rilis-update-patch-ob-rework-bermuda",
     "category": "Update Patch",
-    "thumbnail": "https://images.unsplash.com/photo-1537813281636-9a12ad03f637?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-ff-ob-update.jpg",
     "excerpt": "Garena memperbarui grafis kawasan Clock Tower dan Bimasakti Strip serta menyeimbangkan jarak tembak senjata M1887 dan Charge Buster.",
     "content": "\nGarena resmi menggulirkan patch pembaruan OB terbaru untuk seluruh survivor Free Fire. Rework tampilan visual map Bermuda membuat pertempuran terasa lebih segar dan optimal di perangkat spesifikasi ringan.\n",
     "author": "Redaksi Seraphi",
@@ -2525,7 +2525,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 14100,
-    "featured_image": "https://images.unsplash.com/photo-1537813281636-9a12ad03f637?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-ff-ob-update.jpg"
   },
   {
     "id": "news-playstation-state-of-play",
@@ -2533,7 +2533,7 @@ export const SEED_NEWS: News[] = [
     "title": "PlayStation State of Play Umumkan Deretan Game Action RPG Baru untuk PS5",
     "slug": "playstation-state-of-play-umumkan-action-rpg-baru-ps5",
     "category": "Industry",
-    "thumbnail": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-playstation-state-of-play.jpg",
     "excerpt": "Sony Interactive Entertainment menyuguhkan trailer gameplay baru dari pengembang Asia dan studio barat dengan pemanfaatan DualSense penuh.",
     "content": "\nDalam siaran State of Play berdurasi 40 menit, Sony memamerkan beragam judul game yang akan meluncur tahun ini, termasuk sekuel aksi RPG yang telah dinantikan banyak gamer konsol.\n",
     "author": "Redaksi Seraphi",
@@ -2547,7 +2547,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 17800,
-    "featured_image": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-playstation-state-of-play.jpg"
   },
   {
     "id": "news-nintendo-switch-2-rumor",
@@ -2555,7 +2555,7 @@ export const SEED_NEWS: News[] = [
     "title": "Informasi Spesifikasi Konsol Generasi Baru Nintendo Semakin Terkuak ke Publik",
     "slug": "informasi-spesifikasi-konsol-generasi-baru-nintendo",
     "category": "Industry",
-    "thumbnail": "https://images.unsplash.com/photo-1536799097017-5b57f1a7e56e?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-nintendo-switch-2-rumor.jpg",
     "excerpt": "Laporan pemasok industri menyebutkan konsol handheld penerus Switch akan mendukung resolusi 4K docked dengan teknologi DLSS mutakhir.",
     "content": "\nPenggemar Nintendo di seluruh dunia kian antusias menanti pengumuman resmi konsol penerus Nintendo Switch. Berbagai bocoran mengindikasikan kompatibilitas mundur (backwards compatibility) penuh untuk pustaka game lama.\n",
     "author": "Redaksi Seraphi",
@@ -2569,7 +2569,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 21500,
-    "featured_image": "https://images.unsplash.com/photo-1536799097017-5b57f1a7e56e?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-nintendo-switch-2-rumor.jpg"
   },
   {
     "id": "news-steam-sale-dates",
@@ -2577,7 +2577,7 @@ export const SEED_NEWS: News[] = [
     "title": "Jadwal Steam Seasonal Sale 2026 Resmi Ditetapkan: Siapkan Wishlist Game Favorit",
     "slug": "jadwal-steam-seasonal-sale-2026-resmi-ditetapkan",
     "category": "Industry",
-    "thumbnail": "https://images.unsplash.com/photo-1520206319821-0496cfdeb31e?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-steam-sale-dates.jpg",
     "excerpt": "Valve mengumumkan kalender diskon musiman sepanjang tahun dengan potongan harga hingga 90% untuk ribuan judul game PC original.",
     "content": "\nBagi gamer PC, kalender diskon Steam adalah momen paling dinanti. Pastikan memeriksa daftar wishlist Anda untuk mengamankan game impian dengan harga terjangkau.\n",
     "author": "Redaksi Seraphi",
@@ -2591,7 +2591,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 13900,
-    "featured_image": "https://images.unsplash.com/photo-1520206319821-0496cfdeb31e?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-steam-sale-dates.jpg"
   },
   {
     "id": "news-esports-world-cup",
@@ -2599,7 +2599,7 @@ export const SEED_NEWS: News[] = [
     "title": "Esports World Cup Resmi Tambahkan Turnamen Game Mobile Populer dengan Hadiah Rekor",
     "slug": "esports-world-cup-tambahkan-turnamen-game-mobile-populer",
     "category": "Esports",
-    "thumbnail": "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=800&auto=format&fit=crop&q=80",
+    "thumbnail": "/images/news/news-esports-world-cup.jpg",
     "excerpt": "Ajang kejuaraan dunia multi-cabang ini mengalokasikan total prize pool puluhan juta dolar untuk cabang Mobile Legends, PUBG Mobile, dan Free Fire.",
     "content": "\nEkosistem esports mobile terus mengukuhkan posisinya di panggung global. Tim-tim esports asal Indonesia dipastikan mendapat undangan resmi untuk mewakili Merah Putih di ajang bergengsi tersebut.\n",
     "author": "Redaksi Seraphi",
@@ -2613,7 +2613,7 @@ export const SEED_NEWS: News[] = [
     ],
     "status": "PUBLISHED",
     "views": 18200,
-    "featured_image": "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=800&auto=format&fit=crop&q=80"
+    "featured_image": "/images/news/news-esports-world-cup.jpg"
   }
 ];
 
@@ -2770,7 +2770,7 @@ export const SEED_EVENTS: EventItem[] = [
     "game_id": "game-genshin",
     "title": "Festival Lantern Rite: Cahaya Harapan Liyue",
     "description": "Rayakan festival tahun baru Liyue dengan berbagai minigame seru, tantangan pertempuran, dan klaim karakter bintang 4 Liyue gratis pilihan Anda.",
-    "image": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-lantern-rite-2026.jpg",
     "start_date": "2026-02-10T04:00:00.000Z",
     "end_date": "2026-03-20T03:59:59.000Z",
     "status": "ACTIVE",
@@ -2778,14 +2778,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "1.600 Primogem, Karakter Bintang 4 Liyue Gratis, Mahkota Insight, Mora",
     "created_at": "2026-01-15T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-lantern-rite-2026.jpg"
   },
   {
     "id": "event-stellaron-hunt-hsr",
     "game_id": "game-hsr",
     "title": "Penacony Dreamscape Gala: Stellaron Hunt Challenge",
     "description": "Tantangan mingguan di ruang mimpi Penacony. Taklukkan bos elit dengan modifier acak untuk mendapatkan relic sintetis dan bahan upgrade langka.",
-    "image": "https://images.unsplash.com/photo-1510182760-5565485cf674?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-stellaron-hunt-hsr.jpg",
     "start_date": "2026-02-25T04:00:00.000Z",
     "end_date": "2026-03-28T03:59:59.000Z",
     "status": "ACTIVE",
@@ -2793,14 +2793,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "1.200 Stellar Jade, Self-Modeling Resin, Tracks of Destiny",
     "created_at": "2026-02-01T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1510182760-5565485cf674?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-stellaron-hunt-hsr.jpg"
   },
   {
     "id": "event-mlbb-515-party",
     "game_id": "game-mlbb",
     "title": "515 All-Star Party Mobile Legends 2026",
     "description": "Event tahunan terbesar Mobile Legends! Selesaikan misi harian bersama teman mabar, kumpulkan koin 515, dan tukarkan dengan skin eksklusif All-Star gratis.",
-    "image": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-mlbb-515-party.jpg",
     "start_date": "2026-04-01T00:00:00.000Z",
     "end_date": "2026-05-15T23:59:59.000Z",
     "status": "UPCOMING",
@@ -2808,14 +2808,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "Skin Eksklusif All-Star 515 Gratis, Efek Recall Permanen, Avatar Border",
     "created_at": "2026-02-15T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-mlbb-515-party.jpg"
   },
   {
     "id": "event-vct-masters",
     "game_id": "game-valorant",
     "title": "VCT Masters World Tour 2026: In-Game Pick'Em & Watch Party",
     "description": "Prediksi tim pemenang setiap pertandingan turnamen dunia VCT dan saksikan siaran langsung untuk mendapatkan drop skin kartu dan title langka.",
-    "image": "https://images.unsplash.com/photo-1519397165361-ec1538bfd9eb?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-vct-masters.jpg",
     "start_date": "2026-03-12T10:00:00.000Z",
     "end_date": "2026-03-26T22:00:00.000Z",
     "status": "UPCOMING",
@@ -2823,14 +2823,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "Exclusive Gun Buddy \"Masters Trophy\", Player Card VCT 2026, Radianite Points",
     "created_at": "2026-02-10T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1519397165361-ec1538bfd9eb?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-vct-masters.jpg"
   },
   {
     "id": "event-solis-wuwa",
     "game_id": "game-wuwa",
     "title": "Solis Awakening Festival: Tantangan Menara Jinzhou",
     "description": "Jelajahi kembali area Mt. Firmament dalam mode tantangan waktu untuk memperoleh Echo bintang 5 dengan main-stat yang dapat dipilih secara bebas.",
-    "image": "https://images.unsplash.com/photo-1581093577421-f561a654a353?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-solis-wuwa.jpg",
     "start_date": "2026-02-18T04:00:00.000Z",
     "end_date": "2026-03-15T03:59:59.000Z",
     "status": "ACTIVE",
@@ -2838,14 +2838,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "1.000 Astrite, Custom Echo Selector Box, Forgery Material",
     "created_at": "2026-02-05T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1581093577421-f561a654a353?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-solis-wuwa.jpg"
   },
   {
     "id": "event-zzz-music-gala",
     "game_id": "game-zzz",
     "title": "New Eridu Street Music Festival",
     "description": "Bantu klub musik jalanan Sixth Street menyusun playlist konser Hollow dan kalahkan monster Ethereal bertempo ritmis.",
-    "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-zzz-music-gala.jpg",
     "start_date": "2026-02-28T04:00:00.000Z",
     "end_date": "2026-03-22T03:59:59.000Z",
     "status": "ACTIVE",
@@ -2853,14 +2853,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "900 Polychrome, W-Engine Bintang 4 Gratis, Tuning Calibrator",
     "created_at": "2026-02-12T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-zzz-music-gala.jpg"
   },
   {
     "id": "event-elden-ring-bossrush",
     "game_id": "game-elden-ring",
     "title": "Lands Between Community Boss Rush Celebration",
     "description": "Event komunitas perayaan tahunan: ikuti tantangan marathon boss run tanpa summons dan raih gelar kehormatan di papan peringkat.",
-    "image": "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-elden-ring-bossrush.jpg",
     "start_date": "2026-01-10T00:00:00.000Z",
     "end_date": "2026-02-10T00:00:00.000Z",
     "status": "ENDED",
@@ -2868,14 +2868,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "Sertifikat Komunitas Digital & Wallpaper 4K Eksklusif",
     "created_at": "2026-01-01T00:00:00.000Z",
     "updated_at": "2026-02-11T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-elden-ring-bossrush.jpg"
   },
   {
     "id": "event-pubgm-warmup",
     "game_id": "game-pubgm",
     "title": "PUBG Mobile Global Warmup Season Challenge",
     "description": "Kumpulkan poin rank di mode Klasik Erangel untuk membuka peti hadiah skin parasut bertema esports dan setelan tempur komando.",
-    "image": "https://images.unsplash.com/photo-1566694271355-9ead56467fd0?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-pubgm-warmup.jpg",
     "start_date": "2026-02-20T00:00:00.000Z",
     "end_date": "2026-03-25T23:59:59.000Z",
     "status": "ACTIVE",
@@ -2883,14 +2883,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "Skin M416 Camo Permanen, Parasut PMGC, Peti Klasik Kupon",
     "created_at": "2026-02-05T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1566694271355-9ead56467fd0?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-pubgm-warmup.jpg"
   },
   {
     "id": "event-ff-booyah-day",
     "game_id": "game-ff",
     "title": "Booyah Day 2026: Pesta Kemenangan Survivor",
     "description": "Capai target total Booyah kumulatif bersama seluruh pemain Indonesia untuk membuka bundle legendaris secara cuma-cuma.",
-    "image": "https://images.unsplash.com/photo-1539316814650-83bdbc5339be?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-ff-booyah-day.jpg",
     "start_date": "2026-03-10T04:00:00.000Z",
     "end_date": "2026-04-05T23:59:59.000Z",
     "status": "UPCOMING",
@@ -2898,14 +2898,14 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "Bundle Booyah Legend Permanen, Pet Emote, Magic Cube Fragment",
     "created_at": "2026-02-18T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1539316814650-83bdbc5339be?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-ff-booyah-day.jpg"
   },
   {
     "id": "event-wukong-west-journey",
     "game_id": "game-wukong",
     "title": "Journey to the West Seasonal Speedrun Challenge",
     "description": "Tantangan komunitas untuk mengalahkan 5 boss babak akhir dengan pembatasan skill tertentu. Hadiah digital dan ranking hall of fame.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
+    "image": "/images/events/event-wukong-west-journey.jpg",
     "start_date": "2026-01-15T00:00:00.000Z",
     "end_date": "2026-02-28T23:59:59.000Z",
     "status": "ENDED",
@@ -2913,7 +2913,7 @@ export const SEED_EVENTS: EventItem[] = [
     "rewards": "Badge Komunitas Digital & Artbook Digital Game Science",
     "created_at": "2026-01-05T00:00:00.000Z",
     "updated_at": "2026-03-01T00:00:00.000Z",
-    "banner_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
+    "banner_image": "/images/events/event-wukong-west-journey.jpg"
   }
 ];
 
@@ -2925,7 +2925,7 @@ export const SEED_ITEMS: Item[] = [
     "slug": "tome-of-the-eternal-flow",
     "type": "Weapon (Catalyst)",
     "rarity": 5,
-    "icon": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=300&auto=format&fit=crop&q=80",
+    "icon": "/images/items/tome-of-the-eternal-flow.webp",
     "description": "Kitab hukum kuno yang memancarkan kejernihan air murni. Senjata signature Neuvillette.",
     "stats": {
       "Base ATK": "542 (Lv 90)",
@@ -2943,7 +2943,7 @@ export const SEED_ITEMS: Item[] = [
     "slug": "sacrificial-jade",
     "type": "Weapon (Catalyst)",
     "rarity": 4,
-    "icon": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=300&auto=format&fit=crop&q=80",
+    "icon": "/images/items/sacrificial-jade.webp",
     "description": "Artefak giok suci dari Chenyu Vale yang kaya akan energi alam.",
     "stats": {
       "Base ATK": "454 (Lv 90)",
@@ -2961,7 +2961,7 @@ export const SEED_ITEMS: Item[] = [
     "slug": "along-the-passing-shore",
     "type": "Light Cone (Nihility)",
     "rarity": 5,
-    "icon": "https://images.unsplash.com/photo-1519337718347-749509f114a8?w=300&auto=format&fit=crop&q=80",
+    "icon": "/images/items/along-the-passing-shore.webp",
     "description": "Light Cone kenangan Acheron yang menatap perbatasan sungai kematian.",
     "stats": {
       "Base HP": "1058 (Lv 80)",
@@ -2979,7 +2979,7 @@ export const SEED_ITEMS: Item[] = [
     "slug": "blade-of-despair",
     "type": "Item Attack",
     "rarity": 5,
-    "icon": "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?w=300&auto=format&fit=crop&q=80",
+    "icon": "/images/items/blade-of-despair.webp",
     "description": "Pedang legendaris dengan Physical Attack tertinggi di Mobile Legends.",
     "stats": {
       "+160": "Physical Attack",
@@ -2997,7 +2997,7 @@ export const SEED_ITEMS: Item[] = [
     "slug": "vandal-rifle",
     "type": "Primary Rifle",
     "rarity": 4,
-    "icon": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=300&auto=format&fit=crop&q=80",
+    "icon": "/images/items/vandal-rifle.webp",
     "description": "Senjata senapan serbu otomatis paling mematikan di Valorant dengan 1-shot headshot kill di semua jarak.",
     "stats": {
       "Headshot DMG": "160 (Semua Jarak)",

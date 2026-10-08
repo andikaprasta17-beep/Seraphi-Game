@@ -26,7 +26,18 @@ for (const ev of db.prepare('SELECT id, title, banner_image FROM events').all())
 
 console.log(`Checking HTTP status for all ${slots.length} URLs...`);
 
+import path from 'node:path';
+import fs from 'node:fs';
+
 async function checkUrl(item) {
+  if (item.url.startsWith('/')) {
+    const diskPath = path.join('public', item.url);
+    if (fs.existsSync(diskPath)) {
+      return { ok: true, status: 200, item };
+    } else {
+      return { ok: false, status: 404, error: 'File missing on disk', item };
+    }
+  }
   try {
     const res = await fetch(item.url, { method: 'HEAD' });
     if (res.status === 200) {

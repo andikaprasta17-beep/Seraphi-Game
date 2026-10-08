@@ -155,6 +155,13 @@ export async function runNeonMigration() {
     }
     console.log(`  ✓ Games migrated: ${games.length}`);
 
+    // Clean up any stale games in Neon not in SQLite
+    const gameIds = games.map((g) => g.id);
+    if (gameIds.length > 0) {
+      const placeholders = gameIds.map((_, i) => `$${i + 1}`).join(',');
+      await client.query(`DELETE FROM games WHERE id NOT IN (${placeholders})`, gameIds);
+    }
+
     // Migrate Characters (repair legacy Free Fire game IDs)
     const characters = getSqliteRows('characters');
     for (const c of characters) {
