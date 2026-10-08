@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getRedeemCodes, getGames } from '@/lib/db';
 import RedeemCodeCard from '@/components/RedeemCodeCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import GamingSidebar from '@/components/GamingSidebar';
 import { getCanonicalUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
@@ -39,12 +40,14 @@ export default async function GlobalRedeemCodesPage({ searchParams }: Props) {
         <h1 style={{ fontSize: '2.4rem', fontWeight: 900, color: '#fff', marginBottom: 10 }}>
           Pusat Kode Redeem Game
         </h1>
-        <p style={{ color: 'var(--text-secondary)', maxWidth: 700, fontSize: '1.05rem', lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--text-secondary)', maxWidth: 850, fontSize: '1.05rem', lineHeight: 1.6 }}>
           Klaim hadiah gratis resmi dari publisher game favoritmu. Seluruh kode diperiksa secara berkala oleh tim Seraphi Game. Klik tombol &quot;SALIN KODE&quot; untuk mengklaim.
         </p>
       </div>
 
-      {/* Filter by Game */}
+      <div className="layout-with-sidebar">
+        <div>
+          {/* Filter by Game */}
       <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 16, marginBottom: 28 }}>
         <Link
           href="/redeem-codes"
@@ -117,6 +120,16 @@ export default async function GlobalRedeemCodesPage({ searchParams }: Props) {
           </div>
         </section>
       )}
+        </div>
+
+        {/* Gaming Info Sidebar */}
+        <aside>
+          <div className="sidebar-sticky-wrapper">
+            <GamingSidebar hideRedeemCodes />
+          </div>
+        </aside>
+      </div>
     </div>
   );
 }
+

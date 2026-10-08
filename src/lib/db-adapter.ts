@@ -101,7 +101,10 @@ export interface DatabaseAdapter {
 
   // Events
   getEvents(options?: { gameId?: string; status?: string }): Promise<(EventItem & { game_name?: string; game_slug?: string })[]>;
+  getEventById(id: string): Promise<EventItem | null>;
+  getEventBySlug(slug: string): Promise<EventItem | null>;
   insertEventItem(data: Omit<EventItem, 'created_at' | 'updated_at'>): Promise<EventItem>;
+  updateEventItem(id: string, updates: Partial<EventItem>): Promise<void>;
   deleteEventItem(id: string): Promise<void>;
 
   // Items
@@ -115,6 +118,8 @@ export interface DatabaseAdapter {
   // Tier Lists
   getTierLists(gameId?: string): Promise<TierList[]>;
   getTierListBySlug(slug: string): Promise<TierList | null>;
+  insertTierList(data: Omit<TierList, 'created_at' | 'updated_at'>): Promise<TierList>;
+  updateTierList(id: string, updates: Partial<TierList>): Promise<void>;
 
   // Ad Slots
   getAdSlots(): Promise<AdSlotConfig[]>;

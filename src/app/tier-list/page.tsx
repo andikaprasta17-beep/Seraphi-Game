@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTierLists } from '@/lib/db';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import GamingSidebar from '@/components/GamingSidebar';
 import { getCanonicalUrl } from '@/lib/seo';
 
 export const dynamic = 'force-dynamic';
@@ -28,12 +29,14 @@ export default async function GlobalTierListPage() {
         <h1 style={{ fontSize: '2.4rem', fontWeight: 900, color: '#fff', marginBottom: 10 }}>
           Tier List Game Populer
         </h1>
-        <p style={{ color: 'var(--text-secondary)', maxWidth: 700, fontSize: '1.05rem', lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--text-secondary)', maxWidth: 850, fontSize: '1.05rem', lineHeight: 1.6 }}>
           Evaluasi mendalam peringkat efisiensi karakter, hero, dan agent berdasarkan performa meta kompetitif dan update patch terkini.
         </p>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
+      <div className="layout-with-sidebar">
+        {/* Main Column */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
         {tierLists.map((tl) => (
           <div
             key={tl.id}
@@ -106,7 +109,16 @@ export default async function GlobalTierListPage() {
             </div>
           </div>
         ))}
+        </div>
+
+        {/* Gaming Info Sidebar */}
+        <aside>
+          <div className="sidebar-sticky-wrapper">
+            <GamingSidebar hideTierList />
+          </div>
+        </aside>
       </div>
     </div>
   );
 }
+

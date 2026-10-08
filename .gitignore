@@ -48,3 +48,8 @@ next-env.d.ts
 # temp scratch directories
 temp_audit/
 temp_check/
+
+# archives and zip packages
+*.zip
+*.tar.gz
+

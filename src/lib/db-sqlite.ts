@@ -916,7 +916,7 @@ export class SqliteAdapter implements DatabaseAdapter {
   }
 
   async checkDuplicateSlug(
-    table: 'games' | 'characters' | 'guides' | 'news' | 'items' | 'authors',
+    table: 'games' | 'characters' | 'guides' | 'news' | 'items' | 'authors' | 'events' | 'tier_lists',
     slug: string,
     excludeId?: string
   ): Promise<boolean> {
@@ -1713,6 +1713,59 @@ export class SqliteAdapter implements DatabaseAdapter {
     return ev;
   }
 
+  async getEventById(id: string): Promise<EventItem | null> {
+    const row = this.db.prepare('SELECT * FROM events WHERE id = ?').get(id) as any;
+    if (!row) return null;
+    return {
+      ...row,
+      image: row.image || row.banner_image || '',
+      banner_image: row.banner_image || row.image || '',
+      rewards: typeof row.rewards === 'string' && row.rewards.startsWith('[') ? JSON.parse(row.rewards) : row.rewards,
+      is_demo: Boolean(row.is_demo),
+    };
+  }
+
+  async getEventBySlug(slug: string): Promise<EventItem | null> {
+    const row = this.db.prepare('SELECT * FROM events WHERE slug = ?').get(slug) as any;
+    if (!row) return null;
+    return {
+      ...row,
+      image: row.image || row.banner_image || '',
+      banner_image: row.banner_image || row.image || '',
+      rewards: typeof row.rewards === 'string' && row.rewards.startsWith('[') ? JSON.parse(row.rewards) : row.rewards,
+      is_demo: Boolean(row.is_demo),
+    };
+  }
+
+  async updateEventItem(id: string, updates: Partial<EventItem>): Promise<void> {
+    const existing = await this.getEventById(id);
+    if (!existing) throw new Error('Event not found');
+    const merged = { ...existing, ...updates, updated_at: new Date().toISOString() };
+    this.db.prepare(`
+      UPDATE events SET
+        game_id = ?, title = ?, slug = ?, description = ?, type = ?,
+        status = ?, official_url = ?, start_date = ?, end_date = ?,
+        rewards = ?, banner_image = ?, image = ?, updated_at = ?, is_demo = ?
+      WHERE id = ?
+    `).run(
+      merged.game_id,
+      merged.title,
+      merged.slug || id,
+      merged.description,
+      merged.type || 'EVENT',
+      merged.status || 'ACTIVE',
+      merged.official_url || '',
+      merged.start_date,
+      merged.end_date,
+      JSON.stringify(merged.rewards || []),
+      merged.banner_image || merged.image || '',
+      merged.image || merged.banner_image || '',
+      merged.updated_at,
+      merged.is_demo ? 1 : 0,
+      id
+    );
+  }
+
   async deleteEventItem(id: string): Promise<void> {
     this.db.prepare('DELETE FROM events WHERE id = ?').run(id);
   }
@@ -1854,6 +1907,56 @@ export class SqliteAdapter implements DatabaseAdapter {
     }
     const row = this.db.prepare(query).get(slug);
     return row ? mapTierList(row) : null;
+  }
+
+  async insertTierList(data: Omit<TierList, 'created_at' | 'updated_at'>): Promise<TierList> {
+    const now = new Date().toISOString();
+    const tl: TierList = {
+      ...data,
+      created_at: now,
+      updated_at: now,
+      is_demo: data.is_demo ?? false,
+    };
+    this.db.prepare(`
+      INSERT INTO tier_lists (
+        id, game_id, title, slug, description, version, tiers, updated_at, created_at, is_demo
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).run(
+      tl.id,
+      tl.game_id,
+      tl.title,
+      tl.slug,
+      tl.description,
+      tl.version || '1.0',
+      JSON.stringify(tl.tiers || []),
+      tl.updated_at,
+      tl.created_at || now,
+      tl.is_demo ? 1 : 0
+    );
+    return tl;
+  }
+
+  async updateTierList(id: string, updates: Partial<TierList>): Promise<void> {
+    const row = this.db.prepare('SELECT * FROM tier_lists WHERE id = ?').get(id) as any;
+    if (!row) throw new Error('Tier list not found');
+    const existing = mapTierList(row);
+    const merged = { ...existing, ...updates, updated_at: new Date().toISOString() };
+    this.db.prepare(`
+      UPDATE tier_lists SET
+        game_id = ?, title = ?, slug = ?, description = ?, version = ?,
+        tiers = ?, updated_at = ?, is_demo = ?
+      WHERE id = ?
+    `).run(
+      merged.game_id,
+      merged.title,
+      merged.slug,
+      merged.description,
+      merged.version || '1.0',
+      JSON.stringify(merged.tiers || []),
+      merged.updated_at,
+      merged.is_demo ? 1 : 0,
+      id
+    );
   }
 
   async getAdSlots(): Promise<AdSlotConfig[]> {

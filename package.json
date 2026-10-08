@@ -23,7 +23,8 @@
     "test:phase4": "node test-phase4.mjs",
     "test:phase3": "node test-phase3.mjs",
     "test:security": "node test-security.mjs",
-    "test:e2e": "node test-e2e.mjs"
+    "test:e2e": "node test-e2e.mjs",
+    "test:ai-publish": "node test-ai-publish.mjs"
   },
   "engines": {
     "node": ">=18.20.0"

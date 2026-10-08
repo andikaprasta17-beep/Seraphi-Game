@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getGuides } from '@/lib/db';
 import GuideCard from '@/components/GuideCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import GamingSidebar from '@/components/GamingSidebar';
 
 export const metadata: Metadata = {
   title: 'Panduan & Build Karakter Game Terlengkap — Tips Pemula & Walkthrough',
@@ -38,33 +39,46 @@ export default async function GuidesCatalogPage({ searchParams }: Props) {
         <h1 style={{ fontSize: '2.4rem', fontWeight: 900, color: '#fff', marginBottom: 10 }}>
           Panduan & Guide Game
         </h1>
-        <p style={{ color: 'var(--text-secondary)', maxWidth: 700, fontSize: '1.05rem', lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--text-secondary)', maxWidth: 850, fontSize: '1.05rem', lineHeight: 1.6 }}>
           Pelajari mekanik gameplay, strategi build karakter terkuat, dan trik menaklukkan boss dari para pemain berpengalaman.
         </p>
       </div>
 
-      {/* Category Pills */}
-      <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 16, marginBottom: 24 }}>
-        {CATEGORIES.map((cat) => {
-          const isActive = (!currentCategory && cat === 'Semua') || currentCategory === cat;
-          return (
-            <Link
-              key={cat}
-              href={cat === 'Semua' ? '/guides' : `/guides?category=${encodeURIComponent(cat)}`}
-              className={`btn btn-sm ${isActive ? 'btn-primary' : 'btn-secondary'}`}
-              style={{ borderRadius: 'var(--radius-full)' }}
-            >
-              {cat}
-            </Link>
-          );
-        })}
-      </div>
+      <div className="layout-with-sidebar">
+        {/* Main Guides Catalog */}
+        <div>
+          {/* Category Pills */}
+          <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 16, marginBottom: 24 }}>
+            {CATEGORIES.map((cat) => {
+              const isActive = (!currentCategory && cat === 'Semua') || currentCategory === cat;
+              return (
+                <Link
+                  key={cat}
+                  href={cat === 'Semua' ? '/guides' : `/guides?category=${encodeURIComponent(cat)}`}
+                  className={`btn btn-sm ${isActive ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ borderRadius: 'var(--radius-full)' }}
+                >
+                  {cat}
+                </Link>
+              );
+            })}
+          </div>
 
-      <div className="grid-cards">
-        {guides.map((guide) => (
-          <GuideCard key={guide.id} guide={guide} />
-        ))}
+          <div className="grid-cards">
+            {guides.map((guide) => (
+              <GuideCard key={guide.id} guide={guide} />
+            ))}
+          </div>
+        </div>
+
+        {/* Gaming Info Sidebar */}
+        <aside>
+          <div className="sidebar-sticky-wrapper">
+            <GamingSidebar />
+          </div>
+        </aside>
       </div>
     </div>
   );
 }
+

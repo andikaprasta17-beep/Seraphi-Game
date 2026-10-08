@@ -56,7 +56,7 @@ export function getAdapter(): DatabaseAdapter {
 // ---------------------------------------------------------------------------
 
 export async function checkDuplicateSlug(
-  table: 'games' | 'characters' | 'guides' | 'news' | 'items' | 'authors',
+  table: 'games' | 'characters' | 'guides' | 'news' | 'items' | 'authors' | 'events' | 'tier_lists',
   slug: string,
   excludeId?: string
 ): Promise<boolean> {
@@ -228,8 +228,20 @@ export async function getEvents(options?: { gameId?: string; status?: string }):
   return getAdapter().getEvents(options);
 }
 
+export async function getEventById(id: string): Promise<EventItem | null> {
+  return getAdapter().getEventById(id);
+}
+
+export async function getEventBySlug(slug: string): Promise<EventItem | null> {
+  return getAdapter().getEventBySlug(slug);
+}
+
 export async function insertEventItem(data: Omit<EventItem, 'created_at' | 'updated_at'>): Promise<EventItem> {
   return getAdapter().insertEventItem(data);
+}
+
+export async function updateEventItem(id: string, updates: Partial<EventItem>): Promise<void> {
+  return getAdapter().updateEventItem(id, updates);
 }
 
 export async function deleteEventItem(id: string): Promise<void> {
@@ -266,6 +278,14 @@ export async function getTierLists(gameIdOrSlug?: string): Promise<TierList[]> {
 
 export async function getTierListBySlug(slug: string): Promise<TierList | null> {
   return getAdapter().getTierListBySlug(slug);
+}
+
+export async function insertTierList(data: Omit<TierList, 'created_at' | 'updated_at'>): Promise<TierList> {
+  return getAdapter().insertTierList(data);
+}
+
+export async function updateTierList(id: string, updates: Partial<TierList>): Promise<void> {
+  return getAdapter().updateTierList(id, updates);
 }
 
 export async function getAdSlots(): Promise<AdSlotConfig[]> {

@@ -181,10 +181,14 @@ export class PostgresAdapter implements DatabaseAdapter {
   }
 
   async checkDuplicateSlug(
-    table: 'games' | 'characters' | 'guides' | 'news' | 'items' | 'authors',
+    table: 'games' | 'characters' | 'guides' | 'news' | 'items' | 'authors' | 'events' | 'tier_lists',
     slug: string,
     excludeId?: string
   ): Promise<boolean> {
+    const ALLOWED_TABLES = new Set(['games', 'characters', 'guides', 'news', 'items', 'authors', 'events', 'tier_lists']);
+    if (!ALLOWED_TABLES.has(table)) {
+      throw new Error(`Invalid table for slug check: ${table}`);
+    }
     let query = `SELECT id FROM ${table} WHERE LOWER(slug) = LOWER($1)`;
     const params: any[] = [slug.trim()];
     if (excludeId) {
@@ -691,7 +695,7 @@ export class PostgresAdapter implements DatabaseAdapter {
       [
         guide.id,
         guide.game_id,
-        guide.author_id || 'author-1',
+        guide.author_id || 'author-seraphi-editorial',
         guide.title,
         guide.slug,
         guide.excerpt,
@@ -734,7 +738,7 @@ export class PostgresAdapter implements DatabaseAdapter {
     `,
       [
         merged.game_id,
-        merged.author_id || 'author-1',
+        merged.author_id || 'author-seraphi-editorial',
         merged.title,
         merged.slug,
         merged.excerpt,
@@ -859,7 +863,7 @@ export class PostgresAdapter implements DatabaseAdapter {
       [
         item.id,
         item.game_id || null,
-        item.author_id || 'author-1',
+        item.author_id || 'author-seraphi-editorial',
         item.title,
         item.slug,
         item.excerpt,
@@ -895,7 +899,7 @@ export class PostgresAdapter implements DatabaseAdapter {
     `,
       [
         merged.game_id || null,
-        merged.author_id || 'author-1',
+        merged.author_id || 'author-seraphi-editorial',
         merged.title,
         merged.slug,
         merged.excerpt,
@@ -1117,6 +1121,61 @@ export class PostgresAdapter implements DatabaseAdapter {
     return ev;
   }
 
+  async getEventById(id: string): Promise<EventItem | null> {
+    const res = await this.pool.query('SELECT * FROM events WHERE id = $1', [id]);
+    if (res.rows.length === 0) return null;
+    const ev = res.rows[0];
+    return {
+      ...ev,
+      image: ev.image || ev.banner_image || '',
+      banner_image: ev.banner_image || ev.image || '',
+      rewards: safeJsonParse(ev.rewards, []),
+      is_demo: Boolean(ev.is_demo),
+    };
+  }
+
+  async getEventBySlug(slug: string): Promise<EventItem | null> {
+    const res = await this.pool.query('SELECT * FROM events WHERE slug = $1', [slug]);
+    if (res.rows.length === 0) return null;
+    const ev = res.rows[0];
+    return {
+      ...ev,
+      image: ev.image || ev.banner_image || '',
+      banner_image: ev.banner_image || ev.image || '',
+      rewards: safeJsonParse(ev.rewards, []),
+      is_demo: Boolean(ev.is_demo),
+    };
+  }
+
+  async updateEventItem(id: string, updates: Partial<EventItem>): Promise<void> {
+    const existing = await this.getEventById(id);
+    if (!existing) throw new Error('Event not found');
+    const merged = { ...existing, ...updates, updated_at: new Date().toISOString() };
+    await this.pool.query(`
+      UPDATE events SET
+        game_id = $1, title = $2, slug = $3, description = $4, type = $5,
+        status = $6, official_url = $7, start_date = $8, end_date = $9,
+        rewards = $10, banner_image = $11, image = $12, updated_at = $13, is_demo = $14
+      WHERE id = $15
+    `, [
+      merged.game_id,
+      merged.title,
+      merged.slug || id,
+      merged.description,
+      merged.type || 'EVENT',
+      merged.status || 'ACTIVE',
+      merged.official_url || '',
+      merged.start_date,
+      merged.end_date,
+      JSON.stringify(merged.rewards || []),
+      merged.banner_image || merged.image || '',
+      merged.image || merged.banner_image || '',
+      merged.updated_at,
+      merged.is_demo ? 1 : 0,
+      id
+    ]);
+  }
+
   async deleteEventItem(id: string): Promise<void> {
     await this.pool.query('DELETE FROM events WHERE id = $1', [id]);
   }
@@ -1276,6 +1335,65 @@ export class PostgresAdapter implements DatabaseAdapter {
     }
     const res = await this.pool.query(query, [slug]);
     return res.rows.length > 0 ? mapTierList(res.rows[0]) : null;
+  }
+
+  async insertTierList(data: Omit<TierList, 'created_at' | 'updated_at'>): Promise<TierList> {
+    const now = new Date().toISOString();
+    const tl: TierList = {
+      ...data,
+      created_at: now,
+      updated_at: now,
+      is_demo: data.is_demo ?? false,
+    };
+    await this.pool.query(`
+      INSERT INTO tier_lists (
+        id, game_id, title, slug, description, version, tiers, updated_at, created_at, is_demo
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+      ON CONFLICT (id) DO UPDATE SET
+        game_id = EXCLUDED.game_id,
+        title = EXCLUDED.title,
+        slug = EXCLUDED.slug,
+        description = EXCLUDED.description,
+        version = EXCLUDED.version,
+        tiers = EXCLUDED.tiers,
+        updated_at = EXCLUDED.updated_at,
+        is_demo = EXCLUDED.is_demo
+    `, [
+      tl.id,
+      tl.game_id,
+      tl.title,
+      tl.slug,
+      tl.description,
+      tl.version || '1.0',
+      JSON.stringify(tl.tiers || []),
+      tl.updated_at,
+      tl.created_at,
+      tl.is_demo ? 1 : 0
+    ]);
+    return tl;
+  }
+
+  async updateTierList(id: string, updates: Partial<TierList>): Promise<void> {
+    const res = await this.pool.query('SELECT * FROM tier_lists WHERE id = $1', [id]);
+    if (res.rows.length === 0) throw new Error('Tier list not found');
+    const existing = mapTierList(res.rows[0]);
+    const merged = { ...existing, ...updates, updated_at: new Date().toISOString() };
+    await this.pool.query(`
+      UPDATE tier_lists SET
+        game_id = $1, title = $2, slug = $3, description = $4, version = $5,
+        tiers = $6, updated_at = $7, is_demo = $8
+      WHERE id = $9
+    `, [
+      merged.game_id,
+      merged.title,
+      merged.slug,
+      merged.description,
+      merged.version || '1.0',
+      JSON.stringify(merged.tiers || []),
+      merged.updated_at,
+      merged.is_demo ? 1 : 0,
+      id
+    ]);
   }
 
   async getAdSlots(): Promise<AdSlotConfig[]> {
