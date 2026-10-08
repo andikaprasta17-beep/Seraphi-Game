@@ -1,4 +1,4 @@
-import { DatabaseSync } from 'node:sqlite';
+import type { DatabaseSync } from 'node:sqlite';
 import path from 'node:path';
 import fs from 'node:fs';
 import {
@@ -33,6 +33,21 @@ import { hashPassword } from './auth';
 import { isProductionMode } from './seo';
 import { DatabaseAdapter, GlobalSearchResult } from './db-adapter';
 
+// Safe runtime loader for DatabaseSync (node:sqlite is built into Node.js >= 22.5)
+// Allows Node.js 18.20.8 (e.g. Hypercloudhost / cPanel Passenger) to run without module resolution errors
+let _DatabaseSyncClass: any = null;
+function getDatabaseSyncClass(): any {
+  if (_DatabaseSyncClass) return _DatabaseSyncClass;
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const sqliteModule = require('node:sqlite');
+    _DatabaseSyncClass = sqliteModule.DatabaseSync;
+    return _DatabaseSyncClass;
+  } catch {
+    return null;
+  }
+}
+
 declare global {
   // eslint-disable-next-line no-var
   var _seraphi_sqlite_db: DatabaseSync | undefined;
@@ -43,13 +58,21 @@ export function getSqliteDatabase(): DatabaseSync {
     return globalThis._seraphi_sqlite_db;
   }
 
+  const DatabaseSyncClass = getDatabaseSyncClass();
+  if (!DatabaseSyncClass) {
+    throw new Error(
+      'node:sqlite is not available in Node.js < 22.5. ' +
+      'For Node.js 18 (e.g. Hypercloudhost / cPanel), please configure DATABASE_PROVIDER=postgres with DATABASE_URL.'
+    );
+  }
+
   const dataDir = path.join(process.cwd(), 'data');
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
   }
 
   const dbPath = path.join(dataDir, 'seraphi.db');
-  const db = new DatabaseSync(dbPath);
+  const db = new DatabaseSyncClass(dbPath) as DatabaseSync;
 
   db.exec('PRAGMA busy_timeout = 10000;');
   db.exec('PRAGMA journal_mode = WAL;');
