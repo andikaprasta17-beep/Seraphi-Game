@@ -1,74 +1,138 @@
-# ATURAN DEPLOYMENT & PENGEMBANGAN SERAPHI GAME
+# ATURAN OPERASIONAL FINAL SERAPHI GAME
 
-Dokumen ini adalah pedoman operasional wajib bagi AI coding agent dan pengembang dalam memodifikasi Seraphi Game.
+Dokumen ini adalah pedoman operasional wajib dan permanen bagi AI Coding Agent dan pengembang dalam memodifikasi Seraphi Game. AI secara mandiri menentukan klasifikasi setiap tugas sebelum mengeksekusinya.
 
 ---
 
-## 1. CONTENT ONLY CHANGE
-Jika tugas hanya menambah, mengedit, atau menghapus data konten:
-- **News**
-- **Guides**
-- **Games**
-- **Characters**
-- **Items**
-- **Redeem Codes**
-- **Events**
-- **Tier Lists**
+## 1. CONTENT CHANGE
 
-### Aturan:
-1. **WAJIB gunakan AI Content Publisher API**: `POST /api/ai/publish`.
-2. **JANGAN mengubah source code**.
-3. **JANGAN membuat file ZIP**.
-4. **JANGAN melakukan npm run build**.
-5. **JANGAN melakukan deployment aplikasi**.
-6. Konten ditulis langsung ke production database (Neon PostgreSQL) melalui Publisher API dan otomatis memicu on-demand cache revalidation.
+Jika perintah berhubungan dengan data konten:
+- **News** (Berita)
+- **Guides** (Panduan)
+- **Games** (Data Game)
+- **Characters** (Karakter)
+- **Items** (Item / Senjata / Relic)
+- **Redeem Codes** (Kode Redeem)
+- **Events** (Event Game)
+- **Tier Lists** (Tier List)
+
+### Aturan Wajib:
+1. **JANGAN mengubah source code aplikasi** (`src/`, `server.js`, dsb.).
+2. **JANGAN membuat file ZIP**.
+3. **JANGAN menjalankan `npm run build`**.
+4. **JANGAN mendeploy aplikasi**.
+5. **JANGAN menggunakan GitHub Actions**.
+6. **JANGAN menggunakan SSH**.
+7. **JANGAN menulis ke SQLite / database lokal**.
+
+### Target & Koneksi:
+- **Target**: Neon PostgreSQL Production.
+- **Koneksi Wajib**:
+  - `DATABASE_PROVIDER=postgres`
+  - `DATABASE_URL=<Neon Production URL>`
+- Jika koneksi Neon Production gagal:
+  - **DILARANG KERAS fallback ke SQLite**.
+  - **DILARANG mengklaim berhasil**.
+  - Laporkan error koneksi secara transparan.
+
+### Workflow Content:
+```text
+AI Buat Konten
+     │
+     ▼
+Validasi Data & Relasi
+     │
+     ▼
+Publish Langsung ke Neon Production Database
+     │
+     ▼
+Verifikasi Record Tersimpan di Neon PostgreSQL
+     │
+     ▼
+Verifikasi Slug / Ketersediaan Konten
+     │
+     ▼
+Laporkan URL Production (Boleh dinyatakan LIVE)
+```
 
 ---
 
 ## 2. CODE / UI CHANGE
-Jika tugas memodifikasi:
-- **UI**
+
+Jika perintah berhubungan dengan:
+- **UI / Tampilan**
 - **CSS / Styling**
 - **Layout**
 - **Komponen React**
 - **Routing**
-- **Logic backend / API endpoint**
-- **Fitur baru**
-- **Source code (`src/`, `server.js`, konfigurasi)**
+- **Logika Backend / API Endpoint**
+- **Fitur Baru**
+- **Source Code (`src/`, `server.js`, konfigurasi)**
 
-### Aturan:
-1. Ubah source code lokal.
-2. Jalankan test lokal untuk memverifikasi kebenaran logika.
-3. Jalankan `npm run build` di lokal.
-4. Buat Prebuilt ZIP (berisi `.next/`, `public/`, `server.js`, `package.json`, dsb.).
-5. Laporkan secara transparan bahwa **deployment manual / upload ZIP ke HyperCloudHost diperlukan**.
-6. **JANGAN MENGANGGAP PERUBAHAN LOKAL SUDAH LIVE**.
+### Aturan Wajib:
+1. **JANGAN menggunakan GitHub Actions**.
+2. **JANGAN menggunakan SSH deployment**.
+3. **JANGAN mengubah deployment architecture**.
+4. **DILARANG menyatakan perubahan sudah LIVE**.
 
----
-
-## 3. PRODUCTION SOURCE OF TRUTH
-- **Untuk KONTEN**: Neon PostgreSQL Production (`DATABASE_PROVIDER=postgres`).
-- **Untuk KODE**: Server Production HyperCloudHost (`~/seraphigame`).
-
----
-
-## 4. LARANGAN KLAIM STATUS LIVE
-Perubahan kode/UI lokal **TIDAK BOLEH** diklaim sudah live di production sampai file build prebuilt benar-benar di-deploy ke server HyperCloudHost dan aplikasi Passenger direstart.
-
----
-
-## 5. KLASIFIKASI TUGAS (CONTENT vs CODE)
-Sebelum mengerjakan permintaan apa pun, AI agent **WAJIB MENENTUKAN KATEGORI TUGAS**:
-
+### Workflow Code / UI:
 ```text
-               APAKAH TUGAS INI?
-                      │
-        ┌─────────────┴─────────────┐
-        ▼                           ▼
-[ CONTENT CHANGE ]          [ CODE / UI CHANGE ]
-        │                           │
-  Gunakan endpoint            Ubah kode lokal,
-POST /api/ai/publish         test & build lokal,
-(Tanpa build, tanpa ZIP)    buat prebuilt package ZIP,
-                            laporkan butuh deploy.
+1. Ubah code lokal (src/, styles, components, dsb.)
+     │
+     ▼
+2. Jalankan test lokal untuk memverifikasi logika
+     │
+     ▼
+3. Jalankan npm run build di lokal (harus PASS)
+     │
+     ▼
+4. Buat Prebuilt ZIP (berisi .next/, public/, server.js, package.json, dsb.)
+     │
+     ▼
+5. Laporkan bahwa ZIP siap & deployment manual ke HyperCloudHost diperlukan
 ```
+
+---
+
+## 3. PANDUAN KLASIFIKASI TUGAS (JANGAN SALAH KLASIFIKASI)
+
+| Contoh Perintah | Klasifikasi | Eksekusi |
+| :--- | :--- | :--- |
+| *"Tambah berita Monopoly GO"* | **CONTENT CHANGE** | Langsung ke Neon Production |
+| *"Tambah 5 guide Elden Ring"* | **CONTENT CHANGE** | Langsung ke Neon Production |
+| *"Tambahkan game baru ke database"* | **CONTENT CHANGE** | Langsung ke Neon Production |
+| *"Update kode redeem MLBB"* | **CONTENT CHANGE** | Langsung ke Neon Production |
+| *"Ubah posisi card Games"* | **CODE / UI CHANGE** | Ubah code + Test + Build + Prebuilt ZIP |
+| *"Ubah warna sidebar gaming"* | **CODE / UI CHANGE** | Ubah code + Test + Build + Prebuilt ZIP |
+| *"Tambahkan fitur komentar"* | **CODE / UI CHANGE** | Ubah code + Test + Build + Prebuilt ZIP |
+| *"Perbaiki routing /api/health"* | **CODE / UI CHANGE** | Ubah code + Test + Build + Prebuilt ZIP |
+
+---
+
+## 4. SOURCE OF TRUTH
+
+- **KONTEN**: Neon PostgreSQL Production (`DATABASE_PROVIDER=postgres`).
+- **KODE SUMBER**: Source code lokal (`g:\website seraphi game`).
+- **KODE PRODUCTION**: Server HyperCloudHost (`/home/oakbznzn/seraphigame`).
+
+---
+
+## 5. KEJUJURAN STATUS
+
+- **Untuk CONTENT**:
+  Setelah data berhasil ditulis dan diverifikasi pada Neon PostgreSQL Production, konten **BOLEH dinyatakan LIVE**.
+- **Untuk CODE / UI**:
+  Perubahan **HANYA BOLEH disebut LIVE** jika file prebuilt ZIP sudah benar-benar di-upload dan diekstrak di server HyperCloudHost serta aplikasi Passenger telah direstart.
+
+---
+
+## 6. PRIORITAS & KESEDERHANAAN
+
+- JANGAN membuat sistem deployment baru.
+- JANGAN membuat workflow GitHub Actions baru.
+- JANGAN membuat SSH deployment script.
+- JANGAN menambah kompleksitas arsitektur.
+
+**PRINSIP UTAMA:**
+- **CONTENT** = Langsung tulis ke Neon PostgreSQL Production.
+- **CODE / UI** = Build lokal + Prebuilt ZIP untuk upload manual.
