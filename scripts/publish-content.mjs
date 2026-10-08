@@ -71,8 +71,9 @@ export async function publishNews(article) {
     const publishedAt = article.publishedAt || article.published_at || now;
 
     // Check author existence
-    const authorRes = await pool.query('SELECT id, name FROM authors WHERE id = $1 OR slug = $1 LIMIT 1', [authorId]);
-    const finalAuthorId = authorRes.rows[0]?.id || 'author-editorial';
+    const authorRes = await pool.query('SELECT id, name, slug FROM authors WHERE id = $1 OR slug = $1 LIMIT 1', [authorId]);
+    const finalAuthorId = authorRes.rows[0]?.id || 'author-seraphi-editorial';
+    const finalAuthorSlug = authorRes.rows[0]?.slug || 'seraphi-editorial';
 
     // Check game existence if gameSlug or gameId given
     let finalGameId = gameId;
@@ -86,18 +87,19 @@ export async function publishNews(article) {
 
     const sql = `
       INSERT INTO news (
-        id, title, slug, excerpt, content, thumbnail, category,
-        author_id, game_id, tags, status, views, is_demo,
+        id, title, slug, excerpt, content, featured_image, category,
+        author_id, author_slug, game_id, tags, status, views, is_demo,
         created_at, updated_at
-      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
       ON CONFLICT (id) DO UPDATE SET
         title = EXCLUDED.title,
         slug = EXCLUDED.slug,
         excerpt = EXCLUDED.excerpt,
         content = EXCLUDED.content,
-        thumbnail = EXCLUDED.thumbnail,
+        featured_image = EXCLUDED.featured_image,
         category = EXCLUDED.category,
         author_id = EXCLUDED.author_id,
+        author_slug = EXCLUDED.author_slug,
         game_id = EXCLUDED.game_id,
         tags = EXCLUDED.tags,
         status = EXCLUDED.status,
@@ -107,7 +109,7 @@ export async function publishNews(article) {
 
     const res = await pool.query(sql, [
       id, title, slug, excerpt, content, image, category,
-      finalAuthorId, finalGameId, tags, status, article.views || 0, 0,
+      finalAuthorId, finalAuthorSlug, finalGameId, tags, status, article.views || 0, 0,
       publishedAt, now,
     ]);
 
