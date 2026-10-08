@@ -60,6 +60,14 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: '/images/:path*',
+        destination: 'https://cdn.jsdelivr.net/gh/andikaprasta17-beep/Seraphi-Game@main/public/images/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

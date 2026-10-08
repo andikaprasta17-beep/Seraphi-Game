@@ -4,6 +4,9 @@ import { getGames } from '@/lib/db';
 import GameCard from '@/components/GameCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'Database Game Indonesia — Katalog Lengkap Game PC, Konsol & Mobile',
   description:

@@ -11,6 +11,9 @@ import EventCard from '@/components/EventCard';
 import AdSlot from '@/components/AdSlot';
 import { getCanonicalUrl } from '@/lib/seo';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   alternates: {
     canonical: getCanonicalUrl('/'),

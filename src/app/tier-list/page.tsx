@@ -5,6 +5,9 @@ import { getTierLists } from '@/lib/db';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getCanonicalUrl } from '@/lib/seo';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'Tier List Game Terbaik 2026 — Rekomendasi Karakter Paling Meta',
   description:
