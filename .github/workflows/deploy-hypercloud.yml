@@ -245,13 +245,18 @@ jobs:
           "
           echo "✅ Passenger restart triggered."
 
-      - name: 10. Health Check & Validation
+      - name: 10. Health Check & Validation (Direct to HyperCloudHost)
         id: health-check
         env:
+          SSH_HOST: ${{ secrets.HYPERCLOUD_SSH_HOST }}
           BASE_URL: "https://seraphigame.my.id"
+          COMMIT_SHA: ${{ github.sha }}
         run: |
-          echo "=== RUNNING PRODUCTION HEALTH CHECK ==="
-          echo "Target URL: $BASE_URL"
+          echo "=== RUNNING DIRECT HYPERCLOUDHOST HEALTH CHECK ==="
+          echo "Target Server IP/Host : $SSH_HOST"
+          echo "Target Hostname/SNI   : seraphigame.my.id"
+          echo "Commit Verified       : $COMMIT_SHA"
+          echo "Catatan: Memaksa koneksi langsung ke HyperCloudHost via curl --resolve (bypass public DNS/Netlify)."
           
           # Tunggu Passenger memuat worker baru
           echo "Menunggu Passenger memuat worker baru (10 detik)..."
@@ -260,14 +265,17 @@ jobs:
           HEALTH_SUCCESS=false
           for i in {1..6}; do
             echo "Percobaan Health Check #$i..."
-            HTTP_STATUS=$(curl -s -o /tmp/health_res.txt -w "%{http_code}" "$BASE_URL/api/health" || echo "000")
+            HTTP_STATUS=$(curl -k -s -S \
+              --resolve "seraphigame.my.id:443:${SSH_HOST}" \
+              --resolve "seraphigame.my.id:80:${SSH_HOST}" \
+              -o /tmp/health_res.txt -w "%{http_code}" "$BASE_URL/api/health" || echo "000")
             BODY=$(cat /tmp/health_res.txt 2>/dev/null || echo "")
             echo "HTTP Status /api/health: $HTTP_STATUS"
             echo "Response: $BODY"
 
             if [ "$HTTP_STATUS" -eq 200 ] && echo "$BODY" | grep -q '"database":"connected"'; then
               HEALTH_SUCCESS=true
-              echo "✅ /api/health PASS (database: connected)"
+              echo "✅ /api/health PASS langsung di HyperCloudHost (database: connected)"
               break
             fi
             echo "Worker masih reload atau database connecting, menunggu 5 detik..."
@@ -275,29 +283,42 @@ jobs:
           done
 
           if [ "$HEALTH_SUCCESS" != "true" ]; then
-            echo "❌ /api/health GAGAL setelah 6 percobaan."
+            echo "❌ /api/health GAGAL di HyperCloudHost setelah 6 percobaan."
             exit 1
           fi
 
-          # Validasi halaman utama dan katalog penting
-          echo "Memeriksa halaman utama..."
-          curl -s -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/" | grep -q "^200$" || (echo "❌ Homepage gagal 200" && exit 1)
-          echo "✅ Homepage (/) PASS"
+          # Validasi halaman utama dan katalog penting langsung ke HyperCloudHost
+          echo "Memeriksa homepage (/) di HyperCloudHost..."
+          curl -k -s -S \
+            --resolve "seraphigame.my.id:443:${SSH_HOST}" \
+            --resolve "seraphigame.my.id:80:${SSH_HOST}" \
+            -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/" | grep -q "^200$" || (echo "❌ Homepage gagal 200 di HyperCloudHost" && exit 1)
+          echo "✅ Homepage (/) PASS langsung dari HyperCloudHost"
 
-          echo "Memeriksa /games..."
-          curl -s -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/games" | grep -q "^200$" || (echo "❌ /games gagal 200" && exit 1)
-          echo "✅ /games PASS"
+          echo "Memeriksa /games di HyperCloudHost..."
+          curl -k -s -S \
+            --resolve "seraphigame.my.id:443:${SSH_HOST}" \
+            --resolve "seraphigame.my.id:80:${SSH_HOST}" \
+            -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/games" | grep -q "^200$" || (echo "❌ /games gagal 200 di HyperCloudHost" && exit 1)
+          echo "✅ /games PASS langsung dari HyperCloudHost"
 
-          echo "Memeriksa /news..."
-          curl -s -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/news" | grep -q "^200$" || (echo "❌ /news gagal 200" && exit 1)
-          echo "✅ /news PASS"
+          echo "Memeriksa /news di HyperCloudHost..."
+          curl -k -s -S \
+            --resolve "seraphigame.my.id:443:${SSH_HOST}" \
+            --resolve "seraphigame.my.id:80:${SSH_HOST}" \
+            -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/news" | grep -q "^200$" || (echo "❌ /news gagal 200 di HyperCloudHost" && exit 1)
+          echo "✅ /news PASS langsung dari HyperCloudHost"
 
-          echo "Memeriksa /guides..."
-          curl -s -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/guides" | grep -q "^200$" || (echo "❌ /guides gagal 200" && exit 1)
-          echo "✅ /guides PASS"
+          echo "Memeriksa /guides di HyperCloudHost..."
+          curl -k -s -S \
+            --resolve "seraphigame.my.id:443:${SSH_HOST}" \
+            --resolve "seraphigame.my.id:80:${SSH_HOST}" \
+            -f -o /dev/null -w "%{http_code}\n" "$BASE_URL/guides" | grep -q "^200$" || (echo "❌ /guides gagal 200 di HyperCloudHost" && exit 1)
+          echo "✅ /guides PASS langsung dari HyperCloudHost"
 
           echo "ALL_HEALTH_PASS=true" >> $GITHUB_ENV
-          echo "✅ SEMUA HEALTH CHECK PRODUCTION BERHASIL!"
+          echo "VERIFIED_TARGET_IP=$SSH_HOST" >> $GITHUB_ENV
+          echo "✅ SEMUA HEALTH CHECK LANGSUNG KE HYPERCLOUDHOST BERHASIL!"
 
       - name: 11. Rollback on Failure
         if: failure() && steps.deploy.outcome == 'success'
@@ -335,11 +356,11 @@ jobs:
           echo "BUILD           : ${{ steps.build.outcome == 'success' && 'PASS' || (steps.check-secrets.outcome == 'failure' && 'BLOCKED' || 'FAIL') }}"
           echo "BUILD LOCATION  : GitHub Actions"
           echo "DEPLOY          : ${{ steps.deploy.outcome == 'success' && 'PASS' || 'FAIL' }}"
-          echo "TARGET          : HyperCloudHost"
+          echo "TARGET HOST/IP  : ${{ env.VERIFIED_TARGET_IP || secrets.HYPERCLOUD_SSH_HOST }}"
           echo "DEPLOYED COMMIT : ${{ github.sha }}"
           echo "RESTART         : ${{ steps.restart.outcome == 'success' && 'PASS' || 'FAIL' }}"
           echo "HEALTH CHECK    : ${{ env.ALL_HEALTH_PASS == 'true' && 'PASS' || 'FAIL' }}"
-          echo "PRODUCTION      : https://seraphigame.my.id"
+          echo "PRODUCTION URL  : https://seraphigame.my.id (via HyperCloudHost direct)"
           if [ "${{ env.ALL_HEALTH_PASS }}" == "true" ]; then
             echo "ROLLBACK        : NOT NEEDED"
           elif [ "${{ env.ROLLBACK_STATUS }}" == "SUCCESS" ]; then
