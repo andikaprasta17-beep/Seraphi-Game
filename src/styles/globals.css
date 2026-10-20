@@ -2521,6 +2521,281 @@ img {
   }
 }
 
+/* ==========================================================================
+   Affiliate Direct-Buy Product Box Component
+   ========================================================================== */
+.affiliate-product-box {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  background: linear-gradient(135deg, rgba(16, 22, 38, 0.98) 0%, rgba(32, 18, 42, 0.95) 100%);
+  border: 2px solid rgba(238, 77, 45, 0.45);
+  border-radius: var(--radius-xl);
+  padding: 22px;
+  margin: 36px 0;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 30px rgba(238, 77, 45, 0.16);
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.affiliate-product-box:hover {
+  border-color: rgba(238, 77, 45, 0.85);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65), 0 0 40px rgba(238, 77, 45, 0.28);
+  transform: translateY(-2px);
+}
+
+.affiliate-product-media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(35, 42, 60, 0.85) 0%, rgba(10, 14, 22, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 210px;
+}
+
+.affiliate-product-img-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.affiliate-product-img {
+  width: 100%;
+  height: 100%;
+  max-height: 230px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.affiliate-product-box:hover .affiliate-product-img {
+  transform: scale(1.05);
+}
+
+.affiliate-overlay-pill {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  color: #ee4d2d;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(238, 77, 45, 0.4);
+}
+
+.affiliate-product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.affiliate-product-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.affiliate-product-badge .badge-official {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #ee4d2d;
+  background: rgba(238, 77, 45, 0.14);
+  border: 1px solid rgba(238, 77, 45, 0.35);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.affiliate-product-badge .badge-category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.affiliate-product-badge .badge-guarantee {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.affiliate-product-name {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.35;
+  margin: 0 0 8px 0;
+}
+
+.affiliate-product-name a {
+  color: #fff;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.affiliate-product-name a:hover {
+  color: #ee4d2d;
+}
+
+.affiliate-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  margin-bottom: 12px;
+}
+
+.affiliate-product-rating .stars {
+  color: #fbbf24;
+  letter-spacing: 2px;
+}
+
+.affiliate-product-rating .rating-score {
+  font-weight: 800;
+  color: #fff;
+}
+
+.affiliate-product-rating .rating-count {
+  color: var(--text-muted);
+}
+
+.affiliate-product-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.affiliate-feature-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.affiliate-product-pricing {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.price-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price-current {
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #ee4d2d;
+  letter-spacing: -0.02em;
+}
+
+.price-original {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  text-decoration: line-through;
+}
+
+.discount-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.affiliate-product-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.btn-buy-shopee {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f97316 0%, #ee4d2d 100%);
+  color: #fff !important;
+  font-size: 1.05rem;
+  font-weight: 900;
+  padding: 14px 30px;
+  border-radius: var(--radius-md);
+  text-decoration: none !important;
+  box-shadow: 0 6px 20px rgba(238, 77, 45, 0.45);
+  transition: all var(--transition-fast);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-buy-shopee:hover {
+  background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+  box-shadow: 0 8px 30px rgba(238, 77, 45, 0.7);
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
+.affiliate-disclaimer {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .affiliate-product-box {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 16px;
+  }
+  
+  .btn-buy-shopee {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+}
+
 
 
 

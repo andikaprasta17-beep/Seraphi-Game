@@ -8,6 +8,11 @@ interface AffiliateProduct {
   badgeOfficial: string;
   badgeGuarantee: string;
   highlightTag?: string;
+  price: string;
+  originalPrice: string;
+  discount: string;
+  rating: string;
+  sales: string;
   imageUrl: string;
   imageAlt: string;
   affiliateUrl: string;
@@ -27,7 +32,12 @@ const affiliateProducts: AffiliateProduct[] = [
     badgeOfficial: 'Toko Resmi Bass Audio',
     badgeGuarantee: 'Garansi Resmi 1 Tahun',
     highlightTag: 'Rekomendasi Utama Earphone Gaming',
-    imageUrl: '/images/gear/tangzu-xue-tao-iem.webp',
+    price: 'Rp 249.000',
+    originalPrice: 'Rp 350.000',
+    discount: '-29%',
+    rating: '4.9',
+    sales: '1.200+ Terjual',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/andikaprasta17-beep/Seraphi-Game@main/public/images/gear/tangzu-xue-tao-iem.webp',
     imageAlt: 'TANGZU Xue Tao Gaming In-Ear Monitor (IEM) Earphones dengan Boom Mic untuk Deteksi Footsteps',
     affiliateUrl: 'https://s.shopee.co.id/20wN4AbcBL',
     description:
@@ -45,7 +55,12 @@ const affiliateProducts: AffiliateProduct[] = [
     badgeOfficial: 'Toko Resmi Shopee',
     badgeGuarantee: 'Garansi Resmi',
     highlightTag: 'Setup All-in-One Paling Hemat',
-    imageUrl: '/images/gear/onikuma-gaming-bundle-3in1.webp',
+    price: 'Rp 289.000',
+    originalPrice: 'Rp 420.000',
+    discount: '-31%',
+    rating: '4.8',
+    sales: '3.500+ Terjual',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/andikaprasta17-beep/Seraphi-Game@main/public/images/gear/onikuma-gaming-bundle-3in1.webp',
     imageAlt: 'ONIKUMA Gaming Bundle 3-in-1 - Paket Keyboard, Mouse, dan Headset Gaming',
     affiliateUrl: 'https://s.shopee.co.id/9V26hRMsP2',
     description:
@@ -79,11 +94,11 @@ export default function GamingGearAffiliateCard() {
                   textTransform: 'uppercase',
                 }}
               >
-                Pilihan Periferal Resmi
+                Pilihan Periferal Resmi Shopee
               </span>
             </div>
             <h2 id="gear-recommendation-title" className="section-title" style={{ fontSize: '1.45rem' }}>
-              Rekomendasi Gear Gaming
+              Rekomendasi Gear Gaming (Beli Langsung)
             </h2>
           </div>
         </div>
@@ -92,15 +107,27 @@ export default function GamingGearAffiliateCard() {
       <div className="gaming-gear-grid">
         {affiliateProducts.map((gear) => (
           <div key={gear.id} className="gaming-gear-card">
-            {/* Gambar Produk Autentik */}
+            {/* Gambar Produk Autentik (Bisa Diklik Langsung) */}
             <div className="gaming-gear-media">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={gear.imageUrl}
-                alt={gear.imageAlt}
-                className="gaming-gear-img"
-                loading="lazy"
-              />
+              <a
+                href={gear.affiliateUrl}
+                target="_blank"
+                rel="sponsored nofollow noopener"
+                style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}
+                title={`Buka & Beli ${gear.title} langsung di Shopee`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={gear.imageUrl}
+                  alt={gear.imageAlt}
+                  className="gaming-gear-img"
+                  loading="lazy"
+                />
+                <span className="affiliate-overlay-pill">
+                  <ShoppingBag size={12} />
+                  <span>Klik Beli</span>
+                </span>
+              </a>
             </div>
 
             {/* Informasi Produk */}
@@ -121,7 +148,32 @@ export default function GamingGearAffiliateCard() {
                   )}
                 </div>
 
-                <h3 className="gaming-gear-title">{gear.title}</h3>
+                <h3 className="gaming-gear-title">
+                  <a
+                    href={gear.affiliateUrl}
+                    target="_blank"
+                    rel="sponsored nofollow noopener"
+                    style={{ color: '#fff', textDecoration: 'none' }}
+                  >
+                    {gear.title}
+                  </a>
+                </h3>
+
+                {/* Rating & Pricing E-Commerce */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '10px 0 12px', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
+                    <span style={{ fontSize: '1.55rem', fontWeight: 900, color: '#ee4d2d' }}>{gear.price}</span>
+                    <span style={{ fontSize: '0.88rem', color: 'var(--text-dim)', textDecoration: 'line-through' }}>{gear.originalPrice}</span>
+                  </div>
+                  <span style={{ fontSize: '0.74rem', fontWeight: 800, color: '#10b981', background: 'rgba(16, 185, 129, 0.15)', border: '1px solid rgba(16, 185, 129, 0.35)', padding: '2px 8px', borderRadius: 4 }}>
+                    {gear.discount}
+                  </span>
+                  <div style={{ fontSize: '0.8rem', color: '#fbbf24', display: 'flex', alignItems: 'center', gap: 4, marginLeft: 'auto' }}>
+                    <span>★★★★★</span>
+                    <span style={{ color: '#fff', fontWeight: 700 }}>{gear.rating}</span>
+                    <span style={{ color: 'var(--text-muted)' }}>({gear.sales})</span>
+                  </div>
+                </div>
 
                 <p className="gaming-gear-desc">{gear.description}</p>
 
@@ -144,17 +196,17 @@ export default function GamingGearAffiliateCard() {
                     href={gear.affiliateUrl}
                     target="_blank"
                     rel="sponsored nofollow noopener"
-                    className="btn-shopee-affiliate"
-                    title={`Buka halaman produk ${gear.title} di Shopee`}
+                    className="btn-buy-shopee"
+                    title={`Beli ${gear.title} sekarang di Shopee`}
                   >
-                    <ShoppingBag size={18} />
-                    <span>Cek Produk di Shopee</span>
-                    <ExternalLink size={16} />
+                    <ShoppingBag size={20} />
+                    <span>BELI SEKARANG DI SHOPEE ({gear.price})</span>
+                    <ExternalLink size={17} />
                   </a>
                 </div>
 
                 <p className="gear-affiliate-disclosure">
-                  *Transparansi: Seraphi Game dapat memperoleh komisi dari pembelian melalui tautan afiliasi ini tanpa biaya tambahan bagi Anda.
+                  *Transparansi: Produk resmi Shopee, Garansi 100% Original. Seraphi Game dapat memperoleh komisi afiliasi tanpa biaya tambahan bagi Anda.
                 </p>
               </div>
             </div>
@@ -164,4 +216,5 @@ export default function GamingGearAffiliateCard() {
     </section>
   );
 }
+
 

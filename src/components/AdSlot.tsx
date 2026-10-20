@@ -73,8 +73,9 @@ export default async function AdSlot({
           <a
             href={adConfig.target_url || '#'}
             target="_blank"
-            rel="sponsored noopener noreferrer"
+            rel="sponsored nofollow noopener"
             style={{ display: 'block', textDecoration: 'none' }}
+            title="Beli produk langsung di Shopee"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -84,16 +85,27 @@ export default async function AdSlot({
               loading="lazy"
               style={{ maxHeight: 180, objectFit: 'cover', width: '100%', borderRadius: 'var(--radius-sm)' }}
             />
-            {adConfig.label && (
-              <div style={{ marginTop: 8, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 6, padding: '0 4px' }}>
-                <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#fff', textAlign: 'left', lineHeight: 1.3 }}>
-                  {adConfig.label}
+            <div style={{ marginTop: 10, display: 'flex', flexDirection: 'column', gap: 6, padding: '0 4px', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 6 }}>
+                <span style={{ fontSize: '0.7rem', color: '#ee4d2d', fontWeight: 800, textTransform: 'uppercase' }}>
+                  Toko Resmi Shopee
                 </span>
-                <span style={{ fontSize: '0.7rem', color: '#ee4d2d', fontWeight: 800, whiteSpace: 'nowrap' }}>
-                  Cek di Shopee &rarr;
+                <span style={{ fontSize: '0.75rem', color: '#fbbf24', fontWeight: 700 }}>
+                  ★ 4.9
                 </span>
               </div>
-            )}
+              <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>
+                {adConfig.label || 'TANGZU Xue Tao Gaming IEM'}
+              </span>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 4 }}>
+                <span style={{ fontSize: '1.05rem', fontWeight: 900, color: '#ee4d2d' }}>
+                  Rp 249.000
+                </span>
+                <span style={{ fontSize: '0.72rem', background: 'linear-gradient(135deg, #f97316, #ee4d2d)', color: '#fff', fontWeight: 800, padding: '4px 10px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                  Beli &rarr;
+                </span>
+              </div>
+            </div>
           </a>
         ) : (
           <div

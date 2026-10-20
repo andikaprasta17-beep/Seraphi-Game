@@ -17,6 +17,7 @@ import AdSlot from '@/components/AdSlot';
 import NewsCard from '@/components/NewsCard';
 import GuideCard from '@/components/GuideCard';
 import ViewTracker from '@/components/ViewTracker';
+import AffiliateProductCard from '@/components/AffiliateProductCard';
 import {
   generateSeoTitle,
   generateSeoDescription,
@@ -246,14 +247,27 @@ export default async function NewsDetailPage({ params }: Props) {
             />
           </div>
 
-          {/* In-Article Ad Slot */}
-          <AdSlot slotId="ad-article-incontent" />
-
           {/* Article Prose */}
           <div className="prose">
-            {newsItem.content.split('\n\n').map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
+            {newsItem.content.split('\n\n').map((paragraph, index) => {
+              if (paragraph.includes('shopee.co.id')) {
+                const linkMatch = paragraph.match(/https?:\/\/s\.shopee\.co\.id\/[a-zA-Z0-9_-]+/);
+                const affUrl = linkMatch ? linkMatch[0] : 'https://s.shopee.co.id/20wN4AbcBL';
+                return (
+                  <AffiliateProductCard
+                    key={index}
+                    affiliateUrl={affUrl}
+                  />
+                );
+              }
+              if (paragraph.startsWith('### ')) {
+                return <h3 key={index}>{paragraph.replace('### ', '')}</h3>;
+              }
+              if (paragraph.startsWith('## ')) {
+                return <h2 key={index}>{paragraph.replace('## ', '')}</h2>;
+              }
+              return <p key={index}>{paragraph}</p>;
+            })}
           </div>
 
           {/* Tags */}
