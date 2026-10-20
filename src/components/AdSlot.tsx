@@ -74,7 +74,7 @@ export default async function AdSlot({
             href={adConfig.target_url || '#'}
             target="_blank"
             rel="sponsored noopener noreferrer"
-            style={{ display: 'block' }}
+            style={{ display: 'block', textDecoration: 'none' }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -82,8 +82,18 @@ export default async function AdSlot({
               alt={adConfig.label || 'Sponsor Advertisement'}
               className="ad-image"
               loading="lazy"
-              style={{ maxHeight: 120, objectFit: 'cover', width: '100%' }}
+              style={{ maxHeight: 180, objectFit: 'cover', width: '100%', borderRadius: 'var(--radius-sm)' }}
             />
+            {adConfig.label && (
+              <div style={{ marginTop: 8, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 6, padding: '0 4px' }}>
+                <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#fff', textAlign: 'left', lineHeight: 1.3 }}>
+                  {adConfig.label}
+                </span>
+                <span style={{ fontSize: '0.7rem', color: '#ee4d2d', fontWeight: 800, whiteSpace: 'nowrap' }}>
+                  Cek di Shopee &rarr;
+                </span>
+              </div>
+            )}
           </a>
         ) : (
           <div

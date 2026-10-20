@@ -1285,6 +1285,20 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.redeem-code-box:hover {
+  border-color: var(--primary);
+  background: rgba(0, 240, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+.redeem-code-box.copied {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.25);
 }
 
 .code-text {
@@ -1349,6 +1363,16 @@ img {
   border-color: var(--border-glow);
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.event-card-ended {
+  opacity: 0.85;
+  filter: grayscale(0.2);
+}
+
+.event-card-ended:hover {
+  opacity: 1;
+  filter: none;
 }
 
 .event-image-wrap {
@@ -1963,4 +1987,541 @@ img {
     font-size: 1.3rem;
   }
 }
+
+/* Meta Build & Tactical Gaming Cards */
+.meta-build-card {
+  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+.meta-build-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-glow) !important;
+  box-shadow: var(--shadow-glow), var(--shadow-lg) !important;
+}
+
+.hover-link {
+  transition: color var(--transition-fast);
+}
+.hover-link:hover {
+  color: var(--primary) !important;
+}
+
+/* Upcoming & New Release Games Showcase */
+.badge-hot-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 22, 36, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.badge-hot-chip:hover {
+  background: rgba(0, 242, 254, 0.15);
+  border-color: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.2);
+}
+
+/* Side Rail Sponsors (Pinggir Kiri & Pinggir Kanan) */
+.side-rail-sponsor {
+  position: fixed;
+  top: 140px;
+  width: 140px;
+  z-index: 90;
+  background: rgba(14, 20, 32, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.side-rail-sponsor:hover {
+  border-color: rgba(0, 242, 254, 0.4);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 242, 254, 0.15);
+}
+
+.side-rail-left {
+  left: 12px;
+}
+
+.side-rail-right {
+  right: 12px;
+}
+
+@media (min-width: 1600px) {
+  .side-rail-left {
+    left: calc((100vw - 1280px) / 2 - 155px);
+  }
+  .side-rail-right {
+    right: calc((100vw - 1280px) / 2 - 155px);
+  }
+}
+
+@media (max-width: 1380px) {
+  .side-rail-sponsor {
+    display: none !important;
+  }
+}
+
+.side-rail-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.side-rail-close:hover {
+  background: rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.side-rail-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: var(--primary);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.side-rail-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.side-rail-img {
+  width: 100%;
+  max-height: 85px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+}
+
+.side-rail-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.side-rail-desc {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.side-rail-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 242, 254, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  transition: all var(--transition-fast);
+}
+
+.side-rail-cta:hover {
+  background: var(--primary);
+  color: #0b0f19;
+}
+
+/* ========================================================
+   THREE-COLUMN PORTAL LAYOUT (Kiri, Tengah Utama, Kanan)
+   ======================================================== */
+.three-column-portal-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 230px;
+  gap: 28px;
+  align-items: start;
+}
+
+.portal-center-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sponsor-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rail-sticky {
+  position: sticky;
+  top: 85px;
+}
+
+.rail-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sponsor-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.sponsor-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 242, 254, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 242, 254, 0.12);
+}
+
+.sponsor-card-tag {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.sponsor-brand-banner {
+  border-radius: var(--radius-md);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sponsor-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.sponsor-action-btn:hover {
+  background: var(--primary);
+  color: #0b0f19;
+}
+
+.community-box {
+  background: linear-gradient(135deg, rgba(88, 101, 242, 0.15) 0%, rgba(14, 20, 32, 0.9) 100%);
+  border-color: rgba(88, 101, 242, 0.3);
+}
+
+.sponsor-verified-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+/* Responsive Breakpoints for 3-Column Layout */
+@media (max-width: 1240px) {
+  .three-column-portal-layout {
+    grid-template-columns: minmax(0, 1fr) 240px;
+  }
+  .sponsor-rail:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .three-column-portal-layout {
+    grid-template-columns: 1fr;
+  }
+  .sponsor-rail {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Rekomendasi Gear Gaming (Shopee Affiliate Section)
+   ========================================================================== */
+.gaming-gear-section {
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+
+.gaming-gear-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gaming-gear-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  background: linear-gradient(135deg, rgba(16, 22, 36, 0.95) 0%, rgba(26, 18, 38, 0.92) 100%);
+  border: 1px solid rgba(238, 77, 45, 0.28);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 25px rgba(238, 77, 45, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.gaming-gear-card:hover {
+  border-color: rgba(238, 77, 45, 0.5);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55), 0 0 30px rgba(238, 77, 45, 0.16);
+  transform: translateY(-2px);
+}
+
+.gaming-gear-media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(30, 36, 52, 0.8) 0%, rgba(10, 14, 22, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.gaming-gear-img {
+  width: 100%;
+  height: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  padding: 12px;
+}
+
+.gaming-gear-card:hover .gaming-gear-img {
+  transform: scale(1.04);
+}
+
+.gaming-gear-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gaming-gear-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.gear-badge-category {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #ee4d2d;
+  background: rgba(238, 77, 45, 0.12);
+  border: 1px solid rgba(238, 77, 45, 0.3);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gear-badge-official {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gear-badge-guarantee {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gear-badge-highlight {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gaming-gear-title {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.gaming-gear-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.gaming-gear-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gear-feature-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.gaming-gear-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.btn-shopee-affiliate {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f97316 0%, #ee4d2d 100%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(238, 77, 45, 0.35);
+  transition: all var(--transition-fast);
+  letter-spacing: 0.02em;
+}
+
+.btn-shopee-affiliate:hover {
+  background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+  box-shadow: 0 6px 22px rgba(238, 77, 45, 0.55);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.gear-affiliate-disclosure {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .gaming-gear-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 18px;
+  }
+  
+  .gaming-gear-media {
+    min-height: 190px;
+    max-height: 240px;
+  }
+  
+  .gaming-gear-title {
+    font-size: 1.25rem;
+  }
+  
+  .btn-shopee-affiliate {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
 
