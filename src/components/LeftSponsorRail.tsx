@@ -1,29 +1,29 @@
 import React from 'react';
 import Link from 'next/link';
-import { Sparkles, Users, ExternalLink, ShieldCheck, Gamepad2, Award, Headphones, ShoppingBag } from 'lucide-react';
+import { Sparkles, Users, ExternalLink, ShieldCheck, Gamepad2, Award, Headphones, ShoppingCart, Keyboard } from 'lucide-react';
 
 export default function LeftSponsorRail() {
   return (
     <aside className="sponsor-rail rail-sticky" aria-label="Sponsor & Partner Kiri">
       {/* 1. Header Rail Label */}
       <div className="rail-section-header">
-        <Sparkles size={14} color="#00f2fe" />
-        <span>SPONSOR PARTNER</span>
+        <Sparkles size={14} color="#ffd000" />
+        <span style={{ color: '#ffd000' }}>KERANJANG KUNING SHOPEE</span>
       </div>
 
-      {/* 2. Hardware Gaming Sponsor: TANGZU Xue Tao Gaming IEM (Shopee Affiliate) */}
+      {/* 2. Hardware Gaming Sponsor: TANGZU Xue Tao Gaming IEM */}
       <div className="sponsor-card">
-        <div className="sponsor-card-tag" style={{ color: '#ee4d2d', borderColor: 'rgba(238, 77, 45, 0.4)' }}>
-          SHOPEE AFFILIATE
+        <div className="sponsor-card-tag" style={{ color: '#000', background: '#ffd000', borderColor: '#ffe600', fontWeight: 900 }}>
+          KERANJANG KUNING
         </div>
-        <div className="sponsor-brand-banner" style={{ background: 'linear-gradient(135deg, rgba(238, 77, 45, 0.12) 0%, rgba(14, 20, 32, 0.85) 100%)' }}>
+        <div className="sponsor-brand-banner" style={{ background: 'linear-gradient(135deg, rgba(255, 208, 0, 0.12) 0%, rgba(14, 20, 32, 0.85) 100%)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
-            <div style={{ width: 28, height: 28, borderRadius: 6, background: 'linear-gradient(135deg, #f97316 0%, #ee4d2d 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 900, fontSize: '0.85rem' }}>
+            <div style={{ width: 28, height: 28, borderRadius: 6, background: 'linear-gradient(135deg, #ffd000 0%, #ff9e00 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#000', fontWeight: 900, fontSize: '0.85rem' }}>
               <Headphones size={15} />
             </div>
             <div>
               <h4 style={{ fontSize: '0.85rem', fontWeight: 800, color: '#fff', margin: 0 }}>TANGZU Xue Tao</h4>
-              <span style={{ fontSize: '0.67rem', color: '#ee4d2d', fontWeight: 700 }}>Toko Bass Audio Shopee</span>
+              <span style={{ fontSize: '0.67rem', color: '#ffd000', fontWeight: 700 }}>Toko Bass Audio Shopee</span>
             </div>
           </div>
           <p style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', lineHeight: 1.4, margin: '6px 0 10px' }}>
@@ -33,10 +33,41 @@ export default function LeftSponsorRail() {
             href="https://s.shopee.co.id/20wN4AbcBL"
             target="_blank"
             rel="sponsored nofollow noopener"
-            className="sponsor-action-btn"
-            style={{ borderColor: 'rgba(238, 77, 45, 0.5)', color: '#ee4d2d', background: 'rgba(238, 77, 45, 0.1)' }}
+            className="btn-keranjang-kuning-sm"
           >
-            <span>Beli di Shopee</span>
+            <ShoppingCart size={13} />
+            <span>Keranjang Kuning (Rp 249rb)</span>
+            <ExternalLink size={11} />
+          </a>
+        </div>
+      </div>
+
+      {/* 2b. Hardware Gaming Sponsor: ONIKUMA Gaming Bundle 3-in-1 */}
+      <div className="sponsor-card">
+        <div className="sponsor-card-tag" style={{ color: '#000', background: '#ffd000', borderColor: '#ffe600', fontWeight: 900 }}>
+          KERANJANG KUNING
+        </div>
+        <div className="sponsor-brand-banner" style={{ background: 'linear-gradient(135deg, rgba(255, 208, 0, 0.12) 0%, rgba(14, 20, 32, 0.85) 100%)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+            <div style={{ width: 28, height: 28, borderRadius: 6, background: 'linear-gradient(135deg, #ffd000 0%, #ff9e00 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#000', fontWeight: 900, fontSize: '0.85rem' }}>
+              <Keyboard size={15} />
+            </div>
+            <div>
+              <h4 style={{ fontSize: '0.85rem', fontWeight: 800, color: '#fff', margin: 0 }}>ONIKUMA Bundle 3-in-1</h4>
+              <span style={{ fontSize: '0.67rem', color: '#ffd000', fontWeight: 700 }}>Toko Resmi Shopee</span>
+            </div>
+          </div>
+          <p style={{ fontSize: '0.72rem', color: 'var(--text-secondary)', lineHeight: 1.4, margin: '6px 0 10px' }}>
+            Paket lengkap Keyboard RGB, Mouse Gaming presisi & Headset stereo over-ear push rank.
+          </p>
+          <a
+            href="https://s.shopee.co.id/9V26hRMsP2"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            className="btn-keranjang-kuning-sm"
+          >
+            <ShoppingCart size={13} />
+            <span>Keranjang Kuning (Rp 289rb)</span>
             <ExternalLink size={11} />
           </a>
         </div>

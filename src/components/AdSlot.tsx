@@ -1,4 +1,5 @@
 import React from 'react';
+import { ShoppingCart } from 'lucide-react';
 import { getAdSlots, getAdSlotById } from '@/lib/db';
 import { AdSlotConfig } from '@/lib/types';
 
@@ -54,6 +55,7 @@ export default async function AdSlot({
 
   // Safe container identification
   const containerId = slotId || `ad-${normalizePlacement(placement) || 'slot'}`;
+  const isShopee = adConfig.target_url?.includes('shopee.co.id');
 
   return (
     <aside
@@ -62,7 +64,9 @@ export default async function AdSlot({
       aria-label="Area Iklan Sponsor"
     >
       <div className="ad-slot-box">
-        <span className="ad-badge">SPONSOR / IKLAN</span>
+        <span className="ad-badge">
+          {isShopee ? 'KERANJANG KUNING' : 'SPONSOR / IKLAN'}
+        </span>
 
         {customHtml ? (
           <div
@@ -74,21 +78,29 @@ export default async function AdSlot({
             href={adConfig.target_url || '#'}
             target="_blank"
             rel="sponsored nofollow noopener"
-            style={{ display: 'block', textDecoration: 'none' }}
-            title="Beli produk langsung di Shopee"
+            style={{ display: 'block', textDecoration: 'none', position: 'relative' }}
+            title="Beli produk langsung di Keranjang Kuning Shopee"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={adConfig.image_url}
-              alt={adConfig.label || 'Sponsor Advertisement'}
-              className="ad-image"
-              loading="lazy"
-              style={{ maxHeight: 180, objectFit: 'cover', width: '100%', borderRadius: 'var(--radius-sm)' }}
-            />
+            <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 'var(--radius-sm)' }}>
+              <img
+                src={adConfig.image_url}
+                alt={adConfig.label || 'Sponsor Advertisement'}
+                className="ad-image"
+                loading="lazy"
+                style={{ maxHeight: 180, objectFit: 'cover', width: '100%', display: 'block' }}
+              />
+              {isShopee && (
+                <div className="badge-keranjang-kuning" style={{ fontSize: '0.65rem', padding: '3px 8px', top: 6, left: 6 }}>
+                  <ShoppingCart size={11} />
+                  <span>Keranjang Kuning</span>
+                </div>
+              )}
+            </div>
             <div style={{ marginTop: 10, display: 'flex', flexDirection: 'column', gap: 6, padding: '0 4px', textAlign: 'left' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 6 }}>
-                <span style={{ fontSize: '0.7rem', color: '#ee4d2d', fontWeight: 800, textTransform: 'uppercase' }}>
-                  Toko Resmi Shopee
+                <span style={{ fontSize: '0.7rem', color: isShopee ? '#ffd000' : '#ee4d2d', fontWeight: 800, textTransform: 'uppercase' }}>
+                  {isShopee ? 'Toko Resmi Shopee' : 'Sponsor'}
                 </span>
                 <span style={{ fontSize: '0.75rem', color: '#fbbf24', fontWeight: 700 }}>
                   ★ 4.9
@@ -98,12 +110,19 @@ export default async function AdSlot({
                 {adConfig.label || 'TANGZU Xue Tao Gaming IEM'}
               </span>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 4 }}>
-                <span style={{ fontSize: '1.05rem', fontWeight: 900, color: '#ee4d2d' }}>
+                <span style={{ fontSize: '1.05rem', fontWeight: 900, color: isShopee ? '#ffd000' : '#ee4d2d' }}>
                   Rp 249.000
                 </span>
-                <span style={{ fontSize: '0.72rem', background: 'linear-gradient(135deg, #f97316, #ee4d2d)', color: '#fff', fontWeight: 800, padding: '4px 10px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-                  Beli &rarr;
-                </span>
+                {isShopee ? (
+                  <span style={{ fontSize: '0.72rem', background: 'linear-gradient(135deg, #ffd000, #ff9e00)', color: '#000', fontWeight: 900, padding: '5px 10px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 4, border: '1px solid #ffe600' }}>
+                    <ShoppingCart size={12} color="#000" />
+                    <span>Keranjang Kuning</span>
+                  </span>
+                ) : (
+                  <span style={{ fontSize: '0.72rem', background: 'linear-gradient(135deg, #f97316, #ee4d2d)', color: '#fff', fontWeight: 800, padding: '4px 10px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                    Beli &rarr;
+                  </span>
+                )}
               </div>
             </div>
           </a>

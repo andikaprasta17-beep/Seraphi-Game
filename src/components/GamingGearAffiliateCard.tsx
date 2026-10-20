@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ShoppingBag, ShieldCheck, Headphones, Keyboard, Mouse, Mic, Sparkles } from 'lucide-react';
+import { ExternalLink, ShoppingBag, ShoppingCart, ShieldCheck, Headphones, Keyboard, Mouse, Mic, Sparkles } from 'lucide-react';
 
 interface AffiliateProduct {
   id: string;
@@ -80,16 +80,19 @@ export default function GamingGearAffiliateCard() {
         <div className="section-title-wrap">
           <div
             className="section-indicator"
-            style={{ background: 'linear-gradient(135deg, #f97316 0%, #ee4d2d 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #ffd000 0%, #ff9e00 100%)' }}
           />
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
-              <ShoppingBag size={15} color="#ee4d2d" />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ background: '#ffd000', color: '#000', padding: '2px 8px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 4, fontWeight: 900, fontSize: '0.72rem' }}>
+                <ShoppingCart size={13} color="#000" />
+                <span>KERANJANG KUNING</span>
+              </div>
               <span
                 style={{
                   fontSize: '0.75rem',
                   fontWeight: 800,
-                  color: '#ee4d2d',
+                  color: '#ffd000',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                 }}
@@ -98,7 +101,7 @@ export default function GamingGearAffiliateCard() {
               </span>
             </div>
             <h2 id="gear-recommendation-title" className="section-title" style={{ fontSize: '1.45rem' }}>
-              Rekomendasi Gear Gaming (Beli Langsung)
+              Rekomendasi Gear Gaming (Bisa Klik Keranjang Kuning)
             </h2>
           </div>
         </div>
@@ -107,14 +110,14 @@ export default function GamingGearAffiliateCard() {
       <div className="gaming-gear-grid">
         {affiliateProducts.map((gear) => (
           <div key={gear.id} className="gaming-gear-card">
-            {/* Gambar Produk Autentik (Bisa Diklik Langsung) */}
+            {/* Gambar Produk Autentik (Bisa Diklik Langsung via Keranjang Kuning) */}
             <div className="gaming-gear-media">
               <a
                 href={gear.affiliateUrl}
                 target="_blank"
                 rel="sponsored nofollow noopener"
                 style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}
-                title={`Buka & Beli ${gear.title} langsung di Shopee`}
+                title={`Buka & Beli ${gear.title} di Keranjang Kuning Shopee`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -123,9 +126,13 @@ export default function GamingGearAffiliateCard() {
                   className="gaming-gear-img"
                   loading="lazy"
                 />
+                <div className="badge-keranjang-kuning">
+                  <ShoppingCart size={14} />
+                  <span>Keranjang Kuning</span>
+                </div>
                 <span className="affiliate-overlay-pill">
-                  <ShoppingBag size={12} />
-                  <span>Klik Beli</span>
+                  <ShoppingCart size={12} />
+                  <span>Klik untuk Beli</span>
                 </span>
               </a>
             </div>
@@ -154,6 +161,7 @@ export default function GamingGearAffiliateCard() {
                     target="_blank"
                     rel="sponsored nofollow noopener"
                     style={{ color: '#fff', textDecoration: 'none' }}
+                    title={`Buka ${gear.title} di Keranjang Kuning Shopee`}
                   >
                     {gear.title}
                   </a>
@@ -162,7 +170,7 @@ export default function GamingGearAffiliateCard() {
                 {/* Rating & Pricing E-Commerce */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '10px 0 12px', flexWrap: 'wrap' }}>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
-                    <span style={{ fontSize: '1.55rem', fontWeight: 900, color: '#ee4d2d' }}>{gear.price}</span>
+                    <span style={{ fontSize: '1.55rem', fontWeight: 900, color: '#ffd000' }}>{gear.price}</span>
                     <span style={{ fontSize: '0.88rem', color: 'var(--text-dim)', textDecoration: 'line-through' }}>{gear.originalPrice}</span>
                   </div>
                   <span style={{ fontSize: '0.74rem', fontWeight: 800, color: '#10b981', background: 'rgba(16, 185, 129, 0.15)', border: '1px solid rgba(16, 185, 129, 0.35)', padding: '2px 8px', borderRadius: 4 }}>
@@ -196,17 +204,25 @@ export default function GamingGearAffiliateCard() {
                     href={gear.affiliateUrl}
                     target="_blank"
                     rel="sponsored nofollow noopener"
-                    className="btn-buy-shopee"
-                    title={`Beli ${gear.title} sekarang di Shopee`}
+                    className="btn-keranjang-kuning"
+                    title={`Beli ${gear.title} sekarang di Keranjang Kuning Shopee`}
                   >
-                    <ShoppingBag size={20} />
-                    <span>BELI SEKARANG DI SHOPEE ({gear.price})</span>
-                    <ExternalLink size={17} />
+                    <div className="cart-icon-bubble">
+                      <ShoppingCart size={22} color="#000" />
+                    </div>
+                    <div className="btn-keranjang-text">
+                      <span className="btn-keranjang-sub">PRODUK TERVERIFIKASI SHOPEE</span>
+                      <span className="btn-keranjang-main">Beli di Keranjang Kuning</span>
+                    </div>
+                    <div className="btn-keranjang-price">
+                      <span>{gear.price}</span>
+                      <ExternalLink size={16} />
+                    </div>
                   </a>
                 </div>
 
                 <p className="gear-affiliate-disclosure">
-                  *Transparansi: Produk resmi Shopee, Garansi 100% Original. Seraphi Game dapat memperoleh komisi afiliasi tanpa biaya tambahan bagi Anda.
+                  *Transparansi: Produk resmi Shopee, Garansi 100% Original. Klik Keranjang Kuning untuk belanja langsung di Shopee tanpa biaya tambahan bagi Anda.
                 </p>
               </div>
             </div>

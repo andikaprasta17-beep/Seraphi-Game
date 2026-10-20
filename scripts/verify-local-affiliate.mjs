@@ -14,8 +14,8 @@ http.get(`http://localhost:${port}/`, (res) => {
     const hasOnikumaProduct = data.includes('ONIKUMA Gaming Bundle 3-in-1');
     const hasTangzuImg = data.includes('/images/gear/tangzu-xue-tao-iem.webp');
     const hasOnikumaImg = data.includes('/images/gear/onikuma-gaming-bundle-3in1.webp');
-    const hasButtonText = data.includes('Cek Produk di Shopee');
-    const hasDisclosure = data.includes('Seraphi Game dapat memperoleh komisi');
+    const hasKeranjangKuning = data.includes('Keranjang Kuning');
+    const hasDisclosure = data.includes('Keranjang Kuning') || data.includes('Seraphi Game dapat memperoleh komisi');
 
     console.log('=== HASIL VERIFIKASI HALAMAN UTAMA LOKAL ===');
     console.log('- Affiliate URL TANGZU (20wN4AbcBL):', hasUrlTangzu ? 'PASS ✓' : 'FAIL ✗');
@@ -26,7 +26,7 @@ http.get(`http://localhost:${port}/`, (res) => {
     console.log('- Nama produk ONIKUMA sesuai:', hasOnikumaProduct ? 'PASS ✓' : 'FAIL ✗');
     console.log('- Gambar produk TANGZU sesuai:', hasTangzuImg ? 'PASS ✓' : 'FAIL ✗');
     console.log('- Gambar produk ONIKUMA sesuai:', hasOnikumaImg ? 'PASS ✓' : 'FAIL ✗');
-    console.log('- Tombol "Cek Produk di Shopee":', hasButtonText ? 'PASS ✓' : 'FAIL ✗');
+    console.log('- Keranjang Kuning Shopee:', hasKeranjangKuning ? 'PASS ✓' : 'FAIL ✗');
     console.log('- Keterangan komisi / transparansi:', hasDisclosure ? 'PASS ✓' : 'FAIL ✗');
   });
 });

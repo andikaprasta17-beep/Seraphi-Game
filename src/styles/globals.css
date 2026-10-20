@@ -2748,6 +2748,141 @@ img {
   margin-bottom: 10px;
 }
 
+.badge-keranjang-kuning {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ffd000 0%, #ffaa00 100%);
+  color: #0a0a0a !important;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 16px rgba(255, 187, 0, 0.55);
+  border: 1.5px solid #ffe600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  z-index: 3;
+  animation: pulseKeranjang 2.5s infinite;
+}
+
+@keyframes pulseKeranjang {
+  0%, 100% {
+    box-shadow: 0 4px 14px rgba(255, 187, 0, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 4px 22px rgba(255, 208, 0, 0.85);
+    transform: scale(1.05);
+  }
+}
+
+.btn-keranjang-kuning {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: linear-gradient(135deg, #ffd000 0%, #ff9e00 100%);
+  color: #0a0a0a !important;
+  font-size: 0.95rem;
+  font-weight: 900;
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  text-decoration: none !important;
+  box-shadow: 0 6px 20px rgba(255, 187, 0, 0.45);
+  border: 2px solid #ffe600;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-keranjang-kuning:hover {
+  background: linear-gradient(135deg, #ffe033 0%, #ffb300 100%);
+  box-shadow: 0 8px 30px rgba(255, 187, 0, 0.75);
+  transform: translateY(-2px);
+  color: #000 !important;
+}
+
+.btn-keranjang-kuning .cart-icon-bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.btn-keranjang-kuning .btn-keranjang-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex: 1;
+}
+
+.btn-keranjang-kuning .btn-keranjang-sub {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.72);
+  line-height: 1.1;
+}
+
+.btn-keranjang-kuning .btn-keranjang-main {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+}
+
+.btn-keranjang-kuning .btn-keranjang-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.92);
+  color: #ffd000;
+  font-weight: 900;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn-keranjang-kuning-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  background: linear-gradient(135deg, #ffd000 0%, #ff9e00 100%);
+  color: #000 !important;
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(255, 187, 0, 0.4);
+  border: 1px solid #ffe600;
+  transition: all var(--transition-fast);
+}
+
+.btn-keranjang-kuning-sm:hover {
+  background: linear-gradient(135deg, #ffe033 0%, #ffb300 100%);
+  box-shadow: 0 6px 18px rgba(255, 187, 0, 0.65);
+  transform: translateY(-1px);
+  color: #000 !important;
+}
+
 .btn-buy-shopee {
   display: inline-flex;
   align-items: center;
@@ -2794,9 +2929,17 @@ img {
     padding: 12px 18px;
     font-size: 0.95rem;
   }
+
+  .btn-keranjang-kuning {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .btn-keranjang-kuning .btn-keranjang-price {
+    justify-content: center;
+    width: 100%;
+  }
 }
-
-
-
-
 
